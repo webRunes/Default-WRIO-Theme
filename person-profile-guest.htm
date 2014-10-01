@@ -83,14 +83,14 @@
                                 <article>
                                     <div class="media thumbnail">
                                         <div class="col-xs-12 col-md-6 pull-right">
-                                            <span itemscope itemtype="http://schema.org/ImageObject">
-                                                <img itemprop="thumbnail" src="img/profile1-200x200.jpg" class="pull-left">
+                                            <span itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <img itemprop="thumbnail" src="img/no-photo-200x200.png" class="pull-left">
                                             </span>
                                             <ul class="details">
                                                 <li>Registered: 22 Jun 2013</li>
-                                                <li>Rating: 244</li>
-                                                <li>Followers: 1,634</li>
-                                                <li>Posts: 1,634</li>
+                                                <li>Rating: 4</li>
+                                                <li>Followers: 1</li>
+                                                <li>Posts: 2</li>
                                             </ul>
                                         </div>
                                         <div class="col-xs-12 col-md-6">
@@ -98,9 +98,10 @@
                                                 Информация публичного профайла доступна любому, даже незарегистрированным пользователям. Если вы хотите оставаться анонимным, просто не заполняйте его.
                                             </p>
                                             <ul class="actions">
-                                                <li><a href="#"><span class="glyphicon glyphicon-edit"></span>Edit</a></li>
-                                                <li><a href="#"><span class="glyphicon glyphicon-share"></span>Share</a></li>
                                                 <li><a href="wrio-account-edit.htm"><span class="glyphicon glyphicon-arrow-up"></span>Upgrade guest account for free</a> <span class="label label-warning">30 days left</span></li>
+                                            </ul>
+                                            <ul class="actions">
+                                                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Already have an account?</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -110,7 +111,6 @@
                     </ul>
                     <ul class="breadcrumb" itemprop="breadcrumb">
                         <li class="active">Read</li>
-                        <li><a href="#">Edit</a></li>
                     </ul>
                     <aside class="callout">
                         <a href="#" class="pull-right">
@@ -433,19 +433,22 @@
                             <div class="in" id="ticket-element">
                                 <aside>
                                     <div class="media thumbnail">
-                                        <div class="col-xs-12 pull-right">
-                                            <img src="img/profile1-200x200.jpg" class="pull-left">
+                                        <div class="col-xs-12">
+                                            <span itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <img itemprop="thumbnail" src="img/no-photo-200x200.png" class="pull-left">
+                                            </span>
                                             <ul class="details">
-                                                <li>Registered: 22 Jun 2013</li>
-                                                <li>Rating: 244</li>
-                                                <li>Followers: 1,634</li>
-                                                <li>Posts: 1,634</li>
+                                                <li>Name: <span itemprop="name"><span itemprop="givenName">I'm</span> <span itemprop="familyName">Anonymous</span></span></li>
+                                                <li>Registered: <time datetime="2013-01-22">22 January 2013</time></li>
+                                                <li>Rating: 4</li>
+                                                <li>Followers: 1</li>
+                                                <li>Posts: 2</li>
                                             </ul>
                                         </div>
                                         <div class="col-xs-12">
-                                            <p>
-                                                Информация публичного профайла доступна любому, даже незарегистрированным пользователям. Если вы хотите оставаться анонимным, просто не заполняйте его.
-                                            </p>
+                                            <div class="media-body">
+                                                Disclaimer: We start a series of stories describing various issues and problems that are related for the most part to the Internet, and our vision of possible ways to solve them. Those will often be followed by previews of projects mentioned in the stories. Keep in mind: some of them might change, some will remain just our fantasy; at this moment we are a small team, but with a great desire to change this world for the better or at least a little bit.
+                                            </div>
                                         </div>
                                     </div>
                                 </aside>
@@ -454,6 +457,7 @@
                     </ul>
                     <div class="margin-bottom">
                         <button type="button" class="btn btn-warning btn-block"><span class="glyphicon glyphicon-arrow-up"></span>Upgrade guest account for free (30 days left)</button>
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-envelope"></span>Edit</button>
                         <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-star"></span>Buy premium</button>
                         <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-envelope"></span>Send message</button>
                         <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-bookmark"></span>Follow</button>

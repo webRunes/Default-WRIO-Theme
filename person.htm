@@ -80,25 +80,31 @@
             <div class="content col-xs-12 col-sm-5 col-md-7">
                 <div class="margin">
                     <ul class="info nav nav-pills nav-stacked" id="profile-accordion">
-                        <li class="panel"><a href="#profile-element" data-parent="#profile-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Logged with WRIO</a>
+                        <li class="panel">
+                            <a href="#profile-element" data-parent="#profile-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Logged as I'm Anonymous <sup>WRIO</sup></a>
                             <div class="in" id="profile-element">
-                                <div class="tickets">
-                                    <div class="media thumbnail">
-                                        <div class="col-xs-12 col-md-6 col-lg-5">
-                                            <img src="img/profile1-200x200.jpg" class="pull-left">
-                                            <ul class="details">
-                                                <li>Name: Alexey Anshakov</li>
-                                                <li>Registered: 22 Jun 2013</li>
-                                                <li>Rating: 244</li>
-                                                <li>Followers: 1,634</li>
-                                                <li>Posts: 1,634</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-xs-12 col-md-6 col-lg-7">
-                                            <div class="media-body">
-                                                Disclaimer: We start a series of stories describing various issues and problems that are related for the most part to the Internet, and our vision of possible ways to solve them. Those will often be followed by previews of projects mentioned in the stories. Keep in mind: some of them might change, some will remain just our fantasy; at this moment we are a small team, but with a great desire to change this world for the better or at least a little bit.
-                                            </div>
-                                        </div>
+                                <div class="media thumbnail">
+                                    <div class="col-xs-12 col-md-6 pull-right">
+                                        <span itemscope="" itemtype="http://schema.org/ImageObject">
+                                            <img itemprop="thumbnail" src="img/no-photo-200x200.png" class="pull-left">
+                                        </span>
+                                        <ul class="details">
+                                            <li>Registered: 22 Jun 2013</li>
+                                            <li>Rating: 4</li>
+                                            <li>Followers: 1</li>
+                                            <li>Posts: 2</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <p>
+                                            Информация публичного профайла доступна любому, даже незарегистрированным пользователям. Если вы хотите оставаться анонимным, просто не заполняйте его.
+                                        </p>
+                                        <ul class="actions">
+                                            <li><a href="wrio-account-edit.htm"><span class="glyphicon glyphicon-arrow-up"></span>Upgrade guest account for free</a> <span class="label label-warning">30 days left</span></li>
+                                        </ul>
+                                        <ul class="actions">
+                                            <li><a href="#"><span class="glyphicon glyphicon-user"></span>Already have an account?</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -135,19 +141,22 @@
                             <div class="in" id="ticket-element">
                                 <div class="tickets">
                                     <div class="media thumbnail">
-                                        <div class="pull-left">
-                                            <img src="img/no-photo-200x200.png">
-                                        </div>
+                                        <div class="col-xs-12">
+                                        <span itemscope="" itemtype="http://schema.org/ImageObject">
+                                            <img itemprop="thumbnail" src="img/no-photo-200x200.png" class="pull-left">
+                                        </span>
                                         <ul class="details">
-                                            <li>Name: I'm Anonymous</li>
-                                            <li>Registered: 22 Jun 2013</li>
-                                            <li>Rating: 244 <sup>level 2</sup></li>
-                                            <li>Earned: 8,821</li>
-                                            <li>Views: 1,634</li>
-                                            <li>Comments: 1,634</li>
+                                            <li>Name: <span itemprop="name"><span itemprop="givenName">I'm</span> <span itemprop="familyName">Anonymous</span></span></li>
+                                            <li>Registered: <time datetime="2013-01-22">22 January 2013</time></li>
+                                            <li>Rating: 4</li>
+                                            <li>Followers: 1</li>
+                                            <li>Posts: 2</li>
                                         </ul>
-                                        <div class="media-body">
-                                            Disclaimer: We start a series of stories describing various issues and problems that are related for the most part to the Internet, and our vision of possible ways to solve them. Those will often be followed by previews of projects mentioned in the stories. Keep in mind: some of them might change, some will remain just our fantasy; at this moment we are a small team, but with a great desire to change this world for the better or at least a little bit.
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="media-body">
+                                                Disclaimer: We start a series of stories describing various issues and problems that are related for the most part to the Internet, and our vision of possible ways to solve them. Those will often be followed by previews of projects mentioned in the stories. Keep in mind: some of them might change, some will remain just our fantasy; at this moment we are a small team, but with a great desire to change this world for the better or at least a little bit.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -157,6 +166,7 @@
                     <div class="margin-bottom">
                         <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-pencil"></span>Edit</button>
                         <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-envelope"></span>Send message</button>
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-arrow-up"></span>Upgrade guest account for free (30 days left)</button>
                         <button type="button" class="btn btn-success btn-block"><span class="glyphicon glyphicon-plus"></span>Added</button>
                         <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-share"></span>Share</button>
                         <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-remove"></span>Close</button>
