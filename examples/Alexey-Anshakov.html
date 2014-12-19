@@ -16,21 +16,18 @@
         "entity": "profile",
         "version": "1.0",
         "templateVersion": "1.0",
-        "cover": {
-        "@type": "ItemList",
-        "name": "Cover",
-        "url": "http://domain.com/2ziwMaIk_en-US(cover).html"
-        },
+        "cover": "http://domain.com/cover.html",
+        "translation": "http://domain.com/translation.html",
         "list": [
         {
         "@type": "ItemList",
-        "name": "List name",
-        "url": "http://domain.com/2ziwMaIk_en-US(list1).html"
+        "name": "List name 1",
+        "url": "http://domain.com/List-name-1.html"
         },
         {
         "@type": "ItemList",
-        "name": "List name2",
-        "url": "http://domain.com/2ziwMaIk_en-US(list2).html"
+        "name": "List name 2",
+        "url": "http://domain.com/List-name-2.html"
         }
         ]
         }
@@ -42,10 +39,7 @@
         "@context": "http://schema.org",
         "@type": "Article",
         "inLanguage": "en-US",
-        "keywords": [
-        "kJy7a-zNisSH1xGoezHSYJcH0_AkSaN1WwZGOCeVzu9bL4b0",
-        "sezHSYJcHaN1Goy7aZu9bL4b0GOWwSH1xCeVkJ0_AkS-zNiz"
-        ],
+        "keywords": "keyword1, keyword2, keyword3",
         "author": {
         "@context": "http://schema.org",
         "@type": "Person",
@@ -54,9 +48,10 @@
         "sameAs": "http://alexey-anshakov.webrunes.com"
         },
         "editor": "",
-        "about": [
-        "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-        "2 Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum."
+        "about": "1 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+        "articleBody": [
+        "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+        "3 Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum."
         ],
         "hasPart": [
         {
@@ -65,7 +60,7 @@
         "articleBody": [
         "3 Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam."
         ]
-        }, 
+        },
         {
         "@type": "Article", 
         "name": "Contacts",
@@ -90,28 +85,14 @@
     }
     </script>
     
-    <!-- json-ld for search engines, ignore it -->
+    <!-- ignore this part -->
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "Person",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Seattle",
-        "addressRegion": "WA",
-        "postalCode": "98052",
-        "streetAddress": "20341 Whitworth Institute 405 N. Whitworth"
-      },
-      "colleague": [
-        "http://www.xyz.edu/students/alicejones.html",
-        "http://www.xyz.edu/students/bobsmith.html"
-      ],
-      "email": "mailto:jane-doe@xyz.edu",
-      "image": "janedoe.jpg",
-      "jobTitle": "Professor",
-      "name": "Jane Doe",
-      "telephone": "(425) 123-4567",
-      "url": "http://www.janedoe.com"
+      "image": "image.jpg",
+      "name": "Alexey Anshakov",
+      "url": "http://webrunes.com/AlexeyAnshakov"
     }
     </script>
 </head>
