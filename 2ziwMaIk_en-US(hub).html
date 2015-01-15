@@ -9,29 +9,12 @@
     <meta name="keywords" content="story, cat">
     <title>Alexey Anshakov</title>
     
-    <!-- json-ld for WRIO -->
     <script type="application/ld+json">
         {
-        "entity": "profile",
-        "version": "1.0",
-        "templateVersion": "1.0",
-        "cover": {
+        "@context": "http://schema.org",
         "@type": "ItemList",
         "name": "Cover",
-        "url": "http://domain.com/2ziwMaIk_en-US(cover).html"
-        },
-        "list": [
-        {
-        "@type": "ItemList",
-        "name": "List name",
-        "url": "http://domain.com/2ziwMaIk_en-US(list1).html"
-        },
-        {
-        "@type": "ItemList",
-        "name": "List name2",
-        "url": "http://domain.com/2ziwMaIk_en-US(list2).html"
-        }
-        ]
+        "url": "http://wall2003.github.io/webRunes-WRIO-Hub/list-name.html?cover"
         }
     </script>
 
@@ -88,30 +71,21 @@
         ]
     }
     </script>
-    
-    <!-- json-ld for search engines, ignore it -->
+
     <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Seattle",
-        "addressRegion": "WA",
-        "postalCode": "98052",
-        "streetAddress": "20341 Whitworth Institute 405 N. Whitworth"
-      },
-      "colleague": [
-        "http://www.xyz.edu/students/alicejones.html",
-        "http://www.xyz.edu/students/bobsmith.html"
-      ],
-      "email": "mailto:jane-doe@xyz.edu",
-      "image": "janedoe.jpg",
-      "jobTitle": "Professor",
-      "name": "Jane Doe",
-      "telephone": "(425) 123-4567",
-      "url": "http://www.janedoe.com"
-    }
+        {
+        "@context": "http://schema.org",
+        "@type": "ItemList",
+        "name": "List name",
+        "url": "http://domain.com/2ziwMaIk_en-US(list1).html"
+        },
+        {
+        "@type": "ItemList",
+        "name": "List name2",
+        "url": "http://domain.com/2ziwMaIk_en-US(list2).html"
+        }
+        ]
+        }
     </script>
 </head>
 
