@@ -1,0 +1,25 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<template id="itemlist-template">
+    <article itemscope itemtype="http://schema.org/Article">
+        <header class="col-xs-12">
+            <h1><span itemprop="name">Item List</span></h1>
+        </header>
+    </article>
+</template>
+
+<script>
+    (function ($) {
+        var webrunes = window.webrunes || {};
+        var importDoc = document.currentScript.ownerDocument;
+        var template = importDoc.querySelector('#itemlist-template');
+        var $template = $(template.innerHTML);
+
+        var proto = Object.create(HTMLElement.prototype);
+        proto.createdCallback = function () {
+            var jsonld = webrunes.jsonlds[1];
+            this.outerHTML = $template.get(0).outerHTML;
+        };
+        document.registerElement('itemlist-widget', {prototype: proto});
+    })(jQuery);
+</script>
