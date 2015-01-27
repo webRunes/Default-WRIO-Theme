@@ -17,7 +17,10 @@
 
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {
-            var jsonld = webrunes.jsonlds[1];
+            var model = webrunes.jsonlds['Cover'];
+            if(model){
+
+            }
             this.outerHTML = $template.get(0).outerHTML;
         };
         document.registerElement('cover-widget', {prototype: proto});
