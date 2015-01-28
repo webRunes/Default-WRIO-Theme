@@ -33,20 +33,23 @@
 
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {
-            var model = window.webrunes.jsonlds[1];
-            var $h1 = $($template).find('H1').get(0);
-            $($h1).html(model.name);
-            this.createParagraphs($template, model);
+            var model = window.webrunes.jsonlds['Person'];
+            if(model){
+                var $h1 = $($template).find('H1').get(0);
+                $($h1).html(model.name);
+                this.createParagraphs($template, model);
 
-            if(model.hasPart){
-                for(var i = 0; i < model.hasPart.length; i++){
-                    var $section = $('<section></section>');
-                    var $h = $('<h2></h2>').attr('id', model.hasPart[i].name).html(model.hasPart[i].name);
-                    $($section).append($h);
-                    $($template).append($section);
-                    this.createParagraphs($section, model.hasPart[i]);
+                if(model.hasPart){
+                    for(var i = 0; i < model.hasPart.length; i++){
+                        var $section = $('<section></section>');
+                        var $h = $('<h2></h2>').attr('id', model.hasPart[i].name).html(model.hasPart[i].name);
+                        $($section).append($h);
+                        $($template).append($section);
+                        this.createParagraphs($section, model.hasPart[i]);
+                    }
                 }
             }
+
             this.outerHTML = $template.get(0).outerHTML;
         };
         proto.createParagraphs = function(el, model){
@@ -59,6 +62,6 @@
                 }
             }
         };
-        document.registerElement('article-widget', {prototype: proto});
+        document.registerElement('person-widget', {prototype: proto});
     })(jQuery);
 </script>
