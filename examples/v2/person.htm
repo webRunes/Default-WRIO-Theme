@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
@@ -14,11 +13,18 @@
     {
         "@context": "http://schema.org",
         "@type": "ItemList",
-        "name": "My Cover List",
-        "url": "http://domain.com/itemList.htm?cover"
+        "name": "My cover",
+        "itemListElement": [
+        {
+              "@type": "ItemList",
+              "name": "Cover",
+              "description": "Info about list",
+              "image": "http://domain1.com/image1.jpg",
+              "url": "http://webrunes.com/cover.htm?cover"
+        }
+        ]
         }
     </script>
-
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -94,6 +100,30 @@
         }
         ]
     }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "ItemList",
+        "name": "My lists",
+        "itemListElement": [
+        {
+              "@type": "ItemList",
+              "name": "Blog",
+              "description": "Info about list",
+              "image": "http://domain1.com/image1.jpg",
+              "url": "http://webrunes.com/blog.htm"
+        },
+        {
+              "@type": "ItemList",
+              "name": "Photos",
+              "description": "Info about list",
+              "image": "http://domain.com/image.jpg",
+              "url": "http://webrunes.com/photos.htm"
+        }
+        ]
+        }
     </script>
 </head>
 
