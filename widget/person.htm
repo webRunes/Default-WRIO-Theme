@@ -1,7 +1,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<template id="article-template">
-    <article itemscope itemtype="http://schema.org/Article">
+<template id="person-template">
+    <article id="article-person-id" itemscope itemtype="http://schema.org/Article">
         <header class="col-xs-12">
             <h1><span itemprop="name"></span></h1>
             <meta itemprop="datePublished" content="2014-05-08T19:30">
@@ -9,7 +9,7 @@
         </header>
     </article>
 </template>
-<template id="paragraph-template">
+<template id="person-paragraph-template">
     <div class="paragraph">
         <div class="col-xs-12 col-md-6">
             <p itemprop="description"></p>
@@ -25,28 +25,31 @@
 <script>
     (function ($) {
         var importDoc = document.currentScript.ownerDocument;
-        var template = importDoc.querySelector('#article-template');
+        var template = importDoc.querySelector('#person-template');
         var $template = $(template.innerHTML);
-        var paragraph = importDoc.querySelector('#paragraph-template');
+        var paragraph = importDoc.querySelector('#person-paragraph-template');
         var $paragraph = $(paragraph.innerHTML);
 
 
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {
-            var model = window.webrunes.jsonlds[1];
-            var $h1 = $($template).find('H1').get(0);
-            $($h1).html(model.name);
-            this.createParagraphs($template, model);
+            var model = window.webrunes.jsonlds['Person'];
+            if(model){
+                var $h1 = $($template).find('H1').get(0);
+                $($h1).html(model.name);
+                this.createParagraphs($template, model);
 
-            if(model.hasPart){
-                for(var i = 0; i < model.hasPart.length; i++){
-                    var $section = $('<section></section>');
-                    var $h = $('<h2></h2>').attr('id', model.hasPart[i].name).html(model.hasPart[i].name);
-                    $($section).append($h);
-                    $($template).append($section);
-                    this.createParagraphs($section, model.hasPart[i]);
+                if(model.hasPart){
+                    for(var i = 0; i < model.hasPart.length; i++){
+                        var $section = $('<section></section>');
+                        var $h = $('<h2></h2>').attr('id', model.hasPart[i].name).html(model.hasPart[i].name);
+                        $($section).append($h);
+                        $($template).append($section);
+                        this.createParagraphs($section, model.hasPart[i]);
+                    }
                 }
             }
+
             this.outerHTML = $template.get(0).outerHTML;
         };
         proto.createParagraphs = function(el, model){
@@ -59,6 +62,6 @@
                 }
             }
         };
-        document.registerElement('article-widget', {prototype: proto});
+        document.registerElement('person-widget', {prototype: proto});
     })(jQuery);
 </script>

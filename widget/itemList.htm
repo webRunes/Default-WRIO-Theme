@@ -1,0 +1,67 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<template id="itemlist-template">
+    <div id="itemlist-container-id" itemscope="" itemtype="http://schema.org/ItemList" style="display: none;"></div>
+</template>
+<template id="itemlist-template-media">
+    <div class="media thumbnail">
+        <div class="col-xs-12 col-md-6 col-lg-5">
+            <img src="#" class="pull-left"/>
+            <ul class="details">
+                <li>Post: ???</li>
+                <li>Published: ???</li>
+                <li>Rating: ???</li>
+                <li>Added: ???</li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-7">
+            <div class="media-body">
+            </div>
+        </div>
+    </div>
+</template>
+<template id="itemlist-template-media-body-actions">
+    <ul class="actions">
+        <li><a href="#"><span class="glyphicon glyphicon-plus"></span>Added</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-share"></span>Share</a></li>
+    </ul>
+</template>
+<script>
+    (function ($) {
+        var webrunes = window.webrunes || {};
+        var model = webrunes.jsonlds['ItemList'];
+        var importDoc = document.currentScript.ownerDocument;
+        var template = importDoc.querySelector('#itemlist-template');
+        var $template = $(template.innerHTML);
+
+        var media = importDoc.querySelector('#itemlist-template-media');
+        var $media = $(media.innerHTML).get(0);
+
+        var action = importDoc.querySelector('#itemlist-template-media-body-actions');
+        var $action = $(action.innerHTML).get(0);
+
+        var proto = Object.create(HTMLElement.prototype);
+        proto.createdCallback = function () {
+            if(model && model.itemListElement){
+                var arr = model.itemListElement;
+                for(var i = 0; i < arr.length; i++){
+                    this.createMediaBox(arr[i]);
+                }
+            }
+            this.outerHTML = $template.get(0).outerHTML;
+        };
+
+        proto.createMediaBox = function(item){
+            var block = $($media).clone();
+            var $img = $(block).find('img').get(0);
+            $($img).attr('src', item.image);
+            var $med = $(block).find('.media-body').get(0);
+            $($med).html(item.about);
+            var $act = $($action).clone();
+            $($med).append($act);
+            $($template).append(block);
+        };
+
+        document.registerElement('itemlist-widget', {prototype: proto});
+    })(jQuery);
+</script>
