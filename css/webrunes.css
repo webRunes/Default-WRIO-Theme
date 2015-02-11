@@ -1,6 +1,7 @@
 html,body{height:100%;overflow-x:hidden;color:#333 /* Prevent scroll on narrow devices */}
 html,body{font-size:12px}
 html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans-serif}
+header,nav,section,article,aside,footer{display:block} /* old IE support */
 
 .navbar-collapse{max-height:none}
 .nav>li>a.pull-right{z-index:99}/* fix bug for "x" in menu */
