@@ -8,50 +8,44 @@
     <meta name="author" content="User name1, User name2">
     <meta name="keywords" content="story, cat">
     <title>Alexey Anshakov</title>
+    <script src="http://alexeyanshakov.github.io/Default-WRIO-Theme/modernizr.js"></script>
 
     <script type="application/ld+json">
-    {
+        {
         "@context": "http://schema.org",
         "@type": "ItemList",
-        "name": "My cover list for hub",
-        "itemListElement": [
-        {
-              "@type": "ItemList",
-              "name": "Cover",
-              "description": "Info about list",
-              "image": "http://domain1.com/image1.jpg",
-              "url": "http://webrunes.com/cover.htm?cover"
+        "name": "Cover",
+        "url": "#"
         }
-        ]
-        }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Seattle",
-        "addressRegion": "WA",
-        "postalCode": "98052",
-        "streetAddress": "20341 Whitworth Institute 405 N. Whitworth"
-      },
-      "colleague": [
-        "http://www.xyz.edu/students/alicejones.html",
-        "http://www.xyz.edu/students/bobsmith.html"
-      ],
-      "email": "mailto:jane-doe@xyz.edu",
-      "image": "janedoe.jpg",
-      "jobTitle": "Professor",
-      "givenName": "Jane",
-      "familyName": "Doe",
-      "telephone": "(425) 123-4567",
-      "url": "http://www.janedoe.com"
-    }
     </script>
 
+    <!--<script type="application/ld+json">-->
+        <!--{-->
+        <!--"@context": "http://schema.org",-->
+        <!--"@type": "Person",-->
+        <!--"address": {-->
+        <!--"@type": "PostalAddress",-->
+        <!--"addressLocality": "Seattle",-->
+        <!--"addressRegion": "WA",-->
+        <!--"postalCode": "98052",-->
+        <!--"streetAddress": "20341 Whitworth Institute 405 N. Whitworth"-->
+        <!--},-->
+        <!--"colleague": [-->
+        <!--"http://www.xyz.edu/students/alicejones.html",-->
+        <!--"http://www.xyz.edu/students/bobsmith.html"-->
+        <!--],-->
+        <!--"email": "mailto:jane-doe@xyz.edu",-->
+        <!--"image": "janedoe.jpg",-->
+        <!--"jobTitle": "Professor",-->
+        <!--"givenName": "Jane",-->
+        <!--"familyName": "Doe",-->
+        <!--"telephone": "(425) 123-4567",-->
+        <!--"url": "http://www.janedoe.com"-->
+        <!--}-->
+    <!--</script>-->
+
     <script type="application/ld+json">
-    {
+        {
         "@context": "http://schema.org",
         "@type": "Article",
         "inLanguage": "en-US",
@@ -79,48 +73,77 @@
         ]
         },
         {
-        "@type": "Article", 
+        "@type": "Article",
         "name": "Contacts",
         "url": "domainname.com/hash.html"
-        }, 
+        },
         {
-        "@type": "Article", 
+        "@type": "Article",
         "name": "Skills",
         "articleBody": [
         "4 Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.",
         "5 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Quisque volutpat condimentum velit."
         ]
-        }, 
+        },
         {
-        "@type": "Article", 
+        "@type": "Article",
         "name": "Experience",
         "articleBody": [
         "6 Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
         ]
         }
         ]
-    }
+        }
     </script>
 
     <script type="application/ld+json">
-    {
+        {
         "@context": "http://schema.org",
         "@type": "ItemList",
-        "name": "My lists",
+        "name": "My list",
         "itemListElement": [
         {
-              "@type": "ItemList",
-              "name": "Blog",
-              "description": "Info about list",
-              "image": "http://domain1.com/image1.jpg",
-              "url": "http://webrunes.com/blog.htm"
+        "@type": "Article",
+        "inLanguage": "en-US",
+        "author": "http://webrunes.github.io/webRunes-WRIO-Hub/Alexey-Anshakov.html",
+        "name": "Post name",
+        "about": "Официальная страница webRunes и ноды webrunes.com. Здесь вы можете не только следить за новостями проекта, но и даже купить share компании.",
+        "image": "http://domain1.com/image1.jpg",
+        "url": "http://wall2003.github.io/webRunes-WRIO-Hub/The-story-of-the-cat.html"
         },
         {
-              "@type": "ItemList",
-              "name": "Photos",
-              "description": "Info about list",
-              "image": "http://domain.com/image.jpg",
-              "url": "http://webrunes.com/photos.htm"
+        "@type": "Article",
+        "inLanguage": "en-US",
+        "name": "WRIO",
+        "about": "Здесь будет информация по тому, что такое WRIO OS, скачивание его дистрибутива или создание инстанса на AWS, связка с исходниками на github и пр.",
+        "image": "http://domain.com/image.jpg",
+        "url": "http://wall2003.github.io/webRunes-WRIO-Hub/article.htm"
+        },
+        {
+        "@type": "Article",
+        "inLanguage": "en-US",
+        "name": "Blogs",
+        "about": "Здесь будет информация по тому, что такое WRIO OS, скачивание его дистрибутива или создание инстанса на AWS, связка с исходниками на github и пр.",
+        "image": "http://domain-another-hub.com/image.jpg",
+        "url": "http://domain.com/article.htm"
+        },
+        {
+        "@type": "Article",
+        "inLanguage": "en-US",
+        "author": "http://webrunes.github.io/webRunes-WRIO-Hub/Alexey-Anshakov.html",
+        "name": "Storage",
+        "about": "Здесь будет информация по тому, что такое WRIO OS, скачивание его дистрибутива или создание инстанса на AWS, связка с исходниками на github и пр.",
+        "image": "http://domain2.com/image2.jpg",
+        "url": "http://domai.com/article2.htm"
+        },
+        {
+        "@type": "Article",
+        "inLanguage": "en-US",
+        "author": "http://domain-another-hub.com/url-another-hub.html",
+        "name": "webGold",
+        "about": "Здесь будет информация по тому, что такое WRIO OS, скачивание его дистрибутива или создание инстанса на AWS, связка с исходниками на github и пр.",
+        "image": "http://domain3.com/image3.jpg",
+        "url": "http://domain.com/article3.htm"
         }
         ]
         }
