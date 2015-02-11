@@ -1,0 +1,51 @@
+
+<!-- saved from url=(0083)http://wrio.s3-website-us-east-1.amazonaws.com/Default-WRIO-Theme/widget/person.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><script src="./person_files/jquery.min.js"></script>
+
+<template id="person-template"></template>
+<template id="person-paragraph-template"></template>
+
+<script>
+    (function ($) {
+        var importDoc = document.currentScript.ownerDocument;
+        var template = importDoc.querySelector('#person-template');
+        var $template = $(template.innerHTML);
+        var paragraph = importDoc.querySelector('#person-paragraph-template');
+        var $paragraph = $(paragraph.innerHTML);
+
+
+        var proto = Object.create(HTMLElement.prototype);
+        proto.createdCallback = function () {
+            var model = window.webrunes.jsonlds['Person'];
+            if(model){
+                var $h1 = $($template).find('H1').get(0);
+                $($h1).html(model.name);
+                this.createParagraphs($template, model);
+
+                if(model.hasPart){
+                    for(var i = 0; i < model.hasPart.length; i++){
+                        var $section = $('<section></section>');
+                        var $h = $('<h2></h2>').attr('id', model.hasPart[i].name).html(model.hasPart[i].name);
+                        $($section).append($h);
+                        $($template).append($section);
+                        this.createParagraphs($section, model.hasPart[i]);
+                    }
+                }
+            }
+
+            this.outerHTML = $template.get(0).outerHTML;
+        };
+        proto.createParagraphs = function(el, model){
+            if(model.articleBody){
+                for(var i = 0; i < model.articleBody.length; i++){
+                    var $paragr = $($paragraph).clone();
+                    var $p = $($paragr).find('P').get(0);
+                    $($p).html(model.articleBody[i]);
+                    $(el).append($paragr);
+                }
+            }
+        };
+        document.registerElement('person-widget', {prototype: proto});
+    })(jQuery);
+</script>
+</head><body></body></html>

@@ -5,7 +5,7 @@ var webrunes = webrunes || {};
     'use strict';
 
     //properties
-    var importUrl = 'http://wrio.s3-website-us-east-1.amazonaws.com';
+    var importUrl = 'http://alexeyanshakov.github.io/';
     var cssUrl = 'http://webrunes.github.io';
     var theme = '/Default-WRIO-Theme';
     webrunes.plusUrl = "";
@@ -39,19 +39,19 @@ var webrunes = webrunes || {};
         //import Login
         var login = document.createElement('link');
         login.rel = 'import';
-        login.href = importUrl + '/Login-WRIO-App/widget/login.htm';
+        //login.href = importUrl + '/Login-WRIO-App/widget/login.htm';
         document.head.appendChild(login);
 
         //import Plus
         var plus = document.createElement('link');
         plus.rel = 'import';
-        plus.href = importUrl + '/Plus-WRIO-App/widget/plus.htm';
+        //plus.href = importUrl + '/Plus-WRIO-App/widget/plus.htm';
         document.head.appendChild(plus);
 
         //import titter
         var titter = document.createElement('link');
         titter.rel = 'import';
-        titter.href = importUrl + '/Titter-WRIO-App/widget/titter.htm';
+        //titter.href = importUrl + '/Titter-WRIO-App/widget/titter.htm';
         document.head.appendChild(titter);
 
         //import Menu
@@ -69,7 +69,7 @@ var webrunes = webrunes || {};
         //import Cover
         var cover = document.createElement('link');
         cover.rel = 'import';
-        cover.href = importUrl + '/Default-WRIO-Theme/widget/cover.htm';
+        //cover.href = importUrl + '/Default-WRIO-Theme/widget/cover.htm';
         document.head.appendChild(cover);
 
         //import Person

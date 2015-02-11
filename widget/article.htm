@@ -1,0 +1,51 @@
+
+<!-- saved from url=(0084)http://wrio.s3-website-us-east-1.amazonaws.com/Default-WRIO-Theme/widget/article.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><script src="./article_files/jquery.min.js"></script>
+
+<template id="article-template"></template>
+<template id="paragraph-template"></template>
+
+<script>
+    (function ($) {
+        var importDoc = document.currentScript.ownerDocument;
+        var template = importDoc.querySelector('#article-template');
+        var $template = $(template.innerHTML);
+        var paragraph = importDoc.querySelector('#paragraph-template');
+        var $paragraph = $(paragraph.innerHTML);
+
+
+        var proto = Object.create(HTMLElement.prototype);
+        proto.createdCallback = function () {
+            var model = window.webrunes.jsonlds['Article'];
+            if(model){
+                var $h1 = $($template).find('H1').get(0);
+                $($h1).html(model.name);
+                this.createParagraphs($template, model);
+
+                if(model.hasPart){
+                    for(var i = 0; i < model.hasPart.length; i++){
+                        var $section = $('<section></section>');
+                        var $h = $('<h2></h2>').attr('id', model.hasPart[i].name).html(model.hasPart[i].name);
+                        $($section).append($h);
+                        $($template).append($section);
+                        this.createParagraphs($section, model.hasPart[i]);
+                    }
+                }
+            }
+
+            this.outerHTML = $template.get(0).outerHTML;
+        };
+        proto.createParagraphs = function(el, model){
+            if(model.articleBody){
+                for(var i = 0; i < model.articleBody.length; i++){
+                    var $paragr = $($paragraph).clone();
+                    var $p = $($paragr).find('P').get(0);
+                    $($p).html(model.articleBody[i]);
+                    $(el).append($paragr);
+                }
+            }
+        };
+        document.registerElement('article-widget', {prototype: proto});
+    })(jQuery);
+</script>
+</head><body></body></html>

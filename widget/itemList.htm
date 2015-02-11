@@ -1,0 +1,46 @@
+
+<!-- saved from url=(0085)http://wrio.s3-website-us-east-1.amazonaws.com/Default-WRIO-Theme/widget/itemList.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><script src="./itemList_files/jquery.min.js"></script>
+
+<template id="itemlist-template"></template>
+<template id="itemlist-template-media"></template>
+<template id="itemlist-template-media-body-actions"></template>
+<script>
+    (function ($) {
+        var webrunes = window.webrunes || {};
+        var model = webrunes.jsonlds['ItemList'];
+        var importDoc = document.currentScript.ownerDocument;
+        var template = importDoc.querySelector('#itemlist-template');
+        var $template = $(template.innerHTML);
+
+        var media = importDoc.querySelector('#itemlist-template-media');
+        var $media = $(media.innerHTML).get(0);
+
+        var action = importDoc.querySelector('#itemlist-template-media-body-actions');
+        var $action = $(action.innerHTML).get(0);
+
+        var proto = Object.create(HTMLElement.prototype);
+        proto.createdCallback = function () {
+            if(model && model.itemListElement){
+                var arr = model.itemListElement;
+                for(var i = 0; i < arr.length; i++){
+                    this.createMediaBox(arr[i]);
+                }
+            }
+            this.outerHTML = $template.get(0).outerHTML;
+        };
+
+        proto.createMediaBox = function(item){
+            var block = $($media).clone();
+            var $img = $(block).find('img').get(0);
+            $($img).attr('src', item.image);
+            var $med = $(block).find('.media-body').get(0);
+            $($med).html(item.about);
+            var $act = $($action).clone();
+            $($med).append($act);
+            $($template).append(block);
+        };
+
+        document.registerElement('itemlist-widget', {prototype: proto});
+    })(jQuery);
+</script></head><body></body></html>
