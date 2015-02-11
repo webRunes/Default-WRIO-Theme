@@ -1,9 +1,26 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<!-- saved from url=(0084)http://wrio.s3-website-us-east-1.amazonaws.com/Default-WRIO-Theme/widget/article.htm -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><script src="./article_files/jquery.min.js"></script>
-
-<template id="article-template"></template>
-<template id="paragraph-template"></template>
+<div id="article-template">
+    <div itemscope itemtype="http://schema.org/Article">
+        <div class="col-xs-12">
+            <h1><span itemprop="name"></span></h1>
+            <meta itemprop="datePublished" content="2014-05-08T19:30">
+            <meta itemprop="dateModified" content="2014-07-17T9:55">
+        </div>
+    </div>
+</div>
+<div id="paragraph-template">
+    <div class="paragraph">
+        <div class="col-xs-12 col-md-6">
+            <p itemprop="description"></p>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div>
+                <span class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="right" title="Not yet available"></span>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
     (function ($) {
@@ -16,23 +33,20 @@
 
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {
-            var model = window.webrunes.jsonlds['Article'];
-            if(model){
-                var $h1 = $($template).find('H1').get(0);
-                $($h1).html(model.name);
-                this.createParagraphs($template, model);
+            var model = window.webrunes.jsonlds[1];
+            var $h1 = $($template).find('H1').get(0);
+            $($h1).html(model.name);
+            this.createParagraphs($template, model);
 
-                if(model.hasPart){
-                    for(var i = 0; i < model.hasPart.length; i++){
-                        var $section = $('<section></section>');
-                        var $h = $('<h2></h2>').attr('id', model.hasPart[i].name).html(model.hasPart[i].name);
-                        $($section).append($h);
-                        $($template).append($section);
-                        this.createParagraphs($section, model.hasPart[i]);
-                    }
+            if(model.hasPart){
+                for(var i = 0; i < model.hasPart.length; i++){
+                    var $section = $('<div></div>');
+                    var $h = $('<h2></h2>').attr('id', model.hasPart[i].name).html(model.hasPart[i].name);
+                    $($section).append($h);
+                    $($template).append($section);
+                    this.createParagraphs($section, model.hasPart[i]);
                 }
             }
-
             this.outerHTML = $template.get(0).outerHTML;
         };
         proto.createParagraphs = function(el, model){
@@ -48,4 +62,3 @@
         document.registerElement('article-widget', {prototype: proto});
     })(jQuery);
 </script>
-</head><body></body></html>

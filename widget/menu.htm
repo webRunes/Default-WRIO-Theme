@@ -1,6 +1,4 @@
-
-<!-- saved from url=(0081)http://wrio.s3-website-us-east-1.amazonaws.com/Default-WRIO-Theme/widget/menu.htm -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><script src="./menu_files/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script>
     (function ($) {
@@ -8,28 +6,25 @@
 
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {
-            var jsonld = webrunes.jsonlds['Article'] || webrunes.jsonlds['Person'];
+            var jsonld = webrunes.jsonlds[1];
+            var $ul = $('<ul class="nav nav-pills nav-stacked" id="sidebar-accordion"></ul>');
             if(jsonld){
-                var $ul = $('<ul class="nav nav-pills nav-stacked" id="sidebar-accordion"></ul>');
-                if(jsonld){
-                    if(jsonld.hasPart){
-                        for(var i = 0; i < jsonld.hasPart.length; i++){
-                            var $li = $('<li></li>');
-                            var $a = $('<a></a>').attr('href', '#' + jsonld.hasPart[i].name).html(jsonld.hasPart[i].name);
-                            $li.append($a);
-                            $ul.append($li);
-                        }
-                    }else{
-                        var $li = $('<li class="active"></li>');
-                        var $a = $('<a></a>').attr('href', '#begin').html(jsonld.name);
+                if(jsonld.hasPart){
+                    for(var i = 0; i < jsonld.hasPart.length; i++){
+                        var $li = $('<li></li>');
+                        var $a = $('<a></a>').attr('href', '#' + jsonld.hasPart[i].name).html(jsonld.hasPart[i].name);
                         $li.append($a);
                         $ul.append($li);
                     }
+                }else{
+                    var $li = $('<li class="active"></li>');
+                    var $a = $('<a></a>').attr('href', '#begin').html(jsonld.name);
+                    $li.append($a);
+                    $ul.append($li);
                 }
             }
-
-            this.outerHTML = $ul.get(0).outerHTML;
+            this.innerHTML = $ul.get(0).outerHTML;
         };
         document.registerElement('menu-widget', {prototype: proto});
     })(jQuery);
-</script></head><body></body></html>
+</script>
