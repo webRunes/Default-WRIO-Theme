@@ -141,35 +141,35 @@ var webrunes = webrunes || {};
     };
     //add dom elements
     var addPlusElement = function(el){
-        var pluswidget = document.createElement('<div id="plus-widget>"</div>');
+        var pluswidget = document.createElement('plus-widget');
         el.appendChild(pluswidget);
     };
     var addLoginElement = function(el){
-        var loginwidget = document.createElement('<div id="login-widget>"</div>');
+        var loginwidget = document.createElement('login-widget');
         el.appendChild(loginwidget);
     };
     var addTitterElement = function(el){
-        var titterwidget = document.createElement('<div id="titter-widget>"</div>');
+        var titterwidget = document.createElement('titter-widget');
         el.appendChild(titterwidget);
     };
     var addMenuElement = function(el){
-        var menuwidget = document.createElement('<div id="menu-widget>"</div>');
+        var menuwidget = document.createElement('menu-widget');
         el.appendChild(menuwidget);
     };
     var addArticleElement = function(el){
-        var articlewidget = document.createElement('<div id="article-widget>"</div>');
+        var articlewidget = document.createElement('article-widget');
         el.appendChild(articlewidget);
     };
     var addCoverElement = function(el){
-        var coverwidget = document.createElement('<div id="cover-widget>"</div>');
+        var coverwidget = document.createElement('cover-widget');
         el.appendChild(coverwidget);
     };
     var addPersonElement = function(el){
-        var personwidget = document.createElement('<div id="person-widget>"</div>');
+        var personwidget = document.createElement('person-widget');
         el.appendChild(personwidget);
     };
     var addItemListElement = function(el){
-        var itemListwidget = document.createElement('<div id="itemList-widget>"</div>');
+        var itemListwidget = document.createElement('itemlist-widget');
         el.appendChild(itemListwidget);
     };
 
