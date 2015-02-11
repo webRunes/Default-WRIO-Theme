@@ -39,19 +39,19 @@ var webrunes = webrunes || {};
         //import Login
         var login = document.createElement('link');
         login.rel = 'import';
-        //login.href = importUrl + '/Login-WRIO-App/widget/login.htm';
+        //login.href = importUrl + '/Default-WRIO-Theme/widget/login.htm';
         document.head.appendChild(login);
 
         //import Plus
         var plus = document.createElement('link');
         plus.rel = 'import';
-        //plus.href = importUrl + '/Plus-WRIO-App/widget/plus.htm';
+        plus.href = importUrl + '/Default-WRIO-Theme/widget/plus.htm';
         document.head.appendChild(plus);
 
         //import titter
         var titter = document.createElement('link');
         titter.rel = 'import';
-        //titter.href = importUrl + '/Titter-WRIO-App/widget/titter.htm';
+        titter.href = importUrl + '/Default-WRIO-Theme/widget/titter.htm';
         document.head.appendChild(titter);
 
         //import Menu
