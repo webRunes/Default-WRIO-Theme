@@ -30,14 +30,19 @@
         var paragraph = importDoc.querySelector('#paragraph-template');
         var $paragraph = $(paragraph.innerHTML);
 
-
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {
             var model = window.webrunes.jsonlds['Article'];
             if(model){
+                //window.webrunes.jsonlds['Article'].ments = this.prepareMentions(model);
+                model.ments = this.prepareMentions(model);
+
                 var $h1 = $($template).find('H1').get(0);
                 $($h1).html(model.name);
-                this.createParagraphs($template, model);
+
+                var strNum = 1;
+                this.createParagraphs($template, model, strNum, model);
+                strNum = strNum + model.articleBody.length;
 
                 if(model.hasPart){
                     for(var i = 0; i < model.hasPart.length; i++){
@@ -45,22 +50,63 @@
                         var $h = $('<h2></h2>').attr('id', model.hasPart[i].name).html(model.hasPart[i].name);
                         $($section).append($h);
                         $($template).append($section);
-                        this.createParagraphs($section, model.hasPart[i]);
+                        this.createParagraphs($section, model.hasPart[i], strNum + i, model);
+                        if(model.hasPart[i].articleBody)
+                            strNum = strNum + model.hasPart[i].articleBody.length;
                     }
                 }
             }
 
             this.outerHTML = $template.get(0).outerHTML;
         };
-        proto.createParagraphs = function(el, model){
+        proto.createParagraphs = function(el, model, ind, rootMod){
             if(model.articleBody){
                 for(var i = 0; i < model.articleBody.length; i++){
                     var $paragr = $($paragraph).clone();
                     var $p = $($paragr).find('P').get(0);
-                    $($p).html(model.articleBody[i]);
+                    var text = this.addMentions(ind+i, model.articleBody[i], rootMod);
+                    $($p).html(text);
                     $(el).append($paragr);
                 }
             }
+        };
+        proto.addMentions = function(ind, text, model){
+            var mentions = this.getMention(ind, model);
+            for(var i = 0; i < mentions.length; i++){
+                var pos = text.indexOf(mentions[i].origin, mentions[i].position);
+                if(pos > 0){
+                    text = text.replace(mentions[i].origin, '<a href="' + mentions[i].url + '">' + mentions[i].title + '</a>');
+                }
+            }
+            return text;
+        };
+        proto.prepareMentions = function(model){
+            var ments = [];
+            for(var i = 0; i < model.mentions.length; i++){
+                var arr = model.mentions[i].url.split('?');
+                var arr1 = arr[1].split(':');
+                var arr2 = arr1[1].split(',');
+                if(arr.length > 1 && arr1.length > 1 && arr2.length > 1){
+                    var item = {
+                        line: arr2[0],
+                        position: arr2[1],
+                        origin: arr1[0].replace(/'/g, ""),
+                        title: model.mentions[i].name,
+                        url: arr[0] + '?' + arr1[0]
+                    };
+                    ments.push(item);
+                }
+            }
+            return ments;
+        };
+        proto.getMention = function(line, model){
+            var arr = [];
+            for(var i = 0; i < model.ments.length; i++){
+                if(model.ments[i].line == line){
+                    arr.push(model.ments[i]);
+                }
+            }
+            return arr;
         };
         document.registerElement('article-widget', {prototype: proto});
     })(jQuery);
