@@ -74,8 +74,8 @@
             var mentions = this.getMention(ind, model);
             for(var i = 0; i < mentions.length; i++){
                 var pos = text.indexOf(mentions[i].origin, mentions[i].position);
-                if(pos > 0){
-                    text = text.replace(mentions[i].origin, '<a href="' + mentions[i].url + '">' + mentions[i].title + '</a>');
+                if(pos == mentions[i].position){
+                    text = text.replace(mentions[i].origin, '<a href="' + mentions[i].url + '">' + mentions[i].origin + '</a>');
                 }
             }
             return text;
@@ -92,7 +92,7 @@
                         position: arr2[1],
                         origin: arr1[0].replace(/'/g, ""),
                         title: model.mentions[i].name,
-                        url: arr[0] + '?' + arr1[0]
+                        url: arr[0] + '?' + model.mentions[i].name.split(' ').join('-')
                     };
                     ments.push(item);
                 }
@@ -106,6 +106,7 @@
                     arr.push(model.ments[i]);
                 }
             }
+            if(arr.length > 1) arr.sort(function(a, b) { return parseFloat(b.position) - parseFloat(a.position) } );
             return arr;
         };
         document.registerElement('article-widget', {prototype: proto});
