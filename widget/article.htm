@@ -1,7 +1,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <template id="article-template">
-    <article id="article-article-id" itemscope itemtype="http://schema.org/Article">
+    <article id="article-article-id" itemscope itemtype="http://schema.org/Article" style="display: none;">
         <header class="col-xs-12">
             <h1><span itemprop="name"></span></h1>
             <meta itemprop="datePublished" content="2014-05-08T19:30">
@@ -30,15 +30,16 @@
         var paragraph = importDoc.querySelector('#paragraph-template');
         var $paragraph = $(paragraph.innerHTML);
 
+        if(wrio.page == 'Article') $($template).css({display: 'block'});
+
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {
-            var model = window.webrunes.jsonlds['Article'];
+            var model = window.wrio.widgetmodels.Article;
             if(model){
-                //window.webrunes.jsonlds['Article'].ments = this.prepareMentions(model);
                 model.ments = this.prepareMentions(model);
 
                 var $h1 = $($template).find('H1').get(0);
-                $($h1).html(model.name);
+                $($h1).attr('id', model.name).html(model.name);
 
                 var strNum = 1;
                 this.createParagraphs($template, model, strNum, model);

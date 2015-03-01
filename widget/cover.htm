@@ -1,27 +1,115 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <template id="cover-template">
-    <article itemscope itemtype="http://schema.org/Article">
-        <header class="col-xs-12">
-            <h1><span itemprop="name">Cover tmpl</span></h1>
-        </header>
-    </article>
+    <div id="cover-container-id" class="carousel slide" data-ride="carousel" itemscope="" itemtype="http://schema.org/ItemList" style="display: none;" >
+        <div id="cover-item-list" class="carousel-inner"></div>
+        <a class="left carousel-control" href="#cover-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#cover-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</template>
+<template id="cover-item-template">
+    <div class="item">
+        <div class="img" style="background: url('img/sign_in-cover3.jpg') center center"></div>
+        <div class="carousel-caption">
+            <div class="carousel-text">
+                <h2></h2>
+                <ul class="features"></ul>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
     (function ($) {
-        var webrunes = window.webrunes || {};
         var importDoc = document.currentScript.ownerDocument;
         var template = importDoc.querySelector('#cover-template');
         var $template = $(template.innerHTML);
 
+        var $list = $($template).find('#cover-item-list').get(0);
+
+        var item = importDoc.querySelector('#cover-item-template');
+        var $item = $(item.innerHTML);
+
+        if(wrio.page == 'Cover') $($template).css({display: 'block'});
+
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {
-            var model = webrunes.jsonlds['Cover'];
+            var model = window.wrio.widgetmodels.Cover;
             if(model){
+                if(model.itemListElement){
+                    for(var i = 0; i < model.itemListElement.length; i++){
+                        var el = $($item).clone();
+                        $($list).append(el);
+                        if(i == 0) $(el).addClass('active');
+                        this.addItem(model.itemListElement[i], el);
 
+                    }
+                }
             }
             this.outerHTML = $template.get(0).outerHTML;
+        };
+        proto.addItem = function(item, el){
+            var $h = $(el).find('h2').get(0);
+            $($h).html(item.name);
+            var $ul = $(el).find('ul.features').get(0);
+
+            if(item.text){
+                var ments = this.prepareMentions(item.mentions);
+                for(var i = 0; i < item.text.length; i++){
+                    var $li = $('<li></li>');
+                    $($ul).append($li);
+
+                    var txt = this.addMentions(i, item.text[i], ments);
+                    $($li).append($('<span class="glyphicon glyphicon-ok"></span>'));
+                    $($li).append(txt);
+                }
+            }
+        };
+        proto.addMentions = function(ind, text, ments){
+            var mentions = this.getMention(ind + 1, ments);
+            for(var i = 0; i < mentions.length; i++){
+                var pos = text.indexOf(mentions[i].origin, mentions[i].position);
+                if(pos == mentions[i].position){
+                    text = text.replace(mentions[i].origin, '<a href="' + mentions[i].url + '">' + mentions[i].origin + '</a>');
+                }
+            }
+            return text;
+        };
+        proto.prepareMentions = function(mentions){
+            var ments = [];
+            if(mentions){
+                for(var i = 0; i < mentions.length; i++){
+                    var arr = mentions[i].url.split('?');
+                    var arr1 = arr[1].split(':');
+                    var arr2 = arr1[1].split(',');
+                    if(arr.length > 1 && arr1.length > 1 && arr2.length > 1){
+                        var item = {
+                            line: arr2[0],
+                            position: arr2[1],
+                            origin: arr1[0].replace(/'/g, ""),
+                            title: mentions[i].name,
+                            url: arr[0] + '?' + mentions[i].name.split(' ').join('-')
+                        };
+                        ments.push(item);
+                    }
+                }
+            }
+
+            return ments;
+        };
+        proto.getMention = function(line, ments){
+            var arr = [];
+            for(var i = 0; i < ments.length; i++){
+                if(ments[i].line == line){
+                    arr.push(ments[i]);
+                }
+            }
+            if(arr.length > 1) arr.sort(function(a, b) { return parseFloat(b.position) - parseFloat(a.position) } );
+            return arr;
         };
         document.registerElement('cover-widget', {prototype: proto});
     })(jQuery);
