@@ -13,7 +13,7 @@
 </template>
 <template id="cover-item-template">
     <div class="item">
-        <div class="img" style="background: url('img/sign_in-cover3.jpg') center center"></div>
+        <div class="img"></div>
         <div class="carousel-caption">
             <div class="carousel-text">
                 <h2></h2>
@@ -29,30 +29,57 @@
         var template = importDoc.querySelector('#cover-template');
         var $template = $(template.innerHTML);
 
+        var $left = $($template).find('a.left').get(0);
+        var $right = $($template).find('a.right').get(0);
+
         var $list = $($template).find('#cover-item-list').get(0);
 
         var item = importDoc.querySelector('#cover-item-template');
         var $item = $(item.innerHTML);
 
-        if(wrio.page == 'Cover') $($template).css({display: 'block'});
+        if(window.wrio.page == 'Cover') $($template).css({display: 'block'});
+        var els = [];
+        var currEl = 0;
 
         var proto = Object.create(HTMLElement.prototype);
-        proto.createdCallback = function () {
-            var model = window.wrio.widgetmodels.Cover;
-            if(model){
-                if(model.itemListElement){
-                    for(var i = 0; i < model.itemListElement.length; i++){
-                        var el = $($item).clone();
-                        $($list).append(el);
-                        if(i == 0) $(el).addClass('active');
-                        this.addItem(model.itemListElement[i], el);
 
+        proto.createdCallback = function () {
+            var url = window.wrio.coverUrl;
+            var self = this;
+            if(url){
+                this.getModel(url, function (model){
+                    if(model){
+                        if(model.itemListElement){
+                            for(var i = 0; i < model.itemListElement.length; i++){
+                                var el = $($item).clone();
+                                $($list).append(el);
+                                els.push(el);
+                                self.addItem(model.itemListElement[i], el);
+                            }
+                            self.setActive();
+                        }
                     }
-                }
+                    self.outerHTML = $template.get(0).outerHTML;
+                });
             }
-            this.outerHTML = $template.get(0).outerHTML;
+        };
+        proto.setActive = function(){
+            for(var i = 0; i < els.length; i++) $(els[i]).removeClass('active');
+            $(els[currEl]).addClass('active');
+        };
+        proto.nextActive = function(){
+            currEl++;
+            if(currEl > els.length) currEl = 0;
+            this.setActive();
+        };
+        proto.prevActive = function(){
+            currEl--;
+            if(currEl < 0) currEl = els.length;
+            this.setActive();
         };
         proto.addItem = function(item, el){
+            var $img = $(el).find('div.img').get(0);
+            $($img).css({background: "url('" + item.contentUrl + "') center center"});
             var $h = $(el).find('h2').get(0);
             $($h).html(item.name);
             var $ul = $(el).find('ul.features').get(0);
@@ -110,6 +137,35 @@
             }
             if(arr.length > 1) arr.sort(function(a, b) { return parseFloat(b.position) - parseFloat(a.position) } );
             return arr;
+        };
+        proto.getModel = function(url, callback){
+            var self = this;
+            var model = '';
+            $.get(url).success(function (response) {
+                var $frame = $('<iframe id = "12345-54321" style="display: none;"></iframe>');
+                $('body').append($frame);
+                var doc = $frame.get(0).contentWindow.document;
+                doc.write(response);
+                var $json = $(doc).find('script[type="application/ld+json"]').get(0);
+                var json = $($json).html();
+                $($frame).remove();
+
+                try{
+                    model = JSON.parse(json);
+                }catch(msg){
+                    Console.log(msg);
+                }
+                if(callback) callback(model);
+            }).error(function (msg) {
+                if(callback) callback(model);
+                Console.log(msg);
+            });
+        };
+        proto.attachedCallback = function(){
+            $($left).on('click', function(){
+                this.prevActive();
+            });
+            $($right).on('click', this.nextActive);
         };
         document.registerElement('cover-widget', {prototype: proto});
     })(jQuery);
