@@ -28,8 +28,7 @@
 </template>
 <script>
     (function ($) {
-        var webrunes = window.webrunes || {};
-        var model = webrunes.jsonlds['ItemList'];
+        var model = window.wrio.widgetmodels.ItemList;
         var importDoc = document.currentScript.ownerDocument;
         var template = importDoc.querySelector('#itemlist-template');
         var $template = $(template.innerHTML);
@@ -39,6 +38,8 @@
 
         var action = importDoc.querySelector('#itemlist-template-media-body-actions');
         var $action = $(action.innerHTML).get(0);
+
+        if(wrio.page == 'ItemList') $($template).css({display: 'block'});
 
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {

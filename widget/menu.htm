@@ -6,7 +6,7 @@
 
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {
-            var jsonld = webrunes.jsonlds['Article'] || webrunes.jsonlds['Person'];
+            var jsonld = webrunes.jsons['Article'] || webrunes.jsonlds['Person'];
             if(jsonld){
                 var $ul = $('<ul class="nav nav-pills nav-stacked" id="sidebar-accordion"></ul>');
                 if(jsonld){
