@@ -1,10 +1,31 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<!-- saved from url=(0085)http://wrio.s3-website-us-east-1.amazonaws.com/Default-WRIO-Theme/widget/itemList.htm -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><script src="./itemList_files/jquery.min.js"></script>
-
-<template id="itemlist-template"></template>
-<template id="itemlist-template-media"></template>
-<template id="itemlist-template-media-body-actions"></template>
+<template id="itemlist-template">
+    <div id="itemlist-container-id" itemscope="" itemtype="http://schema.org/ItemList" style="display: none;"></div>
+</template>
+<template id="itemlist-template-media">
+    <div class="media thumbnail">
+        <div class="col-xs-12 col-md-6 col-lg-5">
+            <img src="#" class="pull-left"/>
+            <ul class="details">
+                <li>Post: ???</li>
+                <li>Published: ???</li>
+                <li>Rating: ???</li>
+                <li>Added: ???</li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-7">
+            <div class="media-body">
+            </div>
+        </div>
+    </div>
+</template>
+<template id="itemlist-template-media-body-actions">
+    <ul class="actions">
+        <li><a href="#"><span class="glyphicon glyphicon-plus"></span>Added</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-share"></span>Share</a></li>
+    </ul>
+</template>
 <script>
     (function ($) {
         var webrunes = window.webrunes || {};
@@ -43,4 +64,4 @@
 
         document.registerElement('itemlist-widget', {prototype: proto});
     })(jQuery);
-</script></head><body></body></html>
+</script>

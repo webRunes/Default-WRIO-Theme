@@ -1,9 +1,26 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<!-- saved from url=(0083)http://wrio.s3-website-us-east-1.amazonaws.com/Default-WRIO-Theme/widget/person.htm -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><script src="./person_files/jquery.min.js"></script>
-
-<template id="person-template"></template>
-<template id="person-paragraph-template"></template>
+<template id="person-template">
+    <article id="article-person-id" itemscope itemtype="http://schema.org/Article">
+        <header class="col-xs-12">
+            <h1><span itemprop="name"></span></h1>
+            <meta itemprop="datePublished" content="2014-05-08T19:30">
+            <meta itemprop="dateModified" content="2014-07-17T9:55">
+        </header>
+    </article>
+</template>
+<template id="person-paragraph-template">
+    <div class="paragraph">
+        <div class="col-xs-12 col-md-6">
+            <p itemprop="description"></p>
+        </div>
+        <div class="col-xs-12 col-md-6">  
+            <aside>
+                <span class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="right" title="Not yet available"></span>
+            </aside>
+        </div>
+    </div>
+</template>
 
 <script>
     (function ($) {
@@ -12,7 +29,7 @@
         var $template = $(template.innerHTML);
         var paragraph = importDoc.querySelector('#person-paragraph-template');
         var $paragraph = $(paragraph.innerHTML);
-
+ 
 
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {
@@ -48,4 +65,3 @@
         document.registerElement('person-widget', {prototype: proto});
     })(jQuery);
 </script>
-</head><body></body></html>
