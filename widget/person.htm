@@ -1,7 +1,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <template id="person-template">
-    <article id="article-person-id" itemscope itemtype="http://schema.org/Article">
+    <article id="article-person-id" itemscope itemtype="http://schema.org/Article" style="display: none;">
         <header class="col-xs-12">
             <h1><span itemprop="name"></span></h1>
             <meta itemprop="datePublished" content="2014-05-08T19:30">
@@ -14,7 +14,7 @@
         <div class="col-xs-12 col-md-6">
             <p itemprop="description"></p>
         </div>
-        <div class="col-xs-12 col-md-6">  
+        <div class="col-xs-12 col-md-6">
             <aside>
                 <span class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="right" title="Not yet available"></span>
             </aside>
@@ -29,14 +29,15 @@
         var $template = $(template.innerHTML);
         var paragraph = importDoc.querySelector('#person-paragraph-template');
         var $paragraph = $(paragraph.innerHTML);
- 
+
+        if(wrio.page == 'Person') $($template).css({display: 'block'});
 
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {
-            var model = window.webrunes.jsonlds['Person'];
+            var model = window.wrio.widgetmodels.Person;
             if(model){
                 var $h1 = $($template).find('H1').get(0);
-                $($h1).html(model.name);
+                $($h1).attr('id', model.name).html(model.name);
                 this.createParagraphs($template, model);
 
                 if(model.hasPart){
