@@ -1,171 +1,27 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <template id="cover-template">
-    <div id="cover-container-id" class="carousel slide" data-ride="carousel" itemscope="" itemtype="http://schema.org/ItemList" style="display: none;" >
-        <div id="cover-item-list" class="carousel-inner"></div>
-        <a class="left carousel-control" href="#cover-carousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#cover-carousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </div>
-</template>
-<template id="cover-item-template">
-    <div class="item">
-        <div class="img"></div>
-        <div class="carousel-caption">
-            <div class="carousel-text">
-                <h2></h2>
-                <ul class="features"></ul>
-            </div>
-        </div>
-    </div>
+    <article itemscope itemtype="http://schema.org/Article">
+        <header class="col-xs-12">
+            <h1><span itemprop="name">Cover tmpl</span></h1>
+        </header>
+    </article>
 </template>
 
 <script>
     (function ($) {
+        var webrunes = window.webrunes || {};
         var importDoc = document.currentScript.ownerDocument;
         var template = importDoc.querySelector('#cover-template');
         var $template = $(template.innerHTML);
 
-        var $left = $($template).find('a.left').get(0);
-        var $right = $($template).find('a.right').get(0);
-
-        var $list = $($template).find('#cover-item-list').get(0);
-
-        var item = importDoc.querySelector('#cover-item-template');
-        var $item = $(item.innerHTML);
-
-        if(window.wrio.page == 'Cover') $($template).css({display: 'block'});
-        var els = [];
-        var currEl = 0;
-
         var proto = Object.create(HTMLElement.prototype);
-
         proto.createdCallback = function () {
-            var url = window.wrio.coverUrl;
-            var self = this;
-            if(url){
-                this.getModel(url, function (model){
-                    if(model){
-                        if(model.itemListElement){
-                            for(var i = 0; i < model.itemListElement.length; i++){
-                                var el = $($item).clone();
-                                $($list).append(el);
-                                els.push(el);
-                                self.addItem(model.itemListElement[i], el);
-                            }
-                            self.setActive();
-                        }
-                    }
-                    self.outerHTML = $template.get(0).outerHTML;
-                });
-            }
-        };
-        proto.setActive = function(){
-            for(var i = 0; i < els.length; i++) $(els[i]).removeClass('active');
-            $(els[currEl]).addClass('active');
-        };
-        proto.nextActive = function(){
-            currEl++;
-            if(currEl > els.length) currEl = 0;
-            this.setActive();
-        };
-        proto.prevActive = function(){
-            currEl--;
-            if(currEl < 0) currEl = els.length;
-            this.setActive();
-        };
-        proto.addItem = function(item, el){
-            var $img = $(el).find('div.img').get(0);
-            $($img).css({background: "url('" + item.contentUrl + "') center center"});
-            var $h = $(el).find('h2').get(0);
-            $($h).html(item.name);
-            var $ul = $(el).find('ul.features').get(0);
+            var model = webrunes.jsonlds['Cover'];
+            if(model){
 
-            if(item.text){
-                var ments = this.prepareMentions(item.mentions);
-                for(var i = 0; i < item.text.length; i++){
-                    var $li = $('<li></li>');
-                    $($ul).append($li);
-
-                    var txt = this.addMentions(i, item.text[i], ments);
-                    $($li).append($('<span class="glyphicon glyphicon-ok"></span>'));
-                    $($li).append(txt);
-                }
             }
-        };
-        proto.addMentions = function(ind, text, ments){
-            var mentions = this.getMention(ind + 1, ments);
-            for(var i = 0; i < mentions.length; i++){
-                var pos = text.indexOf(mentions[i].origin, mentions[i].position);
-                if(pos == mentions[i].position){
-                    text = text.replace(mentions[i].origin, '<a href="' + mentions[i].url + '">' + mentions[i].origin + '</a>');
-                }
-            }
-            return text;
-        };
-        proto.prepareMentions = function(mentions){
-            var ments = [];
-            if(mentions){
-                for(var i = 0; i < mentions.length; i++){
-                    var arr = mentions[i].url.split('?');
-                    var arr1 = arr[1].split(':');
-                    var arr2 = arr1[1].split(',');
-                    if(arr.length > 1 && arr1.length > 1 && arr2.length > 1){
-                        var item = {
-                            line: arr2[0],
-                            position: arr2[1],
-                            origin: arr1[0].replace(/'/g, ""),
-                            title: mentions[i].name,
-                            url: arr[0] + '?' + mentions[i].name.split(' ').join('-')
-                        };
-                        ments.push(item);
-                    }
-                }
-            }
-
-            return ments;
-        };
-        proto.getMention = function(line, ments){
-            var arr = [];
-            for(var i = 0; i < ments.length; i++){
-                if(ments[i].line == line){
-                    arr.push(ments[i]);
-                }
-            }
-            if(arr.length > 1) arr.sort(function(a, b) { return parseFloat(b.position) - parseFloat(a.position) } );
-            return arr;
-        };
-        proto.getModel = function(url, callback){
-            var self = this;
-            var model = '';
-            $.get(url).success(function (response) {
-                var $frame = $('<iframe id = "12345-54321" style="display: none;"></iframe>');
-                $('body').append($frame);
-                var doc = $frame.get(0).contentWindow.document;
-                doc.write(response);
-                var $json = $(doc).find('script[type="application/ld+json"]').get(0);
-                var json = $($json).html();
-                $($frame).remove();
-
-                try{
-                    model = JSON.parse(json);
-                }catch(msg){
-                    Console.log(msg);
-                }
-                if(callback) callback(model);
-            }).error(function (msg) {
-                if(callback) callback(model);
-                Console.log(msg);
-            });
-        };
-        proto.attachedCallback = function(){
-            $($left).on('click', function(){
-                this.prevActive();
-            });
-            $($right).on('click', this.nextActive);
+            this.outerHTML = $template.get(0).outerHTML;
         };
         document.registerElement('cover-widget', {prototype: proto});
     })(jQuery);
