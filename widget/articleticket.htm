@@ -1,0 +1,68 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<template id="article-ticket-template">
+     <aside>
+          <div class="media thumbnail">
+               <div class="col-xs-12 pull-right">
+                   <img src="http://wrio.s3-website-us-east-1.amazonaws.com/Default-WRIO-Theme/img/no-photo-200x200.png" class="pull-left"><ul class="details">
+                       <li>Language: undefined</li>
+                       <li>Author: undefined</li>
+                       <li>Published: undefined</li>
+                       <li>Last modified: undefined</li>
+                       <li>Read time: undefined</li>
+                       <li>Views: undefined</li>
+                       <li>Comments: undefined</li>
+                   </ul>
+               </div>
+               <div class="col-xs-12">
+                   <p>
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                   </p>
+               </div>
+          </div>
+     </aside>
+</template>
+<script>
+    (function ($) {
+        var importDoc = document.currentScript.ownerDocument;
+        var template = importDoc.querySelector('#article-ticket-template');
+        var $template = $(template.innerHTML);
+        var proto = Object.create(HTMLElement.prototype);
+        proto.createdCallback = function () {
+            var model = window.webrunes.jsonlds['Article'];
+            if(model){
+                var $img = $($template).find('IMG').get(0);
+                $($img).attr('src', model.about.Src);
+
+                var $p = $($template).find('p').get(0);
+                $($p).html(model.about.Description);
+
+                var $ul = $($template).find('ul#profile-detail-id').get(0);
+                $($ul).empty();
+
+                var $li = $('<li></li>').html('Language: ' + model.about.isLanguage);
+                $($ul).append($li);
+
+                $li = $('<li></li>').html('Author: ' + model.about.Author);
+                $($ul).append($li);
+
+                $li = $('<li></li>').html('Published: ' + model.about.Published);
+                $($ul).append($li);
+
+                $li = $('<li></li>').html('Last modified: ' + model.about.Edit);
+                $($ul).append($li);
+
+                $li = $('<li></li>').html('Read time: ' + model.about.ReadTime);
+                $($ul).append($li);
+
+                $li = $('<li></li>').html('Views: ' + model.about.Views);
+                $($ul).append($li);
+
+                $li = $('<li></li>').html('Comments: ' + model.about.Comments);
+                $($ul).append($li);
+
+            }
+            this.outerHTML = $template.get(0).outerHTML;
+        };
+        document.registerElement('article-ticket', {prototype: proto});
+    })(jQuery);
+</script>
