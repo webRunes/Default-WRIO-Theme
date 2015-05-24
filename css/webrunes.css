@@ -311,6 +311,9 @@ ul.leaders span + span{float:right;background:white}
 .twitter-timeline{width:100% !important}
 #titteriframe{height:190px;width:100%}
 
+/* Storage */
+#storageiframe{display:none} 
+
 /* Bootstrap Tour */
 .tour-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1100;background-color:#000;opacity:.8}
 .tour-step-backdrop{position:relative;z-index:1101;background:inherit}
