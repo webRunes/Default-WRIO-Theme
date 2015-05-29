@@ -309,7 +309,7 @@ ul.leaders span + span{float:right;background:white}
 .twitter{clear:both}
 .twitter-limit{color:#aaa}
 .twitter-timeline{width:100% !important}
-#titteriframe{height:190px;width:100%}
+#titteriframe{height:320px;width:100%}
 
 /* Storage */
 #storageiframe{display:none} 
