@@ -1,0 +1,27 @@
+CACHE MANIFEST
+
+CACHE:
+js/application.js
+js/bootstrap.min.js
+js/offcanvas.js
+js/jquery-1.10.2.min.js
+js/hub.js
+ico/favicon.ico
+img/bg.png
+img/logo_wrio.png
+css/webrunes.css
+css/bootstrap.min.css
+css/sign_in.css
+fonts/bebarneue.ttf
+widget/article.htm
+widget/articleticket.htm
+widget/cover.htm
+widget/defaultList.htm
+widget/itemList.htm
+widget/person.htm
+
+NETWORK:
+js/cacheManifest.js
+
+FALLBACK:
+/ /404.htm
