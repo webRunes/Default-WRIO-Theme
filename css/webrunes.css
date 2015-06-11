@@ -310,6 +310,7 @@ ul.leaders span + span{float:right;background:white}
 .twitter-limit{color:#aaa}
 .twitter-timeline{width:100% !important}
 #titteriframe{height:190px;width:100%}
+img{width:auto!important;height:auto!important}
 
 /* Bootstrap Tour */
 .tour-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1100;background-color:#000;opacity:.8}
@@ -327,5 +328,3 @@ ul.leaders span + span{float:right;background:white}
 .popover[class*=tour-] .popover-navigation [data-role=prev].disabled,.popover[class*=tour-] .popover-navigation [data-role=next].disabled,.popover[class*=tour-] .popover-navigation [data-role=end].disabled{cursor:default}
 .popover[class*=tour-].orphan .arrow{display:none}
 .popover[class*=tour-] .nav{clear:both;padding-top:12px}
-
-img{width:auto!important;height:auto!important}
