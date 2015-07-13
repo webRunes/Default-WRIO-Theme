@@ -327,3 +327,11 @@ img{width:auto!important;height:auto!important}
 .popover[class*=tour-] .popover-navigation [data-role=prev].disabled,.popover[class*=tour-] .popover-navigation [data-role=next].disabled,.popover[class*=tour-] .popover-navigation [data-role=end].disabled{cursor:default}
 .popover[class*=tour-].orphan .arrow{display:none}
 .popover[class*=tour-] .nav{clear:both;padding-top:12px}
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
