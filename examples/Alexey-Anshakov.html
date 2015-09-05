@@ -8,8 +8,8 @@
     <meta name="author" content="User name1, User name2">
     <meta name="keywords" content="story, cat">
     <title>Alexey Anshakov</title>
-    
-    <!-- json-ld for WRIO -->
+
+    <!-- json-ld for cover -->
     <script type="application/ld+json">
         {
         "entity": "Profile",
@@ -34,70 +34,99 @@
 
     <!-- json-ld for article -->
     <script type="application/ld+json">
-    {
+        {
         "@context": "http://schema.org",
         "@type": "Article",
         "inLanguage": "en-US",
         "keywords": "keyword1, keyword2, keyword3",
-        "author": {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "givenName": "Alexey",
-        "familyName": "Anshakov",
-        "sameAs": "http://alexey-anshakov.webrunes.com"
-        },
+        "author": "http://aa.wr.io",
         "editor": "",
         "name": "Alexey Anshakov",
-        "about": "1 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+        "about": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
         "articleBody": [
-        "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-        "3 Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum."
+        "I was born 1979-09-10. Has a friend Friend Name here sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+        "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum."
+        ],
+        "mentions": [
+        {
+        "@type": "Article",
+        "name": "Alexey Anshakov",
+        "about": "Alexey Anshakov's profile page.",
+        "url": "http://aa.wr.io/index.htm?'Alexey':1,0&givenName"
+        },
+        {
+        "@type": "Article",
+        "name": "Alexey Anshakov",
+        "about": "Alexey Anshakov's profile page.",
+        "url": "http://aa.wr.io/index.htm?'Anshakov':1,7&familyName"
+        },
+        {
+        "@type": "Article",
+        "name": "Alexey Anshakov",
+        "about": "Alexey Anshakov's profile page.",
+        "url": "http://aa.wr.io/index.htm?'1979-09-10':3,11&birthDate"
+        },
+        {
+        "@type": "Article",
+        "name": "Friend Name",
+        "about": "Friend Name's profile page.",
+        "url": "http://friend_name.com/page.htm?'Friend':3,36&givenName"
+        },
+        {
+        "@type": "Article",
+        "name": "Friend Name",
+        "about": "Friend Name's profile page.",
+        "url": "http://friend_name.com/page.htm?'Name':3,43&familyName"
+        }
         ],
         "hasPart": [
         {
         "@type": "Article",
         "name": "Personal information",
         "articleBody": [
-        "3 Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam."
+        "Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam."
         ]
         },
         {
-        "@type": "Article", 
+        "@type": "Article",
         "name": "Contacts",
         "url": "domainname.com/hash.html"
-        }, 
+        },
         {
-        "@type": "Article", 
+        "@type": "Article",
         "name": "Skills",
         "articleBody": [
-        "4 Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.",
-        "5 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Quisque volutpat condimentum velit."
+        "Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.",
+        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Quisque volutpat condimentum velit."
         ]
-        }, 
+        },
         {
-        "@type": "Article", 
+        "@type": "Article",
         "name": "Experience",
         "articleBody": [
-        "6 Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+        "Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
         ]
         }
         ]
-    }
+        }
     </script>
-    
-    <!-- ignore this part -->
+
+    <!-- json-ld for facts -->
     <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "image": "http://webrunes.com/image.jpg",
-      "name": "Alexey Anshakov",
-      "url": "http://webrunes.com/AlexeyAnshakov"
-    }
+        {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "image": "http://webrunes.com/image.jpg",
+        "givenName": "Alexey",
+        "familyName": "Anshakov",
+        "url": "http://webrunes.com/AlexeyAnshakov",
+        "birthDate": "1979-09-10"
+        }
     </script>
 </head>
 
 <body>
-    <script src="http://wrio.s3-website-us-east-1.amazonaws.com/WRIO-InternetOS/main.js"></script>
+    <script type="text/javascript" src="//wrioos.com/start.js"></script>
 </body>
 </html>
