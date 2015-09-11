@@ -149,6 +149,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', en
     .sidebar-offcanvas .nav li .label{border:1px solid #fff;border-radius:3px}
 .info{clear:both}
     .info .panel{margin:0;-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.0);box-shadow:0 1px 1px rgba(0, 0, 0, 0.0)}
+    .info .panel a.in{background-color: #ffffff;margin-bottom: 0;padding: 0;}
         .info .panel>a{background-color:#f5f5f5;color:#aaa;margin-bottom:8px}
             .info .panel>a:hover{color:#333}
 
