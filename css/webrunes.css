@@ -60,7 +60,6 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans
     .container-liquid .row .sidebar-offcanvas{overflow-y:scroll}
 /*.visible-xs{position:fixed;top:0;right:0;z-index:1050}*/
 .breadcrumb,.thumbnail{margin-bottom:8px}
-    #profile-element .actions>li+li:before{padding:0 10px 0 5px; content: '';}
     .breadcrumb>li+li:before,.media .actions>li+li:before{padding:0 10px 0 5px;content:"\00b7"}
     .controls{color:#aaa;float:right}
         .controls .glyphicon{margin-right:5px}
