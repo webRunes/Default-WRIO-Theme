@@ -252,9 +252,11 @@ ul.leaders span + span{float:right;background:white}
     .navbar-fixed-top{position:fixed;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
     .tooltip{z-index:1033}
 }
+.form-send-comment {
+    margin-top:10px;
+}
 
 @media (min-width: 992px){
-    .col-md-3{width:23.93333333333333%}
     .send-comment-form-donation{width:33.3%}
     .send-comment-form{width:100%}
 }
@@ -264,12 +266,10 @@ ul.leaders span + span{float:right;background:white}
     .send-comment-form-donation{width:33.3%}
 }
 @media (min-width: 768px){
-    .col-sm-4{width:31.7%}
     .send-comment-form{width:100%}
     .send-comment-form-donation{width:33.3%}
 }
 @media (max-width:520px){
-    .navbar-brand{display:none}
     .send-comment-form{width:100%}
     .send-comment-form-donation{width:100%}
 }
