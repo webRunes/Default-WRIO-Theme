@@ -256,6 +256,11 @@ ul.leaders span + span{float:right;background:white}
     margin-top:10px;
 }
 
+.form-send-comment .form-group {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
 @media (min-width: 992px){
     .send-comment-form-donation{width:33.3%}
     .send-comment-form{width:100%}
