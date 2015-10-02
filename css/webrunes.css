@@ -260,17 +260,8 @@ ul.leaders span + span{float:right;background:white}
     padding-top:10px;
     padding-bottom:10px;
 }
-
-@media (min-width: 992px){
-    .send-comment-form-donation{width:33.3%}
-    .send-comment-form{width:100%}
-}
 /* Fix right menu scroll visibility bug */
 @media (max-width: 768px){
-    .send-comment-form{width:100%}
-    .send-comment-form-donation{width:33.3%}
-}
-@media (min-width: 768px){
     .send-comment-form{width:100%}
     .send-comment-form-donation{width:33.3%}
 }
@@ -281,6 +272,12 @@ ul.leaders span + span{float:right;background:white}
 
 @media (max-width:450px){
     .navbar-brand{display:none}
+}
+
+@media (min-width:768px){
+    .donation{width:16.666%}
+    .donation-wrg{width:25%}
+    .donation-title{width:58.333%}
 }
 
 /* Fix right menu scroll visibility bug */
