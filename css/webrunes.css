@@ -60,7 +60,7 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans
         .content .margin{margin:8px 0}
     .container-liquid .row .sidebar-offcanvas{overflow-y:scroll}
 /*.visible-xs{position:fixed;top:0;right:0;z-index:1050}*/
-.breadcrumb,.thumbnail{margin-bottom:8px}
+.breadcrumb,.thumbnail{margin-bottom:8px;cursor:pointer}
     .breadcrumb>li+li:before,.media .actions>li+li:before{padding:0 10px 0 5px;content:"\00b7"}
     .controls{color:#aaa;float:right}
         .controls .glyphicon{margin-right:5px}
@@ -259,17 +259,12 @@ ul.leaders span + span{float:right;background:white}
     padding-top:10px;
     padding-bottom:10px;
 }
-
-@media (min-width: 992px){
-    .send-comment-form-donation{width:33.3%}
-    .send-comment-form{width:100%}
+.form-send-comment .send-comment-form-photo-submit {
+    padding-bottom:0px;
+    margin-bottom:0px!important;
 }
 /* Fix right menu scroll visibility bug */
 @media (max-width: 768px){
-    .send-comment-form{width:100%}
-    .send-comment-form-donation{width:33.3%}
-}
-@media (min-width: 768px){
     .send-comment-form{width:100%}
     .send-comment-form-donation{width:33.3%}
 }
@@ -280,6 +275,12 @@ ul.leaders span + span{float:right;background:white}
 
 @media (max-width:450px){
     .navbar-brand{display:none}
+}
+
+@media (min-width:768px){
+    .donation{width:16.666%}
+    .donation-wrg{width:25%}
+    .donation-title{width:58.333%}
 }
 
 /* Fix right menu scroll visibility bug */
