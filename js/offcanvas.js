@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $('[data-toggle=offcanvas]').click(function () {
-        $('.row-offcanvas').toggleClass('active');
+        $('.sidebar-offcanvas').toggleClass('active');
     });
     $('[data-toggle=offcanvas]').click(function () {
-        $('.row-offcanvas-menu').toggleClass('active');
+        $('.content-offcanvas').toggleClass('active');
     });
 });
