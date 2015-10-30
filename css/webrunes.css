@@ -14,8 +14,7 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans
 
 .main .navbar-nav{clear:both;margin:0;width:100%}
     .main .nav a{-webkit-transition:color 0.2s ease-in-out;-moz-transition:color 0.2s ease-in-out;-ms-transition:color 0.2s ease-in-out;-o-transition:color 0.2s ease-in-out;transition:color 0.2s ease-in-out}
-    .main .navbar-collapse{padding:0; transition: height 2s ease-in-out; height: auto;}
-    .main .navbar-collapse.active{height: 0; overflow: hidden; transition: height 2s ease-in-out;}
+
     .main .nav>li{line-height: 24px;}
     .main .nav>.panel{cursor: pointer;border:0;border-radius:0;background-color:#131313;margin:0}
         .main .nav>.panel>a.collapsed{background-color:#222;color:#aaa}
@@ -225,13 +224,18 @@ ul.leaders span + span{float:right;background:white}
 
 @media screen and (max-width:767px){
     .row-offcanvas{position:relative;}
-    .row-offcanvas-right .sidebar-offcanvas{right: -98.5%;padding: 0 20px 0 0;}
+    .row-offcanvas-right .sidebar-offcanvas{right: -100%; padding: 0;}
+    .row-offcanvas-right .sidebar-offcanvas{ position: fixed; width: 100%;}
 
     .content-offcanvas.active{right: 100%;}
     .content-offcanvas{right: 0; transition: all 0.5s ease-out;}
 
-    .sidebar-offcanvas.active{right: -4%;}
+    .sidebar-offcanvas.active{right: -1%;}
     .sidebar-offcanvas{right: 0; position:absolute; top:0; width:100%; z-index:91; transition: all 0.5s ease-out;}
+}
+@media screen and (max-width:767px){
+    .main .navbar-collapse{padding:0; transition: height 2s ease-in-out; height: 0; overflow: hidden; }
+    .main .navbar-collapse.active{height: auto; transition: height 2s ease-in-out;}
 }
 
 @media (min-width:768px){
