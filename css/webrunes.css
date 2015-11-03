@@ -45,9 +45,10 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans
             .main .nav>.panel .sub li.active a,.main .nav>.open .sub li.active a:hover{background-color:#000}
 
     .main .nav>.new.active .glyphicon{opacity:1}
-    .nav.nav-pills{
+    .sidebar-offcanvas .nav.nav-pills{
         position: relative;
         overflow: auto;
+
     }
     .main .nav>.new{-webkit-box-shadow:none;box-shadow:none}
     .main .nav>.panel.new>a{border-top:1px solid #333;text-align:center;box-shadow:none}
@@ -237,7 +238,7 @@ ul.leaders span + span{float:right;background:white}
     .row-offcanvas-right .sidebar-offcanvas{right: -100%; padding: 0;}
     .row-offcanvas-right .sidebar-offcanvas{ position: fixed; width: 100%;}
 
-    .content-offcanvas.active{right: 100%; display: none}
+    .content-offcanvas.active{right: 100%; position: fixed;}
     .content-offcanvas{right: 0; transition: all 0.25s ease-out;}
 
     .sidebar-offcanvas.active{right: -1%;}
