@@ -1,5 +1,5 @@
 html,body{height:100%;overflow-x:hidden;color:#333 /* Prevent scroll on narrow devices */}
-html,body{font-size:12px}
+html,body{font-size:12px; -ms-overflow-style: scrollbar;}
 html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans-serif}
 
 .nav>li>a.pull-right{z-index:99}/* fix bug for "x" in menu */
@@ -93,7 +93,7 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans
 .wysihtml5-supported #textarea-widget-id{width: 100% !important;}
 /* article */
 article{text-align:justify}
-    article h1,article h2,article h3,article h4,article h5,article h6{margin: 15px 0 5px}
+    article h1,article h2,article h3,article h4,article h5,article h6{margin: 15px 0 5px 15px}
     article h1{font-size:180%;}
     article h2{font-size:140%;}
     article img{width:100%}
@@ -242,10 +242,10 @@ ul.leaders span + span{float:right;background:white}
     .row-offcanvas-right .sidebar-offcanvas{ position: fixed; width: 99%;}
 
     .content-offcanvas.active{right: 100%; position: fixed;}
-    .content-offcanvas{right: 0; transition: all 0.25s ease-out;}
+    .content-offcanvas{right: 0; transition: all 0.25s ease-out; padding-top: 53px;}
 
-    .sidebar-offcanvas.active{right: 0%;}
-    .sidebar-offcanvas{right: 0; position:absolute; top:0; width:100%; z-index:91; transition: all 0.25s ease-out;}
+    .sidebar-offcanvas.active{right: 0%; padding-top: 53px;}
+    .sidebar-offcanvas{right: 0; position:absolute; top:0; width:100%; z-index:91; transition: right 0.25s ease-out;}
 
 }
 @media screen and (max-width:767px){
@@ -264,7 +264,8 @@ ul.leaders span + span{float:right;background:white}
 }
 
 @media screen and (max-width:767px){
-    article h1, article h2{padding-top: 75px; margin: -60px 0 0 0;}
+    html{padding-top: 53px;}
+    article h1, article h2{padding-top: 75px; margin: -60px 0 0 15px;}
 }
 
 @media (min-width:768px){
@@ -278,8 +279,8 @@ ul.leaders span + span{float:right;background:white}
     .btn,.nav>li>a,.dropdown-menu>li>a{padding:8px 16px}*/
 }
 @media (max-width:767px){
-    .content{margin-top:50px;padding:0 15px 0 22px}
-    .sidebar-offcanvas{margin-top: 50px; padding-left:0}
+    .content{padding:0 15px 0 22px}
+    .sidebar-offcanvas{ padding-left:0}
     .row-offcanvas-menu.active{position:fixed;right:0%;z-index:1032;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
     .navbar-fixed-top{position:fixed;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
     .tooltip{z-index:1033}
