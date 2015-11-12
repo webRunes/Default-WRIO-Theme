@@ -286,6 +286,11 @@ ul.leaders span + span{float:right;background:white}
     .navbar-fixed-top{position:fixed;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
     .tooltip{z-index:1033}
 }
+
+
+
+
+
 .form-send-comment {
     margin-top:10px;
 }
@@ -298,6 +303,11 @@ ul.leaders span + span{float:right;background:white}
     padding-bottom:0px;
     margin-bottom:0px!important;
 }
+
+
+
+
+
 /* Fix right menu scroll visibility bug */
 @media (max-width: 768px){
     .send-comment-form{width:100%}
@@ -400,3 +410,115 @@ img{width:auto!important;height:auto!important}
 .popover[class*=tour-] .popover-navigation [data-role=prev].disabled,.popover[class*=tour-] .popover-navigation [data-role=next].disabled,.popover[class*=tour-] .popover-navigation [data-role=end].disabled{cursor:default}
 .popover[class*=tour-].orphan .arrow{display:none}
 .popover[class*=tour-] .nav{clear:both;padding-top:12px}
+
+
+.loaded .preloader {
+    -webkit-animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+    animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedHeader {
+    to { -webkit-transform: translate3d(0,-100%,0); }
+}
+
+@keyframes animLoadedHeader {
+    to { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
+}
+
+.switch .preloader {
+    position: absolute;
+}
+
+.preloader-wrapper{
+    margin: 0;
+    height: 100%;
+}
+
+
+.preloader a{color:#20aaef}
+.preloader a:hover{color:#0088cc}
+.preloader .inner-info{margin:0 auto;width:480px;height:240px}
+.preloader .warning{color:#eee;margin:24px 0;width:100%}
+.preloader .warning a{display:inline-block;margin:12px 8px;text-decoration:none}
+.preloader .popover[class*=tour-].orphan{margin:12px;position:absolute;top:0 !important;left:0 !important}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    min-height: 600px;
+    width: 100%;
+    height: 100%;
+    background: #222 url('../img/loading_bg.png');
+    display: table;
+    vertical-align: middle;
+}
+
+.preloader h1 {
+    font-family: BebasNeue,sans-serif;
+    color: #eee;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000;
+    -webkit-font-smoothing: antialiased;
+}
+
+.preloader p{
+    color: #eee;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.preloader .container {
+    position: relative;
+    vertical-align: middle;
+    display: table-cell;
+    height: 260px;
+    text-align: center;
+}
+
+.preloader .inner {
+    margin: 128px auto 0;
+    width: 140px;
+    height: 260px;
+}
+
+.preloader .progress {
+    height: 6px;
+    margin: 20px 0;
+}
+
+.preloader .progress-bar {
+    background-color: #0088cc !important;
+    width: 100% !important;
+}
+
+.preloader .alert {
+    position: absolute;
+    top: 142px;
+    padding: 0;
+    left: 50%;
+    width: 320px;
+    margin-left: -160px;
+}
+
+.preloader .warning {
+    color: #eee;
+    margin: 24px 0;
+    width: 100%;
+}
+
+.preloader .preloader-logo{
+    width: 140px;
+    height: 70px;
+    background: url('../img/logo_wrio.png') no-repeat center;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/bebasneue.eot');
+    src: url('../fonts/bebasneue.eot?#iefix') format('embedded-opentype'), url('../fonts/bebasneue.woff') format('woff'), url('../fonts/bebasneue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
