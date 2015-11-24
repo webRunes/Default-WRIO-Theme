@@ -1,4 +1,3 @@
-html{padding-top:0px !important;}
 html,body{height:100%;overflow-x:hidden;color:#333 /* Prevent scroll on narrow devices */}
 html,body{font-size:12px; -ms-overflow-style: scrollbar;}
 html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans-serif}
