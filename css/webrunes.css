@@ -105,6 +105,17 @@ figcaption.callout{margin:4px 0}
 menu{padding:0;margin:0 0 8px}
 /* END menu */
 
+/* lock up */
+/*
+body.lock_up{background: #222 url('../img/loading_bg.png')}
+.lock_up{background:#222 url('../img/wallpapers/wallpaper1.jpg') center}
+    .lock_up .media{margin-top:0}
+    .lock_up .content{background-color:#fff;margin:32px 0}
+    .lock_up .lock_up-inner{margin:12px}
+    .lock_up .header{background-color:#fff;margin:8px 12px}
+    .modal-dialog {margin: 60px auto}
+ lock up menu */
+
 @font-face{
     font-family:'BebasNeue';
     src: url('../fonts/bebasneue.eot');
@@ -114,6 +125,7 @@ menu{padding:0;margin:0 0 8px}
 }
 .carousel-control{z-index:101}
 .content .carousel-inner a{color:#f0ad4e}
+.carousel .left-top{top:0}
 .carousel-inner .img{background-position:center center;min-height:750px}
     .content .carousel-caption{text-shadow: 1px 1px 4px rgba(0,0,0,1)}
         .content .carousel h2{font-family:BebasNeue,sans-serif;font-size:25px;text-align:left;font-weight:normal}
@@ -121,7 +133,8 @@ menu{padding:0;margin:0 0 8px}
 .carousel-text{margin:0 20% 36px;position:relative}
     .carousel-text sup span.glyphicon-ok-sign{font-size:65%;margin-left:8px}
     .carousel-text .features .glyphicon-ok{margin-right:8px}
-    .carousel-text sup span.label{font-size:12px;margin-left:8px;font-family:Arial,sans-serif}
+    .carousel-text sup{font-size:12px;margin:0 8px;font-family:Arial,sans-serif}
+    .carousel-text .btn-lg{margin-top:32px}
     .carousel-text .description{text-align:justify}
     .carousel-text .features{list-style:none;padding:0;margin:10px 0;text-align:left}
 .carousel-caption{bottom:0;right:0;left:0;
@@ -223,6 +236,7 @@ ul.leaders span + span{float:right;background:white}
     .row-offcanvas-right.active{right:50%}
     .row-offcanvas-left.active{left:50%}
     .sidebar-offcanvas{position:absolute;top:0;width:50%;z-index:91}
+    .lock_up .content{margin:0}
 }
 
 @media (min-width:768px){
