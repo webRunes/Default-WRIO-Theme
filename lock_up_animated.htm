@@ -12,6 +12,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/webrunes.css" rel="stylesheet">
+    <link href="css/animated.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
@@ -43,9 +44,11 @@
                     </div>
                     <div class="navbar-collapse in">
                         <ul class="nav navbar-nav" id="nav-accordion">
-                            <li class="panel"><a href="lock_up_animated.htm" class="collapsed"><span class="qty btn btn-xs pull-right">35</span>Alexey Anshakov</a>
+                            <li class="panel">
+                                <a href="lock_up_animated.htm" class="collapse"><span class="qty btn btn-xs pull-right">35</span>Alexey Anshakov</a>
                             </li>
-                            <li class="panel"><a href="lock_up.htm" class="collapse"><span class="qty btn btn-xs pull-right">2</span>I'm Anonymous</a>
+                            <li class="panel">
+                                <a href="lock_up.htm" class="collapsed"><span class="qty btn btn-xs pull-right">2</span>I'm Anonymous</a>
                             </li>
                             <li class="new panel">
                                 <a href="#" class="collapsed"><span class="glyphicon glyphicon-plus"></span></a>
@@ -79,18 +82,17 @@
                     <div id="cover-carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="item active">
-                                <div class="img" style="background:url('img/person-cover1.jpg') center center"></div>
+                                <div class="img" style="background:url('img/animated.jpg') center center;background-size: cover;" id="container"></div>
                                 <div class="carousel-caption">
                                     <div class="carousel-text">
-                                        <h2>I'm Anonymous <sup>Guest account &middot; <a href="upgrade.htm">Upgrade for free (30 days left)</a></sup></h2>
+                                        <h2>Alexey Anshakov <sup>Standart account &middot; <a href="upgrade.htm">Upgrade</a></sup></h2>
                                         <h6>My motto</h6>
-                                        <div class="description">Гостевой аккаунт регистрируется автоматически и действует в течение 30 дней. Если вы хотите сохранить учетную запись и пользоваться ею с других устройств, достаточно привязать свой Твиттер аккаунт нажав кнопку ниже.</div>
+                                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus nulla, commodo vitae tincidunt quis, bibendum at felis. Donec placerat nisl ac libero lacinia, vel pellentesque metus placerat.</div>
                                         <ul class="features">
-                                            <li><span class="glyphicon glyphicon-ok"></span>Действует 30 дней</li>
-                                            <li><span class="glyphicon glyphicon-ok"></span>Доступ только с данного устройства</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>Люблю читать и играть на гитаре</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>Моя цель - захватить Мир</li>
                                         </ul>
-                                        <button type="button" class="btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-up"></span>Upgrade for Free (30 days left)</button>
-                                        <button type="button" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-user"></span>Login as Guest</button>
+                                        <button type="button" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-user"></span>Login with Twitter</button>
                                     </div>
                                 </div>
                             </div>
@@ -102,21 +104,22 @@
             <div class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas" id="sidebar">
                 <div class="sidebar-margin">
                     <ul class="info nav nav-pills nav-stacked" id="ticket-accordion">
-                        <li class="panel"><a href="#ticket-element" data-parent="#ticket-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Person</a>
+                        <li class="panel">
+                            <a href="#ticket-element" data-parent="#ticket-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Person</a>
                             <div class="in" id="ticket-element">
                                 <div class="tickets">
                                     <div class="media thumbnail">
                                         <div class="col-xs-12">
-                                        <span itemscope="" itemtype="http://schema.org/ImageObject">
-                                            <img itemprop="thumbnail" src="img/no-photo-200x200.png" class="pull-left">
-                                        </span>
-                                        <ul class="details">
-                                            <li>Name: <span itemprop="name"><span itemprop="givenName">I'm</span> <span itemprop="familyName">Anonymous</span></span></li>
-                                            <li>Registered: <time datetime="2013-01-22">22 January 2013</time></li>
-                                            <li>Rating: 4</li>
-                                            <li>Followers: 1</li>
-                                            <li>Posts: 2</li>
-                                        </ul>
+                                            <span itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <img itemprop="thumbnail" src="img/no-photo-200x200.png" class="pull-left">
+                                            </span>
+                                            <ul class="details">
+                                                <li>Name: <span itemprop="name"><span itemprop="givenName">Alexey</span> <span itemprop="familyName">Anshakov</span></span></li>
+                                                <li>Registered: <time datetime="2013-01-22">22 January 2013</time></li>
+                                                <li>Rating: 4</li>
+                                                <li>Followers: 1</li>
+                                                <li>Posts: 2</li>
+                                            </ul>
                                         </div>
                                         <div class="col-xs-12">
                                             <div class="media-body">
@@ -130,7 +133,9 @@
                     </ul>
                     <div class="margin-bottom">
                         <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"></span>Login with Twitter</button>
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-arrow-up"></span>Upgrade for free (30 days left)</button>
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-arrow-up"></span>Upgrade</button>
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-cog"></span>Settings</button>
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-remove"></span>Delete</button>
                     </div>
                 </div>
             </div>
@@ -141,6 +146,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/application.js"></script>
     <script src="js/offcanvas.js"></script>
+
+
+    <script src="js/animated.js"></script>
 
 </body>
 </html>
