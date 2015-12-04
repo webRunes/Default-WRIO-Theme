@@ -8,11 +8,10 @@
     <meta name="description" content="Official webRunes WRIO OS node">
     <meta name="author" content="webRunes">
 
-    <title>Lock Up</title>
+    <title>webRunes</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/webrunes.css" rel="stylesheet">
-    <link href="css/animated.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
@@ -44,14 +43,12 @@
                     </div>
                     <div class="navbar-collapse in">
                         <ul class="nav navbar-nav" id="nav-accordion">
-                            <li class="panel">
-                                <a href="lock_up_animated.htm" class="collapse"><span class="qty btn btn-xs pull-right">35</span>Alexey Anshakov</a>
+                            <li class="panel"><a href="lock_up_animated.htm" class="collapsed"><span class="qty btn btn-xs pull-right">35</span>Alexey Anshakov</a>
                             </li>
-                            <li class="panel">
-                                <a href="lock_up.htm" class="collapsed"><span class="qty btn btn-xs pull-right">2</span>I'm Anonymous</a>
+                            <li class="panel"><a href="lock_up.htm" class="collapsed"><span class="qty btn btn-xs pull-right">2</span>I'm Anonymous</a>
                             </li>
                             <li class="new panel">
-                                <a href="lock_up_add.htm" class="collapsed"><span class="glyphicon glyphicon-plus"></span></a>
+                                <a href="lock_up_add.htm" class="collapse"><span class="glyphicon glyphicon-plus"></span></a>
                             </li>
                         </ul>
                     </div>
@@ -63,13 +60,13 @@
                     <aside>
                         <ul class="info nav nav-pills nav-stacked" id="profile-accordion">
                             <li class="panel">
-                                <a href="#profile-element" data-parent="#profile-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Lock up or switch user</a>
+                                <a href="#profile-element" data-parent="#profile-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Lock Up or Switch User</a>
                                 <div class="in" id="profile-element">
                                     <div class="media">
                                         <div class="callout">
                                             <h5>Choose user</h5>
                                             <p>Выберите пользователя чтобы продолжить. <a href="#">Learn more</a>.</p>
-                                            <p>Если у вас уже есть учетная запись WRIO, нажмите <a href="lock_up_add.htm">здесь</a>.</p>
+                                            <p>Если у вас уже есть учетная запись WRIO, нажмите <a href="#">здесь</a>.</p>
                                             <p>Свяжитесь с <a href="mailto:info@webrunes.com?subject=Login issue">нами</a> если у вас возникли проблемы с авторизацией.</p>
                                         </div>
                                     </div>
@@ -78,22 +75,17 @@
                         </ul>
                     </aside>
                     <ul class="breadcrumb">
-                        <li class="active">I'm Anonymous</li>
+                        <li class="active">Adding an existing user</li>
                     </ul>
                     <div id="cover-carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="item active">
-                                <div class="img" style="background:url('img/animated.jpg') center center;background-size: cover;" id="container"></div>
+                                <div class="img" style="background:url('img/welcome_back-cover.jpg') center center"></div>
                                 <div class="carousel-caption">
                                     <div class="carousel-text">
-                                        <h2>Alexey Anshakov <sup>Standart account &middot; <a href="upgrade.htm">Upgrade</a></sup></h2>
-                                        <h6>My motto</h6>
-                                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus nulla, commodo vitae tincidunt quis, bibendum at felis. Donec placerat nisl ac libero lacinia, vel pellentesque metus placerat.</div>
-                                        <ul class="features">
-                                            <li><span class="glyphicon glyphicon-ok"></span>Люблю читать и играть на гитаре</li>
-                                            <li><span class="glyphicon glyphicon-ok"></span>Моя цель - захватить Мир</li>
-                                        </ul>
-                                        <button type="button" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-user"></span>Login with Twitter</button>
+                                        <h2>Welcome back!</h2>
+                                        <div class="description">Добавить существующую учетную запись WRIO OS в один клик! Добавление происходит через привязку Твиттер аккаунта.</div>
+                                        <button type="button" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span>Add user</button>
                                     </div>
                                 </div>
                             </div>
@@ -105,26 +97,13 @@
             <div class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas" id="sidebar">
                 <div class="sidebar-margin">
                     <ul class="info nav nav-pills nav-stacked" id="ticket-accordion">
-                        <li class="panel">
-                            <a href="#ticket-element" data-parent="#ticket-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Person</a>
+                        <li class="panel"><a href="#ticket-element" data-parent="#ticket-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Guest account</a>
                             <div class="in" id="ticket-element">
                                 <div class="tickets">
                                     <div class="media thumbnail">
                                         <div class="col-xs-12">
-                                            <span itemscope="" itemtype="http://schema.org/ImageObject">
-                                                <img itemprop="thumbnail" src="img/no-photo-200x200.png" class="pull-left">
-                                            </span>
-                                            <ul class="details">
-                                                <li>Name: <span itemprop="name"><span itemprop="givenName">Alexey</span> <span itemprop="familyName">Anshakov</span></span></li>
-                                                <li>Registered: <time datetime="2013-01-22">22 January 2013</time></li>
-                                                <li>Rating: 4</li>
-                                                <li>Followers: 1</li>
-                                                <li>Posts: 2</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-xs-12">
                                             <div class="media-body">
-                                                Disclaimer: We start a series of stories describing various issues and problems that are related for the most part to the Internet, and our vision of possible ways to solve them. Those will often be followed by previews of projects mentioned in the stories. Keep in mind: some of them might change, some will remain just our fantasy; at this moment we are a small team, but with a great desire to change this world for the better or at least a little bit.
+                                                Если вы хотите без промедления приступить к изучению проекта, то воспользуйтесь гостевым аккаунтом. Вы сможете добавить регистрационные данные позже.
                                             </div>
                                         </div>
                                     </div>
@@ -133,23 +112,19 @@
                         </li>
                     </ul>
                     <div class="margin-bottom">
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"></span>Login with Twitter</button>
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-arrow-up"></span>Upgrade</button>
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-cog"></span>Settings</button>
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-remove"></span>Delete</button>
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"></span>Login as Guest</button>
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-plus"></span>Add User</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="js/bootstrap-tour.min.js"></script>
+    <script src="js/conversations/conversation-registration.js"></script>
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/application.js"></script>
     <script src="js/offcanvas.js"></script>
-
-
-    <script src="js/animated.js"></script>
-
 </body>
 </html>
