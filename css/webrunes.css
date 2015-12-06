@@ -43,12 +43,14 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans
 .main .nav>.panel:hover .sub li a .glyphicon{color:#aaa}
 .main .nav>.panel .sub li.active a,.main .nav>.open .sub li.active a:hover{background-color:#000}
 
-.main .nav>.new.active .glyphicon{opacity:1}
+.main .new.panel.active {background-color: #131313;}
+.main .new.panel.active>a {background-color: #131313;}
+.main .new.panel.active .glyphicon{opacity:1}
 .sidebar-offcanvas .nav.nav-pills{ position: relative; overflow: auto; padding-right: 8px; }
 .main .navbar-collapse{ overflow: auto; float: right; width: 100%; max-height: 1500px; }
 
-.main .nav>.new{-webkit-box-shadow:none;box-shadow:none}
-.main .nav>.panel.new>a{border-top:1px solid #333;text-align:center;box-shadow:none}
+.main .new.panel{-webkit-box-shadow:none;box-shadow:none}
+.main .new.panel>a{border-top:1px solid #333;text-align:center;box-shadow:none}
 .main .navbar-nav>li{float:none}
 .main .nav li .qty{opacity:.5; font-weight: normal;}
 .main .nav li a .glyphicon,.main .sub>li a .glyphicon{opacity:.3}
@@ -96,13 +98,14 @@ article .col-xs-12{padding-top:10px;padding-bottom:10px}
 article .paragraph{display:inline-block;width:100%}
 article .paragraph p{margin:0}
 article .paragraph .glyphicon-comment{visibility:hidden}
-article .paragraph:hover .glyphicon-comment{visibility:visible}
+/*article .paragraph:hover .glyphicon-comment{visibility:visible}*/
 article .contents{padding:24px 12px}
 article .contents ol li a{display:block;padding:2px 0;width:100%}
 article .thumbnail{padding:0}
 article .media.thumbnail{margin-top:8px}
 /* END article */
 
+.alert-transition{transition: all 10s;}
 /* callout */
 .callout{background-color:#ecf3fa;border-left:3px solid #d0e2f2;margin:4px 0 12px;padding:8px 16px}
 .callout h5{color:#428bca;margin:10px 0}
@@ -164,7 +167,7 @@ ul.leaders li{margin:4px 0 8px}
 ul.leaders li:before{color:#ccc;float:left;width:0;white-space: nowrap;content:"........................................................................................................................................................................................................................................................................................................................................................................................................................................................"}
 ul.leaders span:first-child{background:white}
 ul.leaders span a{margin-left:4px}
-ul.leaders span + span{float:right;background:white}
+ul.leaders span + span{float:right;background:white; height: 20px}
 .table .glyphicon{color:#aaa}
 .align-center{text-align:center}
 
@@ -265,7 +268,7 @@ ul.leaders span + span{float:right;background:white}
     .tooltip{z-index:1033}
 }
 
-.form-send-comment { margin-top:10px; }
+.form-send-comment { margin-top: -10px; }
 .form-send-comment .form-group { padding-top:10px; padding-bottom:10px; }
 .form-send-comment .send-comment-form-photo-submit { padding-bottom:0px; margin-bottom:0px!important; }
 
@@ -352,6 +355,7 @@ border-bottom-right-radius: 0;
 .twitter-limit{color:#aaa}
 .twitter-timeline{width:100% !important}
 #titteriframe{height:190px;width:100%}
+textarea#comment{resize: none;}
 img{width:auto!important;height:auto!important}
 
 /* Bootstrap Tour */
