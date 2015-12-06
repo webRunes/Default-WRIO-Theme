@@ -26,7 +26,7 @@ html,body{height:100%;margin:0;}
 #outdated .container { position: relative; vertical-align: middle; display: table-cell; height: 260px; }
 #outdated .inner { margin: 128px auto 0; width: 140px; height: 260px; }
 #outdated .alert { position: absolute; top: 142px; padding: 0; left: 50%; width: 320px; margin-left: -160px; }
-#outdated .warning { color: #eee; margin: 24px 0; width: 100%; background-color: inherit; background-image: inherit; }
+#outdated .warning { color: #eee; margin: 24px 0; width: 100%; background-color: #222222; background-color: inherit; background-image: inherit; }
 #outdated a{color:#20aaef}
 #outdated a:hover{color:#0088cc}
 #outdated .inner-info{margin:0 auto;width:480px;height:240px}
