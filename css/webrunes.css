@@ -269,12 +269,19 @@ ul.leaders span + span{float:right;background:white; height: 20px}
         padding:0 8px}
     .btn,.nav>li>a,.dropdown-menu>li>a{padding:8px 16px}*/
 }
+
+
 @media (max-width:767px){
     .content{padding:0 15px 0 22px}
+    .content .margin{margin-top: 60px}
     .sidebar-offcanvas{ padding-left:0}
     .row-offcanvas-menu.active{position:fixed;right:0%;z-index:1032;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
     .navbar-fixed-top{position:fixed;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
     .tooltip{z-index:1033}
+}
+
+@media (min-width:768px){
+    .content .alert.callout{display: none}
 }
 
 .form-send-comment { margin-top: -10px}
