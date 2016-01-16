@@ -200,7 +200,7 @@ ul.leaders span + span{float:right;background:white; height: 20px}
 .thumbnail .col-xs-12 img{margin:4px 8px 4px 0}
 .thumbnail img{width:120px;height:80px}
 .thumbnail h2 sup,.info .panel a sup{color:#aaa;font-size:10px;margin-left:4px}
-#loginbuttoniframe{display: none;}
+#loginbuttoniframe{display: block;}
 /* END thumbnail */
 
 .btn,.nav>li>a,.dropdown-menu>li>a{font-size:12px;padding:8px 16px}
