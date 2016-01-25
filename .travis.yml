@@ -9,8 +9,8 @@ node_js:
 deploy:
   provider: s3
   access_key_id:
-    secure: JI6FIg2XeSrcUgg1mb+C9A4V00BJQZve2XpWD4DRz1v/e4NBGGWTEu8EOBekc/99OY+1ftpkkaBVf59vs4FeRGF7R8eJnJwpx3/3zpiM9X341v/eNymaimYQoldYmXZNdhEri2SIGXwTFWKHd6b1tVPudHoPiRHFHgmrwLXDCc4=
-  secret_access_key:
+    secure: JI6FIg2XeSrcUgg1mb+C9A4V00BJQZve2XpWD4DRz1v/e4NBGGWTEusecret_access_key:8EOBekc/99OY+1ftpkkaBVf59vs4FeRGF7R8eJnJwpx3/3zpiM9X341v/eNymaimYQoldYmXZNdhEri2SIGXwTFWKHd6b1tVPudHoPiRHFHgmrwLXDCc4=
+
     secure: oPFtbS4YuMVy7KfjXSi/Gp8z+n6++YLz1ts0P11j+WOB149RyQopvm//hufDk7Xrmqyxtdx+/92fTBOhmKv21NT3ktxdlb14ojVIWPcYHecfsdTULx5+www1BmTB7DLNWGd4Vhn/EMORRM1kXJ3QoqIItDllTiSi9yvodUIEOb0=
   bucket: wrioos.com
   upload-dir: Default-WRIO-Theme
