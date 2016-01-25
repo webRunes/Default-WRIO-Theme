@@ -261,7 +261,7 @@ ul.leaders span + span{float:right;background:white; height: 20px}
 
 @media screen and (max-width:767px){
     html{padding-top: 53px}
-    article h1, article h2{padding-top: 75px; margin: -60px 0 0 15px}
+    article h1, article h2{padding-top: 75px; margin: -60px 0 0 0 !important;}
 }
 
 @media (min-width:768px){
