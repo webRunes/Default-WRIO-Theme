@@ -67,7 +67,7 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans
 /*.hub img{position:relative;border:1px solid #fff;outline:2px solid #f0ad4e}*/
 .providers label{margin-left:8px}
 .btn-lg{font-size:18px!important}
-.jumbotron {padding:48px}
+.well{border:none;color:#666;margin-bottom:8px;padding:24px;-webkit-box-shadow:none;box-shadow:none}
 
 /* article */
 article{text-align:justify}
