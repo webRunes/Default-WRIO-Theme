@@ -404,3 +404,5 @@ textarea#comment{resize: none}
 .popover[class*=tour-] .popover-navigation [data-role=prev].disabled,.popover[class*=tour-] .popover-navigation [data-role=next].disabled,.popover[class*=tour-] .popover-navigation [data-role=end].disabled{cursor:default}
 .popover[class*=tour-].orphan .arrow{display:none}
 .popover[class*=tour-] .nav{clear:both;padding-top:12px}
+
+.well{border:none;color:#666;margin-bottom:8px;padding:24px;-webkit-box-shadow:none;box-shadow:none}
