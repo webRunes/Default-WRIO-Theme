@@ -594,11 +594,19 @@
                         </ul>
                     </aside>
                     <div class="margin-bottom">
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-pencil"></span>Edit</button>
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-send"></span>Invite the author</button>
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-share"></span>Share</button>
-                        <button type="button" class="btn btn-success btn-block"><span class="glyphicon glyphicon-plus"></span>Added</button>
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-remove"></span>Close</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Action <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-pencil" style="font-size:10px;color:#666;margin-right:8px"></span>Edit</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-send" style="font-size:10px;color:#666;margin-right:8px"></span>Invite the author</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-share" style="font-size:10px;color:#666;margin-right:8px"></span>Share</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-plus" style="font-size:10px;color:#666;margin-right:8px"></span>Added</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-remove" style="font-size:10px;color:#666;margin-right:8px"></span>Close</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <ul class="nav nav-pills nav-stacked">
                         <li class="active"><a href="#">Read</a></li>
