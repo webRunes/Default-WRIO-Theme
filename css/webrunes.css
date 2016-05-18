@@ -179,34 +179,34 @@ ul.leaders span + span{float:right;background:white; height: 20px}
 .align-center{text-align:center}
 
 /* thumbnail */
-.thumbnail{border-color:transparent;text-align:justify;-webkit-box-shadow:0 1px 3px transparent;-moz-box-shadow:0 1px 3px transparent;box-shadow:0 1px 3px transparent;color: #333}
+.thumbnail{border-color:transparent;color:#999;text-align:justify;-webkit-box-shadow:0 1px 3px transparent;-moz-box-shadow:0 1px 3px transparent;box-shadow:0 1px 3px transparent}
 .thumbnail .col-xs-12{padding:10px 15px}
 .thumbnail:hover{background-color:#f9f9f9;border-color:whiteSmoke;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);cursor:pointer}
 .thumbnail:hover h2{color: #666}
-.thumbnail h2{margin: 0 0 20px; color: #333}
+.thumbnail h2{margin:0 0 20px;color:#333}
 .thumbnail header.col-xs-12{padding-bottom:0}
 .tooltip-inner{padding:8px 12px}
-.thumbnail .details,.thumbnail .donation{color:#aaa;line-height:normal;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
+.thumbnail .details,.thumbnail .donation{line-height:normal;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
 .thumbnail .details li,.thumbnail .donation li{list-style:none}
 .thumbnail .donation .btn .glyphicon{margin:0 0 3px 0}
 .thumbnail:hover{color:#666;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
 .thumbnail .details{padding:0;display:table;margin-top:4px;min-width:120px}
 .thumbnail>.pull-right{margin-left:0} /* reset bootstrap to fix ticket view */
 .thumbnail p{margin:0}
-.thumbnail .actions li{display: inline-block; margin-right: 10px}
-.thumbnail .actions>li+li:before{content: ''; padding: 0}
+.thumbnail .actions li{display:inline-block;margin-right:10px}
+.thumbnail .actions>li+li:before{content:'';padding: 0}
 .thumbnail .actions {margin:4px 0;padding:0}
-.thumbnail .actions .label{margin: 0 5px; color: #ffffff}
+.thumbnail .actions .label{margin:0 5px; color:#fff}
 .thumbnail .actions .glyphicon{margin-right:5px}
 .thumbnail .actions li{margin-top:8px;padding:0}
 .thumbnail .actions li span{color:#aaa;-webkit-transition:color .25s linear;transition:color .25s linear}
 .thumbnail:hover .actions li span{color:#428bca;-webkit-transition:color .25s linear;transition:color .25s linear}
-.thumbnail:hover .actions li span:hover{text-decoration: underline}
-.thumbnail:hover .actions li .label{color: #ffffff; text-decoration: none}
+.thumbnail:hover .actions li span:hover{text-decoration:underline}
+.thumbnail:hover .actions li .label{color:#fff; text-decoration:none}
 .thumbnail .col-xs-12 img{margin:4px 8px 4px 0}
 .thumbnail img{width:120px;height:80px}
 .thumbnail h2 sup,.info .panel a sup{color:#aaa;font-size:10px;margin-left:4px}
-#loginbuttoniframe{display: none;}
+#loginbuttoniframe{display:none}
 /* END thumbnail */
 
 .btn,.nav>li>a,.dropdown-menu>li>a{font-size:12px;padding:8px 16px}
@@ -233,8 +233,8 @@ ul.leaders span + span{float:right;background:white; height: 20px}
 .for_paginator{margin:2px}
 
 .sidebar-offcanvas{overflow:hidden}
-.sidebar-offcanvas .thumbnail.media,.sidebar-offcanvas .thumbnail.media:hover,article .contents{background-color:#f8f8f8; overflow: hidden}
-.sidebar-offcanvas .thumbnail{padding:0}
+.sidebar-offcanvas .thumbnail.media,.sidebar-offcanvas .thumbnail.media:hover,article .contents{background-color:#f8f8f8;overflow:hidden}
+.sidebar-offcanvas .thumbnail{color:#aaa;padding:0;cursor:default}
 .sidebar-offcanvas .thumbnail:hover{background-color:transparent;border-color:transparent;cursor:default;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0)}
 
 .total-pages{color:#aaa;text-align:center;font-size:12px}
