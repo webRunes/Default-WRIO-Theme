@@ -51,7 +51,6 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans
 .main .new.panel.active>a {background-color: #131313}
 .main .new.panel.active .glyphicon{opacity:1}
 .sidebar-offcanvas .nav.nav-pills{ position: relative; overflow: auto}
-.sidebar-offcanvas .nav.nav-pills li{cursor: pointer}
 .main .navbar-collapse{ overflow: auto; float: right; width: 100%; max-height: 1500px}
 
 .main .new.panel{-webkit-box-shadow:none;box-shadow:none}
@@ -209,7 +208,7 @@ ul.leaders span + span{float:right;background:white; height: 20px}
 #loginbuttoniframe{display:none}
 /* END thumbnail */
 
-.btn,.nav>li>a,.dropdown-menu>li>a{font-size:12px;padding:8px 16px}
+.btn,.nav>li>a,.dropdown-menu>li>a{cursor:pointer;font-size:12px;padding:8px 16px}
 .btn-block+.btn-block{margin-top:4px}
 .btn .glyphicon{margin:2px 8px 0 0}
 .main .btn .glyphicon{margin:0}
