@@ -69,6 +69,7 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans
 .btn-lg{font-size:18px!important}
 .well{border:none;color:#666;margin-bottom:8px;padding:24px;-webkit-box-shadow:none;box-shadow:none}
 .help-block{margin-left:8px}
+.coming-soon,.coming-soon:hover{color:#a94442}
 
 /* article */
 article{text-align:justify}
