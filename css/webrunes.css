@@ -101,6 +101,7 @@ article header p{color:#999}
 article section{display:inline-block;width:100%}
 article .col-xs-12{padding-top:10px;padding-bottom:10px}
 article .paragraph{display:inline-block;width:100%}
+article .paragraph a:visited{color:#9900ff}
 article .paragraph p{margin:0}
 article .paragraph .glyphicon-comment{visibility:hidden}
 /*article .paragraph:hover .glyphicon-comment{visibility:visible}*/
