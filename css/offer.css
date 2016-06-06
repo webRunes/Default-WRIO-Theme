@@ -1,0 +1,6 @@
+.offer{background-color:#ede6cf}
+.offer .carousel-inner{background:url('../img/offer/noise.png') center center no-repeat}
+.offer .img{margin:28px;-moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px}
+.carousel-inner > .item {position:initial}
+
+/* https://stackoverflow.com/questions/2293910/css3-transparency-gradient */

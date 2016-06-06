@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
 
     <title>webRunes</title>
 
-    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/webrunes.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="ico/favicon.ico">
@@ -31,20 +31,20 @@
         <div class="row row-offcanvas row-offcanvas-right">
             <div class="col-xs-12 col-sm-3 col-md-2">
                 <div class="navbar navbar-inverse main navbar-fixed-top row-offcanvas-menu">
-                    <div class="navbar-header">
+                    <div class="navbar-header tooltip-demo">
                         <ul class="nav menu pull-right">
-                            <li><a href="webrunes-contact.htm" class="btn btn-link btn-sm"><span class="glyphicon glyphicon-envelope"></span></a></li>
-                            <li><a href="#" class="btn btn-link btn-sm"><span class="glyphicon glyphicon-lock"></span></a></li>
-                            <li><a href="#" class="btn btn-link btn-sm"><span class="glyphicon glyphicon-fullscreen"></span></a></li>
-                            <li><a href="#" class="btn btn-link btn-sm visible-xs" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-align-justify"></span></a></li>
-                            <li><a href="#" class="btn btn-link btn-sm visible-xs" data-toggle="offcanvas"><span class="glyphicon glyphicon-transfer"></span></a></li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="Call IA"><a href="#" class="btn btn-link btn-sm active call-ia"><span class="glyphicon glyphicon-comment"></span></a></li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="Logout"><a href="#" class="btn btn-link btn-sm"><span class="glyphicon glyphicon-lock"></span></a></li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="Full screen"><a href="#" class="btn btn-link btn-sm"><span class="glyphicon glyphicon-fullscreen"></span></a></li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="Open/close menu"><a href="#" class="btn btn-link btn-sm visible-xs" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-align-justify"></span></a></li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="Show/hide the sidebar"><a href="#" class="btn btn-link btn-sm visible-xs" data-toggle="offcanvas"><span class="glyphicon glyphicon-transfer"></span></a></li>
                         </ul>
                         <a href="#" class="navbar-brand">&nbsp;</a>
                     </div>
                     <div class="navbar-collapse in">
                         <ul class="nav navbar-nav" id="nav-accordion">
-                            <li class="panel active"><a href="#element1" class="collapse" data-parent="#nav-accordion" data-toggle="collapse">WRIO</a>
-                                <div class="in" id="element1">
+                            <li class="panel"><a href="#element1" class="collapsed" data-parent="#nav-accordion" data-toggle="collapse">WRIO</a>
+                                <div class="collapse" id="element1">
                                     <ul class="nav nav-pills nav-stacked sub">
                                         <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">Alexey Anshakov</a></li>
                                         <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">News name</a></li>
@@ -61,15 +61,10 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="panel"><a href="#element3" class="collapsed" data-parent="#nav-accordion" data-toggle="collapse"><span class="qty btn btn-xs pull-right">324</span>Blogs</a>
-                                <div class="collapse" id="element3">
-                                    <ul class="nav nav-pills nav-stacked sub">
-                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">My best post</a></li>
-                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">Great blogs review</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="new panel"><a href="#element4" data-parent="#nav-accordion" data-toggle="collapse" class="collapsed"><span class="glyphicon glyphicon-plus"></span></a>
+                            <li class="panel"><a href="#element3" class="collapsed" data-parent="#nav-accordion" data-toggle="collapse"><span class="qty btn btn-xs pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></span>Core</a></li>
+                            <li class="panel active"><a href="#element3" class="collapsed" data-parent="#nav-accordion" data-toggle="collapse"><span class="qty btn btn-xs pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></span>Untitled</a></li>
+                            <li class="new panel">
+                                <a href="#element4" data-parent="#nav-accordion" data-toggle="collapse" class="collapsed"><span class="glyphicon glyphicon-plus"></span></a>
                                 <div class="collapse" id="element4"></div>
                             </li>
                         </ul>
@@ -105,31 +100,30 @@
                         </li>
                     </ul>
                     <ul class="breadcrumb">
-                        <li><a href="wrio.htm">Cover</a></li>
-                        <li class="active">About</li>
+                        <li><a href="#">Read</a></li>
+                        <li class="active">Edit</li>
                     </ul>
-                    <div class="post">
-                        <h1>Overview</h1>
-                        <div class="paragraph">
-                            <p class="col-xs-12 col-md-6 col-lg-5">
-                                7 июня 2014 года - день рождения проекта, когда первая альфа версия увидела свет. Тем не менее, начальные идеи, их обкатка, создание прототипов, подбор стека технологий начались существенно раньше, еще весной 2010.
-                            </p>
-                            <div class="col-xs-12 col-md-6 col-lg-7"><span class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="right" title="Not yet available"></span></div>
+                    <form class="form-horizontal tooltip-demo" role="form">
+                        <div class="form-group form-inline">
+                            <div class="col-sm-12">
+                                <textarea class="form-control" rows="4">Здесь разместить редактор</textarea>
+                            </div>
                         </div>
-                        <h1>Our goal</h1>
-                        <div class="paragraph">
-                            <p class="col-xs-12 col-md-6 col-lg-5">
-                                Наша главная цель - создание сети независимых нод, способных противостоять все возрастающей тенденции цензуры и слежки за пользователями государств и компаний.
-                            </p>
-                            <div class="col-xs-12 col-md-6 col-lg-7"><span class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="right" title="Not yet available"></span></div>
+                        <div class="form-group form-inline has-error">
+                            <label for="id-Description" class="col-sm-4 col-md-3 control-label">Description</label>
+                            <div class="col-sm-8 col-md-9">
+                                <input class="form-control" type="text" maxlength="512" placeholder="Optional. Max 512 characters" />
+                                <div class="help-block">Max 512 characters</div>
+                            </div>
                         </div>
-                        <div class="paragraph">
-                            <p class="col-xs-12 col-md-6 col-lg-5">
-                                Сеть WRIO нод легко представить в виде нейронной сети, где каждый нейрон это: пользовательские профайлы, музыка, видео, книги, посты и пр.
-                            </p>
-                            <div class="col-xs-12 col-md-6 col-lg-7"><span class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="right" title="Not yet available"></span></div>
+                        <div class="form-group col-xs-12">
+                            <div class="pull-right">
+                                <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>Delete</button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span>Cancel</button>
+                                <a href="blogs-create-enable_comments.htm" class="btn btn-success"><span class="glyphicon glyphicon-open"></span>Publish</a>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
 
@@ -141,14 +135,16 @@
                                 <div class="tickets">
                                     <div class="media thumbnail">
                                         <div class="col-xs-12">
-                                            <img src="img/wrio-preview.jpg" class="pull-left">
+                                            <img src="img/no-photo-200x200.png" class="pull-left">
                                             <ul class="details">
-                                                <li>Name: WRIO</li>
+                                                <li>Name: Blogs</li>
                                                 <li>Created: 22 Jun 2013</li>
-                                                <li>Rating: 244</li>
-                                                <li>Users: 1,634</li>
-                                                <li>Access: Free &middot; Open source</li>
-                                                <li>Owner: webRunes</li>
+                                                <li>Unread: 48</li>
+                                                <li>Rating: 244 · 3 level</li>
+                                                <li>Subscribers: 1 634</li>
+                                                <li>Access: Free · Read &amp; Write</li>
+                                                <li>Language: English</li>
+                                                <li>Owner: Public</li>
                                             </ul>
                                         </div>
                                         <div class="col-xs-12">
@@ -162,38 +158,38 @@
                         </li>
                     </ul>
                     <div class="margin-bottom">
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-pencil"></span>Create</button>
-                        <button type="button" class="btn btn-success btn-block"><span class="glyphicon glyphicon-plus"></span>Added</button>
+                        <button type="button" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-pencil"></span>Edit</button>
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-ok-sign"></span>Subscribe</button>
                         <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-share"></span>Share</button>
                     </div>
                     <ul class="nav nav-pills nav-stacked" id="sidebar-accordion">
                         <li class="panel"><a href="#sidebar-element1" data-parent="#sidebar-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Cover</a>
                             <div class="in" id="sidebar-element1">
                                 <ul class="nav nav-pills nav-stacked">
-                                    <li><a href="#"><span class="pull-right">3</span>News</a></li>
-                                    <li class="active"><a href="wrio-about.htm">About</a></li>
-                                    <li><a href="wrio-terms.htm"><span class="label label-success pull-right">Class A</span>Terms</a></li>
-                                    <li><a href="wrio-privacy.htm"><span class="label label-success pull-right">Class A</span>Privacy</a></li>
-                                    <li class="disabled"><a href="#" data-toggle="tooltip" data-placement="left" title="Not yet available">Download source</a></li>
+                                    <li><a href="blogs-about.htm">About</a></li>
+                                    <li><a href="#">Authors</a></li>
+                                    <li><a href="#">Editors</a></li>
+                                    <li><a href="#"><span class="label label-success pull-right">Class A</span>Terms</a></li>
+                                    <li><a href="#"><span class="label label-danger pull-right">Class E</span>Privacy</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="panel"><a href="#sidebar-element2" class="collapsed" data-parent="#sidebar-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Content</a>
+                        <li class="panel"><a href="#sidebar-element2" class="collapsed" data-parent="#sidebar-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Shares</a>
                             <div class="collapse" id="sidebar-element2">
                                 <ul class="nav nav-pills nav-stacked">
-                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Buy</a></li>
+                                    <li><a href="#">Sell</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Followers</a></li>
+                    </ul>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="blogs-feed.htm">Feed</a></li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
-
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/application.js"></script>

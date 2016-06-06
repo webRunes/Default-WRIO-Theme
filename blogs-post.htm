@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -83,36 +83,34 @@
 
             <div class="content col-xs-12 col-sm-5 col-md-7">
                 <div class="margin">
-                    <aside>
-                        <ul class="info nav nav-pills nav-stacked" id="profile-accordion">
-                            <li class="panel">
-                                <a href="#profile-element" data-parent="#profile-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Logged as I'm Anonymous</a>
-                                <div class="in" id="profile-element">
-                                    <div class="media thumbnail">
-                                        <div class="col-xs-12 col-md-6 pull-right">
-                                            <img src="img/no-photo-200x200.png" class="pull-left">
-                                            <ul class="details">
-                                                <li>Registered: 22 Jun 2013</li>
-                                                <li>Rating: 0</li>
-                                                <li>Followers: 0</li>
-                                                <li>Posts: 0</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-xs-12 col-md-6">
-                                            <p>
-                                                Информация публичного профайла доступна любому, даже незарегистрированным пользователям. Если вы хотите оставаться анонимным, просто не заполняйте его.
-                                            </p>
-                                            <ul class="actions">
-                                                <li><a href="#"><span class="glyphicon glyphicon-edit"></span>Edit</a></li>
-                                                <li><a href="#"><span class="glyphicon glyphicon-share"></span>Share</a></li>
-                                                <li><a href="person-accounts-link-account.htm"><span class="glyphicon glyphicon-arrow-up"></span>Upgrade guest account for free</a> <span class="label label-warning">30 days left</span></li>
-                                            </ul>
-                                        </div>
+                    <ul class="info nav nav-pills nav-stacked" id="profile-accordion">
+                        <li class="panel">
+                            <a href="#profile-element" data-parent="#profile-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Logged as Alexey Anshakov</a>
+                            <div class="in" id="profile-element">
+                                <div class="media thumbnail">
+                                    <div class="col-xs-12 col-md-6 pull-right">
+                                        <span itemscope="" itemtype="http://schema.org/ImageObject">
+                                            <img itemprop="thumbnail" src="img/profile1-200x200.jpg" class="pull-left">
+                                        </span>
+                                        <ul class="details">
+                                            <li>Registered: 22 Jun 2013</li>
+                                            <li>Rating: 4</li>
+                                            <li>Followers: 1</li>
+                                            <li>Posts: 2</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <p>
+                                            Информация публичного профайла доступна любому, даже незарегистрированным пользователям. Если вы хотите оставаться анонимным, просто не заполняйте его.
+                                        </p>
+                                        <ul class="actions">
+                                            <li><a href="lock_up_animated.htm"><span class="glyphicon glyphicon-lock"></span>Lock up or switch user</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
-                    </aside>
+                            </div>
+                        </li>
+                    </ul>
                     <ul class="breadcrumb controls tooltip-demo">
                         <li data-toggle="tooltip" data-placement="top" title="Read time"><span class="glyphicon glyphicon-time"></span>4-5 minutes</li>
                         <li data-toggle="tooltip" data-placement="top" title="Last modified"><span class="glyphicon glyphicon-calendar"></span>30 May, 2014</li>
@@ -508,7 +506,7 @@
                                 <div class="form-group">
                                     <div class="alert alert-success">
                                         <button type="button" class="close" data-dismiss="alert">×</button>
-                                        You've donated 10 WRG. The author received 82%, which amounts to 8.2 WRG or 0.19 USD. Thank you!<br />More information on donations and percentage you can find <a href="#">here</a>
+                                        You've donated 10 WRG. The author received 82%, which amounts to 8.2 WRG or 0.19 USD. Thank you!</a>
                                     </div>
                                     <ul class="leaders">
                                         <li>
@@ -525,7 +523,7 @@
                                         <div class="input-group input-group-sm tooltip-demo">
                                             <span class="input-group-addon">WRG</span>
                                             <input type="number" class="form-control" id="inputAmount" value="0" min="0">
-                                            <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="The author will receive 82%, which amounts to 8.2 WRG or 0.19 USD. The bigger the donated amount, the bigger the received percentage up to 95%">82%</span>
+                                            <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="The author will receive 82%, which amounts to 8.2 WRG or 0.19 USD. The bigger the donated amount, the bigger the received interest up to 95%">82% <span class="glyphicon glyphicon-question-sign"></span></span>
                                         </div>
                                         <div class="help-block">Insufficient funds. <a href="webgold-add_funds.htm">Add funds</a></div>
                                     </div>
@@ -596,11 +594,19 @@
                         </ul>
                     </aside>
                     <div class="margin-bottom">
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-pencil"></span>Edit</button>
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-send"></span>Invite the author</button>
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-share"></span>Share</button>
-                        <button type="button" class="btn btn-success btn-block"><span class="glyphicon glyphicon-plus"></span>Added</button>
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-remove"></span>Close</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Action <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-pencil" style="font-size:10px;color:#666;margin-right:8px"></span>Edit</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-send" style="font-size:10px;color:#666;margin-right:8px"></span>Invite the author</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-share" style="font-size:10px;color:#666;margin-right:8px"></span>Share</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-plus" style="font-size:10px;color:#666;margin-right:8px"></span>Added</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-remove" style="font-size:10px;color:#666;margin-right:8px"></span>Close</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <ul class="nav nav-pills nav-stacked">
                         <li class="active"><a href="#">Read</a></li>
