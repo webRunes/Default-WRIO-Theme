@@ -1,7 +1,7 @@
-#Default <sup>[WRIO](http://wr.io) Theme</sup>
+#Default <sup>[WRIO](https://wrioos.com) Theme</sup>
 (coming soon)
 
 ##Official Hub
-[https://default.webrunes.com](https://default.webrunes.com)
+[default.wrioos.com](https://default.wrioos.com)
 
-Powered by [Open Copyright](http://opencopyright.webrunes.com)
+Powered by [Open Copyright](https://opencopyright.wrioos.com)
