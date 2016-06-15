@@ -24,7 +24,7 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-s
 .main .nav>li{line-height:24px}
 .main .nav>.panel{cursor:pointer;border:0;border-radius:0;background-color:#131313;margin:0}
 .main .nav>.panel>a.collapsed{background-color:#222;color:#aaa}
-.main .nav>.panel>a{color:#aaa;background-color:#222;font-weight:bold;overflow:visible;text-overflow:ellipsis;white-space:nowrap;outline:none}
+.main .nav>.panel>a{color:#aaa;background-color:#222;overflow:visible;text-overflow:ellipsis;white-space:nowrap;outline:none}
 .main .nav>.panel>a:hover{color:#fff}
 .main .nav>.panel>a:focus{outline:none}
 .main .nav>.panel.open>a{background-color:#131313}
@@ -36,7 +36,6 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-s
 .main .nav>.panel.active>a,
 .main .nav>.panel.active>a:hover{background-color:#000}
 .main .nav>.panel.active>a.collapsed + .in{background-color:#131313;font-weight:normal}
-/*.main .nav>li>a:hover,.main .nav>li>a:focus{background-color:#131313}*/
 .main .nav>li.panel:hover{background-color:#131313}
 .main .nav>li.panel:focus{outline:none}
 .webtop li>a:hover{color:#fff}
