@@ -100,7 +100,7 @@ article .paragraph{display:inline-block;width:100%}
 article .paragraph a{color:#168dd9}
     article .paragraph a:hover{color:#168dd9}
     article .paragraph a:visited{color:#9900ff}
-    article .paragraph .coming-soon,article .paragraph .coming-soon:hover{color:#a94442}
+    article .paragraph a.coming-soon,article .paragraph a.coming-soon:hover,article .paragraph a.coming-soon:visited{color:#e10000}
 article .paragraph p{margin:0}
 article .paragraph .glyphicon-comment{visibility:hidden}
 /*article .paragraph:hover .glyphicon-comment{visibility:visible}*/
