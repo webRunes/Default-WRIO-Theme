@@ -20,8 +20,6 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-s
 .main .new.panel a:hover{transition:all .5s ease;color:#fff}
 .main .navbar-collapse .navbar-header{float:left;overflow:auto}
 .main .nav{position:relative;overflow:auto}
-
-.main .nav>li{line-height:24px}
 .main .nav>.panel{cursor:pointer;border:0;border-radius:0;background-color:#131313;margin:0}
 .main .nav>.panel>a.collapsed{background-color:#222;color:#aaa}
 .main .nav>.panel>a{color:#aaa;background-color:#222;overflow:visible;text-overflow:ellipsis;white-space:nowrap;outline:none}
@@ -36,25 +34,21 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-s
 .main .nav>.panel.active>a,
 .main .nav>.panel.active>a:hover{background-color:#000}
 .main .nav>.panel.active>a.collapsed + .in{background-color:#131313;font-weight:normal}
-.main .nav>li.panel:hover{background-color:#131313}
-.main .nav>li.panel:focus{outline:none}
-.webtop li>a:hover{color:#fff}
-.webtop li>a:hover{color:#fff;background-color:transparent}
 .main .nav>.panel .sub li a{border-radius:0;color:#aaa;line-height:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .main .nav>.panel.active>a{color:#fff}
 .main .nav>.panel .sub li:hover a, .main .nav li a:hover span, .main .nav li.open a:hover span{background-color:transparent;color:#fff}
 .main .nav>.panel:hover .sub li a .glyphicon{color:#aaa}
 .main .nav>.panel .sub li.active a,.main .nav>.open .sub li.active a:hover{background-color:#000}
-
+.main .new.panel{-webkit-box-shadow:none;box-shadow:none}
+.main .new.panel>a{border-top:1px solid #333;text-align:center;box-shadow:none}
 .main .new.panel.active{background-color:#131313}
 .main .new.panel.active>a{background-color:#131313}
 .main .new.panel.active .glyphicon{opacity:1}
-.sidebar-offcanvas .nav.nav-pills{ position:relative;overflow:auto}
 .main .navbar-collapse{ overflow:auto;float:right;width:100%;max-height:1500px}
-
-.main .new.panel{-webkit-box-shadow:none;box-shadow:none}
-.main .new.panel>a{border-top:1px solid #333;text-align:center;box-shadow:none}
 .main .navbar-nav>li{float:none}
+.main .nav>li{line-height:24px}
+.main .nav>li.panel:hover{background-color:#131313}
+.main .nav>li.panel:focus{outline:none}
 .main .nav li .qty{opacity:.5;font-weight:normal}
 .main .nav li a .glyphicon,.main .sub>li a .glyphicon{opacity:.3}
 .main .nav li a:hover .glyphicon,.main .nav li a.active .glyphicon,.main .sub>li a:hover .glyphicon{opacity:1}
@@ -63,6 +57,9 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-s
 .main .menu a,.main .menu:hover a,.main .menu a:focus{background-color:transparent}
 .main .sub li{margin:0 0 1px;list-style:circle !important}
 .main .sub>li.active a,.main .sub>li.active a:hover{background-color:transparent}
+.webtop li>a:hover{color:#fff}
+.webtop li>a:hover{color:#fff;background-color:transparent}
+.sidebar-offcanvas .nav.nav-pills{ position:relative;overflow:auto}
 .container-liquid .row .content{overflow:auto}
 .content label{font-weight:normal}
 .content textarea{resize:vertical}
@@ -103,6 +100,7 @@ article .paragraph{display:inline-block;width:100%}
 article .paragraph a{color:#168dd9}
     article .paragraph a:hover{color:#168dd9}
     article .paragraph a:visited{color:#9900ff}
+    article .paragraph .coming-soon,article .paragraph .coming-soon:hover{color:#a94442}
 article .paragraph p{margin:0}
 article .paragraph .glyphicon-comment{visibility:hidden}
 /*article .paragraph:hover .glyphicon-comment{visibility:visible}*/
