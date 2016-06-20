@@ -76,7 +76,7 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-s
 .panel>a>.glyphicon{margin-top:2px}
 .margin-bottom{margin-bottom:8px}
 .form-horizontal .callout{margin:0}
-.glyphicon-new-window{font-size:90%;margin-left:4px}
+.glyphicon-new-window{font-size:90%;margin:0 2px}
 .popover{z-index:1040}
 .loading{color:#aaa;margin:12px}
 .hidden{display:none}
