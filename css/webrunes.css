@@ -134,7 +134,7 @@ menu{padding:0;margin:0 0 8px}
 .carousel-inner .img{background-position:center center;min-height:750px}
 .content .carousel-caption{text-shadow:1px 1px 4px rgba(0,0,0,1)}
 .content .carousel h2{font-family:BebasNeue,sans-serif;font-size:180%;text-align:left;font-weight:normal}
-.content .carousel h6{font-size:90%;font-weight:bold;text-align:left;text-transform:uppercase}
+.content .carousel h6{font-size:85%;font-weight:bold;text-align:left;text-transform:uppercase}
 .carousel-text{margin:0 20% 36px;position:relative}
     .carousel-text h2,.carousel-text h6{margin:0}
     .carousel-text sup span.glyphicon-ok-sign{font-size:65%;margin-left:8px}
