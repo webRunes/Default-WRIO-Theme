@@ -136,7 +136,8 @@ menu{padding:0;margin:0 0 8px}
 .content .carousel h2{font-family:BebasNeue,sans-serif;font-size:180%;text-align:left;font-weight:normal}
 .content .carousel h6{font-size:85%;font-weight:bold;text-align:left;text-transform:uppercase}
 .carousel-text{margin:0 20% 36px;position:relative}
-    .carousel-text h2,.carousel-text h6{margin:0}
+    .carousel-text h2{margin:0}
+    .carousel-text h6{margin:10px 0}
     .carousel-text sup span.glyphicon-ok-sign{font-size:65%;margin-left:8px}
     .carousel-text .features .glyphicon-ok{margin-right:8px}
     .carousel-text sup span.label{font-size:90%;margin-left:8px}
