@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -31,15 +31,15 @@
         <div class="row row-offcanvas row-offcanvas-right">
             <div class="col-xs-12 col-sm-3 col-md-2">
                 <div class="navbar navbar-inverse main navbar-fixed-top row-offcanvas-menu">
-                    <div class="navbar-header">
+                    <div class="navbar-header tooltip-demo">
                         <ul class="nav menu pull-right">
-                            <li><a href="#" class="btn btn-link btn-sm active-ia call-ia"><span class="glyphicon glyphicon-comment"></span><sup><span class="label label-warning">4</span></sup></a></li>
-                            <li><a href="webrunes-contact.htm" class="btn btn-link btn-sm"><span class="glyphicon glyphicon-envelope"></span></a></li>
-                            <li><a href="#" class="btn btn-link btn-sm"><span class="glyphicon glyphicon-lock"></span></a></li>
-                            <li><a href="#" class="btn btn-link btn-sm"><span class="glyphicon glyphicon-fullscreen"></span></a></li>
-                            <li><a href="#" class="btn btn-link btn-sm visible-xs" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-align-justify"></span></a></li>
-                            <li><a href="#" class="btn btn-link btn-sm visible-xs" data-toggle="offcanvas"><span class="glyphicon glyphicon-transfer"></span></a></li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="Call IA"><a href="#" class="btn btn-link btn-sm active call-ia"><span class="glyphicon glyphicon-comment"></span></a></li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="Logout"><a href="#" class="btn btn-link btn-sm"><span class="glyphicon glyphicon-lock"></span></a></li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="Full screen"><a href="#" class="btn btn-link btn-sm"><span class="glyphicon glyphicon-fullscreen"></span></a></li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="Open/close menu"><a href="#" class="btn btn-link btn-sm visible-xs" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-align-justify"></span></a></li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="Show/hide the sidebar"><a href="#" class="btn btn-link btn-sm visible-xs" data-toggle="offcanvas"><span class="glyphicon glyphicon-transfer"></span></a></li>
                         </ul>
+                        <a href="#" class="navbar-brand">&nbsp;</a>
                     </div>
                     <div class="navbar-collapse in">
                         <ul class="nav navbar-nav" id="nav-accordion">
@@ -110,41 +110,69 @@
                     <div id="cover-carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="item active">
-                                <div class="img" style="background: url('img/sign_in-cover1.jpg') center center"></div>
+                                <div class="img" style="background: url('img/cover1.jpg') center center"></div>
                                 <div class="carousel-caption">
                                     <div class="carousel-text">
-                                        <h2>All your stuff in one place</h2>
+                                        <h2>My Values, Beliefs and Attitudes</h2>
+                                        <h6>Maximum Freedom, Minimum Government</h6>
+                                        <div class="description">Цель моей жизни — поиск единомышленников, которые не только разделяют мои убеждения, но обладают знаниями, навыками и, главное, непреодолимым желанием воплотить их в жизнь.</div>
                                         <ul class="features">
-                                            <li><span class="glyphicon glyphicon-ok"></span>подбор интересного контента на основе <a href="http://webrunes.com/blog.htm?First-url-title">ваших предпочтений</a></li>
-                                            <li><span class="glyphicon glyphicon-ok"></span>отображение и организация любимых сайтов в удобном для вас виде</li>
-                                            <li><span class="glyphicon glyphicon-ok"></span><a href="http://webrunes.com/blog.htm?First-url-title">единый каталог</a> всех ваших статей, книг, фото / аудио / видео материалов</li>
-                                            <li><span class="glyphicon glyphicon-ok"></span>возможность поддержки ваших любимых авторов материально</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>a <a href="#">lifelong learner</a></li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>a dedicated <a href="#">libertarian</a></li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>a <a href="#">cryptocurrency</a> enthusiast</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>an <a href="#">info-</a> and <a href="#">crypto-anarchist</a></li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>a privacy defender and <a href="#">open government</a> agitator</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>a <a href="#">laissez-faire</a> supporter</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="img" style="background: url('img/sign_in-cover2.jpg') center center"></div>
+                                <div class="img" style="background:url('img/cover2.jpg') center center"></div>
                                 <div class="carousel-caption">
                                     <div class="carousel-text">
-                                        <h2>Надежная защита</h2>
+                                        <h2><a href="#">webRunes</a> Founder</h2>
+                                        <h6>Lifelong learning is our credo,our mission is to enlighten people</h6>
+                                        <div class="description">webRunes is a team of freelancers specializing in various IT and other areas of expertise that are developing <a href="#">WRIO Internet OS</a> platform.</div>
                                         <ul class="features">
-                                            <li><span class="glyphicon glyphicon-ok"></span><a href="http://webrunes.com/blog.htm?First-url-title">хранение</a> всех ваших логинов и паролей</li>
-                                            <li><span class="glyphicon glyphicon-ok"></span>шифрование почты</li>
-                                            <li><span class="glyphicon glyphicon-ok"></span>защита личных данных</li>
-                                            <li><span class="glyphicon glyphicon-ok"></span>защита от вирусов, мошенников, спама, отслеживания и цензуры</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>автор <a href="#">принципов</a> webRunes</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>и <a href="#">концепции Ad hoc команд</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="img" style="background: url('img/sign_in-cover3.jpg') center center"></div>
+                                <div class="img" style="background:url('img/cover3.jpg') center center"></div>
                                 <div class="carousel-caption">
                                     <div class="carousel-text">
-                                        <h2>Если вы занимаетесь фото/видео съемками</h2>
+                                        <h2><a href="#">WRIO Internet OS </a> Inventor</h2>
+                                        <h6>All you need is browser</h6>
+                                        <div class="description">WRIO Internet OS или просто WRIO OS — ваше окно в мир децентрализованного, семантического и безопасного интернета на базе технологии блокчеина, с функцией умного помощника. Название является акронимом от “webRunes Input/Output Internet Operating System” и подразумевает в дальнейшем полную замену десктопных операционных систем.
+                                            <br />
+                                            Платформа для реализации <a href="#">Alternative</a>.
+                                        </div>
                                         <ul class="features">
-                                            <li><span class="glyphicon glyphicon-ok"></span>обработка и хранение фото и видео материалов</li>
-                                            <li><span class="glyphicon glyphicon-ok"></span>удобный процесс продажи ваших работ</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>автор идеи</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>архитектор проекта</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>разработчик дизайна и UX</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img" style="background:url('img/alternative.jpg') center center"></div>
+                                <div class="carousel-caption">
+                                    <div class="carousel-text">
+                                        <h2><a href="#">Alternative</a> Dreamer</h2>
+                                        <h6>Now you have a choice <a href="https://en.wikipedia.org/wiki/Red_pill_and_blue_pill" target="_blank" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-original-title="Did you know?" data-content="The red pill and its opposite, the blue pill, are popular culture symbols representing the choice between embracing the sometimes painful truth of reality (red pill) and the blissful ignorance of illusion (blue pill). Click to read more on wikipedia.com"><sup><span class="glyphicon glyphicon-asterisk"></span></sup></a></h6>
+                                        <div class="description">Statism: Centralization, Enforcement and Obedience
+                                            <br />
+                                            VS
+                                            <br />
+                                            Alternative: Decentralization, Cooperation and Freedom.</div>
+                                        <ul class="features">
+                                            <li><span class="glyphicon glyphicon-ok"></span>автор идеи и ее первоначальной реализации</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>продвижение и распространение</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -246,6 +274,7 @@
 
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/application.js"></script>
     <script src="js/offcanvas.js"></script>
 </body>
 </html>
