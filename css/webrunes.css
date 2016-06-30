@@ -110,7 +110,6 @@ article .contents ol li a{display:block;padding:2px 0;width:100%}
 article .thumbnail{padding:0}
 article .media.thumbnail{margin-top:8px}
 /* END article */
-#coreiframe{border:none;height:240px;width:100%}
 
 .alert-transition{transition:all 10s}
 /* callout */
