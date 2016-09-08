@@ -11,7 +11,7 @@
           element: ".call-ia",
           placement: "bottom",
           title: "IA — Individual Assistant",
-          content: "Master, торрент <a href=''>WRIO Internet OS bundle</a> скачан в <a href=''>Storage/Archives</a>. Должен заметить, что осталось свободно лишь 147 MB.<ul class='nav nav-pills nav-stacked'><li><div class='col-lg-12'><div class='input-group'><input class='form-control' placeholder='...' autofocus type='text'><span class='input-group-btn'><button class='btn btn-default' type='button'><span class='glyphicon glyphicon-ok'></span></button></span></div></div></li></ul><ul class='nav nav-pills nav-stacked' style='margin-top:0'><li>How can I help you?</li><li><a href='conversation-archive.js'>Пожалуйста, открой страницу с архивами наших бесед</a></li></ul>"
+          content: "Your command, master.<ul class='nav nav-pills nav-stacked'><li><div class='col-lg-12'><div class='input-group'><input class='form-control' placeholder='#help' autofocus type='text'><span class='input-group-btn'><button class='btn btn-default' type='button'><span class='glyphicon glyphicon-ok'></span></button></span></div></div></li></ul><ul class='nav nav-pills nav-stacked' style='margin-top:0'><li>How can I help you?</li><li><a href='conversation-archive.js'>Пожалуйста, открой страницу с архивами наших бесед</a></li></ul>"
       }
     ]);
 
