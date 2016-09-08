@@ -1,0 +1,505 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official webRunes WRIO OS node">
+    <meta name="author" content="webRunes">
+
+    <title>webRunes</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/webrunes.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container-liquid">
+        <div class="row row-offcanvas row-offcanvas-right">
+            <div class="col-xs-12 col-sm-3 col-md-2">
+                <div class="navbar navbar-inverse main navbar-fixed-top row-offcanvas-menu">
+                    <div class="navbar-header">
+                        <ul class="nav menu">
+                            <li><span class="label label-warning label-small pull-right">1</span><a class="btn btn-link btn-sm" onclick="location.href = 'introduction-step4_ia_open.htm'"><span class="glyphicon glyphicon-comment"></span></a></li>
+                        </ul>
+                        <a class="navbar-brand nav-justified" style="display:inline-block;text-align:center">&nbsp;</a>
+                    </div>
+                    <ul class="webtop nav nav-pills nav-justified">
+                        <li class="webtop-btn"><a><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a>General</a></li>
+                                <li><a><span class="glyphicon glyphicon-ok pull-right"></span>Home</a></li>
+                                <li><a>Work</a></li>
+                                <li><a>Bookshelf</a></li>
+                                <li class="divider"></li>
+                                <li><a>Add widget</a></li>
+                                <li><a>Create new webtop</a></li>
+                            </ul>
+                        </li>
+                        <li class="webtop-btn"><a><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    </ul>
+                    <div class="navbar-collapse in">
+                        <ul class="nav navbar-nav" id="nav-accordion">
+                            <li class="panel">
+                                <a href="#element2" onclick="location.href = 'introduction-step9.htm'" class="collapsed" data-parent="#nav-accordion" data-toggle="collapse"><span class="qty btn btn-xs pull-right">1</span>Alexey Anshakov</a>
+                                <div class="collapse" id="element2">
+                                    <ul class="nav nav-pills nav-stacked sub">
+                                        <!--<li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">WRIO Internet OS: Introduction</a></li>-->
+                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">My first post</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="panel">
+                                <a href="#element3" class="collapsed" data-parent="#nav-accordion" data-toggle="collapse"><span class="qty btn btn-xs pull-right">32</span>Blogs</a>
+                                <div class="collapse" id="element3">
+                                    <ul class="nav nav-pills nav-stacked sub">
+                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="blogs-post.htm">in. Part 1: Vision of the Internet Future</a></li>
+                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">My best post</a></li>
+                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">Great blogs review</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="new panel active">
+                                <a href="#element4" data-parent="#nav-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-plus"></span></a>
+                                <div class="collapse" id="element4"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content col-xs-12 col-sm-5 col-md-7">
+                <div class="margin">
+                    <ul class="info nav nav-pills nav-stacked" id="profile-accordion">
+                        <li class="panel">
+                            <a href="#profile-element" data-parent="#profile-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Logged as Alexey Anshakov</a>
+                            <div class="in" id="profile-element">
+                                <aside>
+                                    <div class="media thumbnail">
+                                        <div class="col-xs-12 col-md-6 pull-right">
+                                            <img src="img/profile1-200x200.jpg" class="pull-left">
+                                            <ul class="details">
+                                                <li>Registered: 22 Jul 2016</li>
+                                                <li>Rating: 42</li>
+                                                <li>Bookmarked: 27</li>
+                                                <li>Posts: 2</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                            <p>
+                                                Information in the public profile is available to any person, even unregistered users. If you want to stay anonimous, simply don't fill it in.
+                                            </p>
+                                            <ul class="actions">
+                                                <li><a><span class="glyphicon glyphicon-lock"></span>Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-group-sm pull-right breadcrumb_btn">
+                        <button type="button" class="btn btn-default active">10</button>
+                        <button type="button" class="btn btn-default">25</button>
+                        <button type="button" class="btn btn-default">50</button>
+                    </div>
+                    <ul class="breadcrumb">
+                        <li class="active">Browse</li>
+                        <li><a>Opened</a></li>
+                        <li><a>History</a></li>
+                    </ul>
+                    <main>
+                        <div class="search">
+                            <div class="col-lg-12">
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">https://<span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a>Action</a></li>
+                                            <li><a>Another action</a></li>
+                                            <li><a>Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a>Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Search for..." autofocus>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <article>
+                            <div class="media thumbnail">
+                                <header class="col-xs-12">
+                                    <h2>webRunes<sup>Hub</sup></h2>
+                                </header>
+                                <div class="col-xs-12 col-md-6 pull-right">
+                                    <img src="img/webrunes-preview.png" class="pull-left">
+                                    <ul class="details">
+                                        <li>Published: 3 Aug 2016</li>
+                                        <li>Rating: 24</li>
+                                        <li>Bookmarked: 16</li>
+                                        <li>Access: Free</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <p>
+                                        The webRunes team has a 10+ year experience in such spheres like technical and web design, programming and data security, payment systems and some other related spheres. We have started working on the project in September 2010. Our goal is to develop a unique platform that will serve as a basis for different projects that help people in various areas of life from the childhood to the old age: education, healthcare, sport, law and etc. We are against growing trends for Internet censorship and information access restriction, so we use only uncopyrighted data.
+                                    </p>
+                                    <ul class="actions">
+                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="media thumbnail">
+                                <header class="col-xs-12">
+                                    <h2>Tutanota<sup>External</sup></h2>
+                                </header>
+                                <div class="col-xs-12 col-md-6 pull-right">
+                                    <img src="img/tutanota-preview.png" class="pull-left">
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <p>
+                                        In the future Tutanota will be our replacement for Google with a calendar, notes, cloud storage - everything encrypted by default! This is our dream of the future Internet and we are truly amazed by the feedback and the support we have received from you so far. We invite all of you to get in touch and to support our goal in bringing privacy and security to the world. It's really easy.
+                                    </p>
+                                    <ul class="actions">
+                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="media thumbnail">
+                                <header class="col-xs-12">
+                                    <h2>Blogs<sup>Hub</sup></h2>
+                                </header>
+                                <div class="col-xs-12 col-md-6 pull-right">
+                                    <img src="img/blogs-preview.jpg" class="pull-left">
+                                    <ul class="details">
+                                        <li>Published: 20 Jul 2016</li>
+                                        <li>Rating: 28</li>
+                                        <li>Bookmarked: 11</li>
+                                        <li>Access: Invitation</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat consequat mollis. Maecenas imperdiet nisl tortor, ac scelerisque odio porta sit amet. Nunc ornare mollis molestie. Vestibulum convallis non arcu non lobortis. Aliquam maximus lacinia tincidunt. Morbi varius urna augue, at malesuada eros interdum commodo. In at felis ac lorem dapibus commodo eget id ex.
+                                    </p>
+                                    <ul class="actions">
+                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a><span class="glyphicon glyphicon-send"></span>Request invite</a></li>
+                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="media thumbnail">
+                                <header class="col-xs-12">
+                                    <h2>webGold<sup>App</sup></h2>
+                                </header>
+                                <div class="col-xs-12 col-md-6 pull-right">
+                                    <img src="img/hoarding-preview.png" class="pull-left">
+                                    <ul class="details">
+                                        <li>Published: 17 Jul 2016</li>
+                                        <li>Rating: 46</li>
+                                        <li>Bookmarked: 22</li>
+                                        <li>Access: Free</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <p>
+                                        Sed dui urna, vehicula vel eros at, imperdiet varius libero. Fusce ornare est nisl, id tincidunt libero dapibus sit amet. Aliquam elementum ipsum est, vitae suscipit enim sollicitudin eget. Etiam cursus libero commodo tristique aliquet. Cras vitae purus eu ex tempus interdum. Curabitur scelerisque porttitor neque nec cursus. Quisque vulputate gravida enim, eleifend tincidunt ante feugiat at. Donec et lacus at magna porttitor rutrum. Nam suscipit sit amet tellus quis sodales.
+                                    </p>
+                                    <ul class="actions">
+                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="media thumbnail">
+                                <header class="col-xs-12">
+                                    <h2>Storage<sup>App</sup></h2>
+                                </header>
+                                <div class="col-xs-12 col-md-6 pull-right">
+                                    <img src="img/storage-preview.jpg" class="pull-left">
+                                    <ul class="details">
+                                        <li>Published: 14 Jul 2016</li>
+                                        <li>Rating: 2</li>
+                                        <li>Bookmarked: 5</li>
+                                        <li>Access: Freemium</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <p>
+                                        Cras viverra justo tellus, vel auctor massa bibendum eu. Suspendisse et eros molestie, tincidunt lorem ut, hendrerit sem. Cras gravida rutrum auctor. Nam quis consequat lectus, ut imperdiet nibh. Maecenas vitae sapien sit amet nulla posuere pretium. Nullam accumsan luctus elit, vel iaculis nisi mattis et. Suspendisse nunc ex, porta nec convallis vitae, pellentesque id ante. Vivamus hendrerit ex in metus elementum tempor.
+                                    </p>
+                                    <ul class="actions">
+                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a><span class="glyphicon glyphicon-gift"></span>Offers</a>&nbsp;<span class="label label-warning">1</span></li>
+                                        <li><a><span class="glyphicon glyphicon-shopping-cart"></span>Buy</a></li>
+                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="media thumbnail">
+                                <header class="col-xs-12">
+                                    <h2>Science<sup>Hub</sup></h2>
+                                </header>
+                                <div class="col-xs-12 col-md-6 pull-right">
+                                    <img src="img/science-preview.png" class="pull-left">
+                                    <ul class="details">
+                                        <li>Published: 11 Jul 2016</li>
+                                        <li>Rating: 17</li>
+                                        <li>Bookmarked: 21</li>
+                                        <li>Access: Free</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <p>
+                                        Vestibulum convallis non arcu non lobortis. Aliquam maximus lacinia tincidunt. Maecenas vitae sapien sit amet nulla posuere pretium. Nullam accumsan luctus elit, vel iaculis nisi mattis et. Suspendisse nunc ex, porta nec convallis vitae, pellentesque id ante.
+                                    </p>
+                                    <ul class="actions">
+                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article onclick="location.href = 'introduction-step3.htm';">
+                            <div class="media thumbnail">
+                                <header class="col-xs-12">
+                                    <h2>Player<sup>App</sup></h2>
+                                </header>
+                                <div class="col-xs-12 col-md-6 pull-right">
+                                    <img src="img/player-preview.png" class="pull-left">
+                                    <ul class="details">
+                                        <li>Published: 11 Jul 2016</li>
+                                        <li>Rating: 17</li>
+                                        <li>Bookmarked: 21</li>
+                                        <li>Access: Free</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <p>
+                                        Integer tincidunt vestibulum nulla vitae dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec gravida nulla in metus eleifend dignissim. Phasellus efficitur lobortis mauris, at posuere eros maximus vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dignissim viverra finibus.
+                                    </p>
+                                    <ul class="actions">
+                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="media thumbnail">
+                                <header class="col-xs-12">
+                                    <h2>Messenger<sup>App</sup></h2>
+                                </header>
+                                <div class="col-xs-12 col-md-6 pull-right">
+                                    <img src="img/messenger-preview.png" class="pull-left">
+                                    <ul class="details">
+                                        <li>Published: 11 Jul 2016</li>
+                                        <li>Rating: 28</li>
+                                        <li>Bookmarked: 14</li>
+                                        <li>Access: Free</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <p>
+                                        Curabitur facilisis ligula vulputate sapien lacinia sollicitudin. Integer pellentesque risus enim. Etiam vulputate eu purus auctor viverra. Aenean non porta orci. Duis ultricies posuere ex vel ullamcorper.
+                                    </p>
+                                    <ul class="actions">
+                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="media thumbnail">
+                                <header class="col-xs-12">
+                                    <h2>Scene<sup>Hub</sup></h2>
+                                </header>
+                                <div class="col-xs-12 col-md-6 pull-right">
+                                    <img src="img/scene-preview.png" class="pull-left">
+                                    <ul class="details">
+                                        <li>Published: 11 Jul 2016</li>
+                                        <li>Rating: 9</li>
+                                        <li>Bookmarked: 11</li>
+                                        <li>Access: 500 WRG &middot; <span class="label label-warning">23 days left</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <p>
+                                        Curabitur facilisis ligula vulputate sapien lacinia sollicitudin. Integer pellentesque risus enim. Etiam vulputate eu purus auctor viverra. Aenean non porta orci. Duis ultricies posuere ex vel ullamcorper.
+                                    </p>
+                                    <ul class="actions">
+                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a><span class="glyphicon glyphicon-gift"></span>Offers</a>&nbsp;<span class="label label-warning">2</span></li>
+                                        <li><a><span class="glyphicon glyphicon-shopping-cart"></span>Buy</a></li>
+                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="media thumbnail">
+                                <header class="col-xs-12">
+                                    <h2>Titter<sup>App</sup></h2>
+                                </header>
+                                <div class="col-xs-12 col-md-6 pull-right">
+                                    <img src="img/titter-preview.jpg" class="pull-left">
+                                    <ul class="details">
+                                        <li>Published: 8 Jul 2016</li>
+                                        <li>Rating: 24</li>
+                                        <li>Bookmarked: 19</li>
+                                        <li>Access: Free</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <p>
+                                        Donec cursus, urna eu luctus luctus, felis ligula tincidunt ipsum, non laoreet tellus leo in dui. Etiam felis arcu, rutrum tempus dui vitae, rhoncus faucibus turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi id felis eget ipsum efficitur auctor. Curabitur ultricies ac lacus sit amet egestas.
+                                    </p>
+                                    <ul class="actions">
+                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </main>
+                    <div class="text-center">
+                        <ul class="pagination">
+                            <li class="disabled"><a>&laquo;</a></li>
+                            <li class="disabled"><a>&lsaquo;</a></li>
+                            <li class="active"><a>1</a></li>
+                            <li><a>2</a></li>
+                            <li><a>3</a></li>
+                            <li><a>4</a></li>
+                            <li><a>5</a></li>
+                            <li><a>&rsaquo;</a></li>
+                            <li><a>&raquo;</a></li>
+                        </ul>
+                        <p class="total-pages">Total pages: 7</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas" id="sidebar">
+                <div class="sidebar-margin">
+                    <div class="btn-group-sm pull-right breadcrumb_btn">
+                        <a href="#ticket-element" class="btn btn-default" data-parent="#ticket-accordion" data-toggle="collapse">
+                            <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                        </a>
+                    </div>
+                    <ul class="breadcrumb">
+                        <li class="active"><a href="#one_" data-toggle="tab">Details</a></li>
+                    </ul>
+                    <div class="in" id="ticket-element">
+                        <div class="tabbable tabs-below">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="one_">
+                                    <div class="tickets">
+                                        <div class="media thumbnail">
+                                            <div class="col-xs-12 padding-bottom">
+                                                <img src="img/plus-preview.jpg" class="pull-left">
+                                                <ul class="details">
+                                                    <li>Name: Plus</li>
+                                                    <li>Published: 2 Jul 2016</li>
+                                                    <li>Rating: 47</li>
+                                                    <li>Bookmarked: 36</li>
+                                                    <li>Access: Free</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-12 padding-top">
+                                                <div class="media-body">
+                                                    Aliquam ac odio vitae mauris tincidunt posuere. Sed viverra, quam non congue finibus, nibh quam ullamcorper massa, ut aliquam neque erat at dui. Praesent molestie neque eu odio bibendum, eget feugiat quam maximus. Duis vitae dictum magna.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="two_">
+                                    Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+                                    Aliquam in felis sit amet augue.
+                                </div>
+                                <div class="tab-pane" id="twee_">
+                                    Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                                    Quisque mauris augue, molestie tincidunt condimentum vitae.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-bottom">
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-th-list"></span>Manage lists</button>
+                        <button type="button" class="btn btn-default btn-block" onclick="location.href = 'introduction-step2.htm'"><span class="glyphicon glyphicon-bookmark"></span>Bookmark</button>
+                    </div>
+                    <ul class="nav nav-pills nav-stacked tooltip-demo" id="sidebar-accordion">
+                        <li class="panel">
+                            <a href="#sidebar-element1" class="collapsed" data-parent="#sidebar-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Cover</a>
+                            <div class="collapse" id="sidebar-element1">
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a>News</a></li>
+                                    <li><a href="plus-about.htm">About</a></li>
+                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Not yet available"><a>Team</a></li>
+                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Not yet available"><a>Settings</a></li>
+                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Not yet available"><a>Feedback</a></li>
+                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Not yet available"><a>Terms</a></li>
+                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Not yet available"><a>Privacy</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="disabled"><a data-toggle="tooltip" data-placement="left" title="Not yet available">Tutorials</a></li>
+                        <li class="disabled"><a data-toggle="tooltip" data-placement="left" title="Not yet available">Offers</a></li>
+                        <li class="disabled"><a data-toggle="tooltip" data-placement="left" title="Not yet available">Themes</a></li>
+                        <li><a>Applications</a></li>
+                        <li><a>Hubs</a></li>
+                        <li><a>People</a></li>
+                        <li><a>Externals</a></li>
+                    </ul>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a><span class="pull-right">73</span>Bookmarks</a></li>
+                        <li><a><span class="pull-right">15</span>Favorite Externals</a></li>
+                        <li><a><span class="pull-right">4</span>My Apps</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/offcanvas.js"></script>
+
+    <script src="js/bootstrap-tour.min.js"></script>
+    <script src="js/conversations/conversation-player.js"></script>
+</body>
+</html>
