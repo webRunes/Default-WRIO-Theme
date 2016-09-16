@@ -24,33 +24,6 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-    <script type="text/javascript">
-
-		var dragIcon = document.createElement('img');
-		dragIcon.src = 'http://www.skjapp.com/wp-content/themes/toommorel-lite/images/facebook_32.png';
-
-		function allowDrop(event)
-		{
-			event.preventDefault();		// Cancel the default browser action. This is to ensure that if we drop a link, the browser doesnâ€™t go off and surf to that location
-		}
-
-		function drag(event)
-		{
-			event.dataTransfer.setDragImage(dragIcon, -10, -10);
-
-			event.dataTransfer.setData("testImage",event.target.id);		// testImage is the key used here for setting data. You can use any key
-		}
-
-		function drop(event)
-		{
-			event.preventDefault(); 	// Cancel the default browser action. This is to ensure that if we drop a link, the browser doesnâ€™t go off and surf to that location
-
-			var data = event.dataTransfer.getData("testImage");				// testImage is the key used here for getting data because setData used it
-			event.target.appendChild(document.getElementById(data));
-		}
-
-    </script>
 </head>
 
 <body>
@@ -59,8 +32,8 @@
             <div class="col-xs-12 col-sm-3 col-md-2">
                 <div class="navbar navbar-inverse main navbar-fixed-top row-offcanvas-menu">
                     <div class="navbar-header">
-                        <ul class="nav menu" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <li><span class="label label-warning label-small pull-right">1</span><a class="btn btn-link btn-sm" onclick="location.href = 'introduction-step4_ia_open.htm'"><span class="glyphicon glyphicon-comment"></span></a></li>
+                        <ul class="nav menu">
+                            <li><span class="label label-warning label-small pull-right">1</span><a class="btn btn-link btn-sm"><span class="glyphicon glyphicon-comment"></span></a></li>
                             <li><a class="btn btn-link btn-sm"><span class="glyphicon glyphicon-envelope"></span></a></li>
                             <li><a class="btn btn-link btn-sm"><span class="glyphicon glyphicon-lock"></span></a></li>
                             <li><a class="btn btn-link btn-sm visible-xs" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-align-justify"></span></a></li>
@@ -177,6 +150,31 @@
                                 </div>
                             </div>
                         </div>
+                        <article>
+                            <div class="media thumbnail">
+                                <header class="col-xs-12">
+                                    <h2>Plus<sup>App</sup></h2>
+                                </header>
+                                <div class="col-xs-12 col-md-6 pull-right">
+                                    <img src="img/plus-preview.jpg" class="pull-left">
+                                    <ul class="details">
+                                        <li>Published: 5 Sep 2016</li>
+                                        <li>Rating: 47</li>
+                                        <li>Bookmarked: 37</li>
+                                        <li>Access: Free</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <p>
+                                        The webRunes team has a 10+ year experience in such spheres like technical and web design, programming and data security, payment systems and some other related spheres. We have started working on the project in September 2010. Our goal is to develop a unique platform that will serve as a basis for different projects that help people in various areas of life from the childhood to the old age: education, healthcare, sport, law and etc. We are against growing trends for Internet censorship and information access restriction, so we use only uncopyrighted data.
+                                    </p>
+                                    <ul class="actions">
+                                        <li><a onclick="location.href = 'introduction-step1.htm'"><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
                         <article>
                             <div class="media thumbnail">
                                 <header class="col-xs-12">
@@ -327,7 +325,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article onclick ="location.href = 'introduction-step3.htm';">
+                        <article onclick="location.href = 'introduction-step3.htm'">
                             <div class="media thumbnail">
                                 <header class="col-xs-12">
                                     <h2>Player<sup>App</sup></h2>
@@ -455,13 +453,12 @@
                         </a>
                     </div>
                     <ul class="breadcrumb">
-                        <li><a href="#one_" data-toggle="tab">Details</a></li>
-                        <li class="active"><a href="https://player.wr.io/?devkey:<hidden>" data-toggle="tab" onclick="location.href = 'introduction-step7.htm'">Player</a></li>
+                        <li class="active"><a href="#one_" data-toggle="tab">Details</a></li>
                     </ul>
                     <div class="in" id="ticket-element">
                         <div class="tabbable tabs-below">
                             <div class="tab-content">
-                                <div class="tab-pane" id="one_">
+                                <div class="tab-pane active" id="one_">
                                     <div class="tickets">
                                         <div class="media thumbnail">
                                             <div class="col-xs-12 padding-bottom">
@@ -470,7 +467,7 @@
                                                     <li>Name: Plus</li>
                                                     <li>Published: 2 Jul 2016</li>
                                                     <li>Rating: 47</li>
-                                                    <li>Bookmarked: 36</li>
+                                                    <li>Bookmarked: 37</li>
                                                     <li>Access: Free</li>
                                                 </ul>
                                             </div>
@@ -482,65 +479,20 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane active" id="two_">
-                                    <div class="tickets">
-                                        <div class="media thumbnail">
-                                            <div class="col-xs-12 padding-bottom">
-                                                <img src="img/player-preview.png" class="pull-left">
-                                                <ul class="details">
-                                                    <li>Name: <a>Player</a></li>
-                                                    <li>Published: 11 Jul 2016</li>
-                                                    <li>Rating: 17</li>
-                                                    <li>Bookmarked: 21</li>
-                                                    <li>Access: Free</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-xs-12 padding-top">
-                                                <div class="media-body">
-                                                    <ul class="webtop nav nav-pills nav-justified">
-                                                        <li class="dropdown">
-                                                            <a class="dropdown-toggle" data-toggle="dropdown"><span class="pull-right">4</span>My playlist</a>
-                                                            <ul class="dropdown-menu" role="menu">
-                                                                <li><a><span class="glyphicon glyphicon-ok pull-right"></span>General</a></li>
-                                                                <li><a>Home</a></li>
-                                                                <li><a>Work</a></li>
-                                                                <li><a>Bookshelf</a></li>
-                                                                <li class="divider"></li>
-                                                                <li><a>Add widget</a></li>
-                                                                <li><a>Create new webtop</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                    <ul class="webtop nav nav-pills nav-justified">
-                                                        <li class="dropdown">
-                                                            <a class="dropdown-toggle" data-toggle="dropdown">Epic Soul Factory — The path of the silent flower</a>
-                                                            <ul class="dropdown-menu" role="menu">
-                                                                <li><a><span class="glyphicon glyphicon-ok pull-right"></span>Epic Soul Factory — The path of the silent flower</a></li>
-                                                                <li><a>Cosmos Volume II</a></li>
-                                                                <li><a>Demo track</a></li>
-                                                                <li><a>Cosmic Frequency 432Hz</a></li>
-                                                                <li class="divider"></li>
-                                                                <li><a>Manage</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="btn-group btn-block player-controls" role="group">
-                                                    <button type="button" class="btn btn-default col-xs-3"><span class="glyphicon glyphicon-step-backward"></span></button>
-                                                    <button type="button" class="btn btn-default col-xs-3"><span class="glyphicon glyphicon-play"></span></button>
-                                                    <button type="button" class="btn btn-default col-xs-3"><span class="glyphicon glyphicon-step-forward"></span></button>
-                                                    <button type="button" class="btn btn-default col-xs-3"><span class="glyphicon glyphicon-volume-up"></span></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="tab-pane" id="two_">
+                                    Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+                                    Aliquam in felis sit amet augue.
+                                </div>
+                                <div class="tab-pane" id="twee_">
+                                    Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                                    Quisque mauris augue, molestie tincidunt condimentum vitae.
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="margin-bottom">
                         <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-th-list"></span>Manage lists</button>
-                        <button type="button" class="btn btn-default btn-block" onclick="location.href = 'introduction-step2.htm'"><span class="glyphicon glyphicon-bookmark"></span>Bookmark</button>
+                        <button type="button" class="btn btn-success btn-block"><span class="glyphicon glyphicon-bookmark"></span>Bookmarked</button>
                     </div>
                     <ul class="nav nav-pills nav-stacked tooltip-demo" id="sidebar-accordion">
                         <li class="panel">
@@ -566,7 +518,7 @@
                         <li><a>Externals</a></li>
                     </ul>
                     <ul class="nav nav-pills nav-stacked">
-                        <li class="active"><a><span class="pull-right">73</span>Bookmarks</a></li>
+                        <li class="active"><a><span class="pull-right">74</span>Bookmarks</a></li>
                         <li><a><span class="pull-right">15</span>Favorite Externals</a></li>
                         <li><a><span class="pull-right">4</span>My Apps</a></li>
                     </ul>

@@ -27,28 +27,25 @@
 
     <script type="text/javascript">
 
-		var dragIcon = document.createElement('img');
-		dragIcon.src = 'http://www.skjapp.com/wp-content/themes/toommorel-lite/images/facebook_32.png';
+        var dragIcon = document.createElement('img');
+        dragIcon.src = 'http://www.skjapp.com/wp-content/themes/toommorel-lite/images/facebook_32.png';
 
-		function allowDrop(event)
-		{
-			event.preventDefault();		// Cancel the default browser action. This is to ensure that if we drop a link, the browser doesnâ€™t go off and surf to that location
-		}
+        function allowDrop(event) {
+            event.preventDefault();		// Cancel the default browser action. This is to ensure that if we drop a link, the browser doesnâ€™t go off and surf to that location
+        }
 
-		function drag(event)
-		{
-			event.dataTransfer.setDragImage(dragIcon, -10, -10);
+        function drag(event) {
+            event.dataTransfer.setDragImage(dragIcon, -10, -10);
 
-			event.dataTransfer.setData("testImage",event.target.id);		// testImage is the key used here for setting data. You can use any key
-		}
+            event.dataTransfer.setData("testImage", event.target.id);		// testImage is the key used here for setting data. You can use any key
+        }
 
-		function drop(event)
-		{
-			event.preventDefault(); 	// Cancel the default browser action. This is to ensure that if we drop a link, the browser doesnâ€™t go off and surf to that location
+        function drop(event) {
+            event.preventDefault(); 	// Cancel the default browser action. This is to ensure that if we drop a link, the browser doesnâ€™t go off and surf to that location
 
-			var data = event.dataTransfer.getData("testImage");				// testImage is the key used here for getting data because setData used it
-			event.target.appendChild(document.getElementById(data));
-		}
+            var data = event.dataTransfer.getData("testImage");				// testImage is the key used here for getting data because setData used it
+            event.target.appendChild(document.getElementById(data));
+        }
 
     </script>
 </head>
@@ -60,8 +57,27 @@
                 <div class="navbar navbar-inverse main navbar-fixed-top row-offcanvas-menu">
                     <div class="navbar-header">
                         <ul class="nav menu">
-                            <li><a class="btn btn-link btn-sm"><span class="glyphicon glyphicon-th-large"></span></a></li>
                             <li><a class="btn btn-link btn-sm"><span class="glyphicon glyphicon-bullhorn"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <ul class="webtop nav nav-pills nav-justified">
+                            <li class="webtop-btn"><a><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown">Webtop 5</a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a>General</a></li>
+                                    <li><a onclick="location.href = 'introduction-step8.htm'">Home</a></li>
+                                    <li><a>Work</a></li>
+                                    <li><a>Bookshelf</a></li>
+                                    <li><a><span class="glyphicon glyphicon-ok pull-right"></span>Webtop 5</a></li>
+                                    <li class="divider"></li>
+                                    <li><a>Add widget</a></li>
+                                    <li><a onclick="location.href = 'introduction-step8.htm'">Create new webtop</a></li>
+                                </ul>
+                            </li>
+                            <li class="webtop-btn"><a><span class="glyphicon glyphicon-chevron-right"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -97,7 +113,7 @@
                                                     <div class="input-group">
                                                         <div id="ms1" style="padding:0" class="ms-ctn form-control"><span style="display: none;" class="ms-helper "></span><div class="ms-sel-ctn"><input class="form-control" placeholder="#help" autofocus="" type="text" style="border:none"><div style="display: none;"></div></div><div class="ms-trigger"><div class="ms-trigger-ico"></div></div></div>
                                                         <span class="input-group-btn">
-                                                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-ok" style="padding:3px 0"></span></button>
+                                                            <button onclick="location.href = 'introduction-step11_2.htm'" class="btn btn-default" type="button"><span class="glyphicon glyphicon-ok" style="padding:3px 0"></span></button>
                                                         </span>
                                                     </div>
                                                 </div>

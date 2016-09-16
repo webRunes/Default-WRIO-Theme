@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official webRunes WRIO OS node">
+    <meta name="description" content="Official webGold WRIO OS hub">
     <meta name="author" content="webRunes">
 
-    <title>webRunes</title>
+    <title>webGold</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/webrunes.css" rel="stylesheet">
@@ -24,33 +24,6 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-    <script type="text/javascript">
-
-		var dragIcon = document.createElement('img');
-		dragIcon.src = 'http://www.skjapp.com/wp-content/themes/toommorel-lite/images/facebook_32.png';
-
-		function allowDrop(event)
-		{
-			event.preventDefault();		// Cancel the default browser action. This is to ensure that if we drop a link, the browser doesnâ€™t go off and surf to that location
-		}
-
-		function drag(event)
-		{
-			event.dataTransfer.setDragImage(dragIcon, -10, -10);
-
-			event.dataTransfer.setData("testImage",event.target.id);		// testImage is the key used here for setting data. You can use any key
-		}
-
-		function drop(event)
-		{
-			event.preventDefault(); 	// Cancel the default browser action. This is to ensure that if we drop a link, the browser doesnâ€™t go off and surf to that location
-
-			var data = event.dataTransfer.getData("testImage");				// testImage is the key used here for getting data because setData used it
-			event.target.appendChild(document.getElementById(data));
-		}
-
-    </script>
 </head>
 
 <body>
@@ -60,7 +33,8 @@
                 <div class="navbar navbar-inverse main navbar-fixed-top row-offcanvas-menu">
                     <div class="navbar-header">
                         <ul class="nav menu">
-                            <li><span class="label label-warning label-small pull-right">1</span><a class="btn btn-link btn-sm" onclick="location.href = 'introduction-step4_ia_open.htm'"><span class="glyphicon glyphicon-comment"></span></a></li>
+                            <li><a class="btn btn-link btn-sm" onclick="location.href = 'introduction-step12_ia_open.htm'"><span class="glyphicon glyphicon-comment"></span></a></li>
+                            <li><a class="btn btn-link btn-sm active" onclick="location.href = 'introduction-step7_open.htm'"><span class="glyphicon glyphicon-music"></span></a></li>
                             <li><a class="btn btn-link btn-sm"><span class="glyphicon glyphicon-envelope"></span></a></li>
                             <li><a class="btn btn-link btn-sm"><span class="glyphicon glyphicon-lock"></span></a></li>
                             <li><a class="btn btn-link btn-sm visible-xs" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-align-justify"></span></a></li>
@@ -116,9 +90,10 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="panel active player">
-                                <a href="https://player.wr.io/?devkey:<hidden>" style="cursor:pointer" class="collapsed" data-parent="#nav-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-remove btn btn-xs pull-right"></span><div class="controls pull-right"><span class="glyphicon glyphicon-step-backward btn btn-xs"></span><span class="glyphicon glyphicon-play btn btn-xs"></span><span class="glyphicon glyphicon-step-forward btn btn-xs"></span><span class="glyphicon glyphicon-volume-up btn btn-xs"></span></div>Player</a>
-                                <div class="collapse" id="element4">
+                            <li class="panel active">
+                                <a href="https://webgold.wrioos.com/?devkey:<hidden>" class="collapsed" data-parent="#nav-accordion" data-toggle="collapse"><span class="qty btn btn-xs pull-right">157 312 WRG</span>webGold</a>
+                                <div class="collapse" id="element3">
+                                    <ul class="nav nav-pills nav-stacked sub"></ul>
                                 </div>
                             </li>
                             <li class="new panel">
@@ -161,144 +136,88 @@
                             </div>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li id="fat-menu" class="dropdown">
-                            <a class="dropdown-toggle" id="drop3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a><span class="glyphicon glyphicon-ok pull-right"></span>English</a></li>
-                                <li><a>Русский</a></li>
-                                <li><a>Esperanto</a></li>
-                                <li class="divider"></li>
-                                <li><a>Manage</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="btn-group-sm pull-right breadcrumb_btn">
-                        <button type="button" class="btn btn-default active">10</button>
-                        <button type="button" class="btn btn-default">25</button>
-                        <button type="button" class="btn btn-default">50</button>
-                    </div>
                     <ul class="breadcrumb">
-                        <li class="active">Browse</li>
+                        <li class="active">Wallets</li>
                     </ul>
                     <main>
                         <article>
                             <div class="media thumbnail">
                                 <header class="col-xs-12">
-                                    <h2>Epic Soul Factory — The path of the silent flower<sup>MP3</sup></h2>
+                                    <h2>webGold</h2>
                                 </header>
                                 <div class="col-xs-12 col-md-6 pull-right">
-                                    <img src="img/Epic-Soul-Factory-The-path-of-the-silent-flower.png" class="pull-left">
+                                    <img src="img/webrunes-preview.png" class="pull-left">
                                     <ul class="details">
-                                        <li>Released: 23 Jan 2012</li>
-                                        <li>Uploaded: 5 Aug 2016</li>
-                                        <li>Rating: 0</li>
-                                        <li>Bookmarked: 0</li>
-                                        <li>Access: Free</li>
-                                        <li>Path: Storage/Audio</li>
+                                        <li>Balance: 157 312</li>
+                                        <li>Transactions: 108</li>
+                                        <li>Created: 3 Jul 2016</li>
                                     </ul>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <p>
-                                        Epic Soul Factory - SIGMA includes sixteen powerful, neo-orchestral tracks; from the most emotional and uplifting melodies to the most massive electronic sounds. You can listen to a story that narrates how we've been created from stardust in the beginning; until the end where a beautiful dream never ends.
+                                        Quisque quis venenatis ante. Vestibulum molestie semper dui quis tincidunt. Curabitur nisl tortor, accumsan nec neque eu, rhoncus tristique tortor. Duis eget felis sed risus dapibus venenatis porttitor vel diam.
                                     </p>
                                     <ul class="actions">
-                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
-                                        <li><a><span class="glyphicon glyphicon-play"></span>Play</a></li>
-                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span>Request</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-arrow-right"></span>Send</a></li>
                                     </ul>
+                                    <p></p>
                                 </div>
                             </div>
                         </article>
                         <article>
                             <div class="media thumbnail">
                                 <header class="col-xs-12">
-                                    <h2>Cosmos Volume II<sup>MP3</sup></h2>
+                                    <h2>Ethereum Classic</h2>
                                 </header>
                                 <div class="col-xs-12 col-md-6 pull-right">
-                                    <img src="img/Cosmos-volume2-preview.png" class="pull-left">
+                                    <img src="img/ethereum-classic-logo.png" class="pull-left">
                                     <ul class="details">
-                                        <li>Released: 11 Jun 2014</li>
-                                        <li>Uploaded: 5 Aug 2016</li>
-                                        <li>Rating: 0</li>
-                                        <li>Bookmarked: 0</li>
-                                        <li>Access: Free</li>
-                                        <li>Path: Storage/Audio</li>
+                                        <li>Balance: 14.84</li>
+                                        <li>Transactions: 3</li>
+                                        <li>Created: 3 Jul 2016</li>
                                     </ul>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <p>
-                                        Well its cloudy, and its the middle of Summer - so I thought I would catch up on a few of my favorite snaps from the past 18 months. Set to an original score I wrote a few years ago (it seemed to fit quite well).
+                                        Sed vestibulum in nibh commodo placerat. Phasellus quam enim, placerat sit amet risus sit amet, porta dictum odio. Maecenas accumsan eget nibh id eleifend.
                                     </p>
                                     <ul class="actions">
-                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
-                                        <li><a><span class="glyphicon glyphicon-play"></span>Play</a></li>
-                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span>Request</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-arrow-right"></span>Send</a></li>
                                     </ul>
+                                    <p></p>
                                 </div>
                             </div>
                         </article>
                         <article>
                             <div class="media thumbnail">
                                 <header class="col-xs-12">
-                                    <h2>Demo track<sup>MP3</sup></h2>
+                                    <h2>Bitcoin</h2>
                                 </header>
                                 <div class="col-xs-12 col-md-6 pull-right">
-                                    <img src="img/no-photo-200x200.png" class="pull-left">
+                                    <img src="img/bitcoin-logo.png" class="pull-left">
                                     <ul class="details">
-                                        <li>Released: 2 Feb 2016</li>
-                                        <li>Uploaded: 5 Aug 2016</li>
-                                        <li>Rating: 0</li>
-                                        <li>Bookmarked: 0</li>
-                                        <li>Access: Free</li>
-                                        <li>Path: Storage/Audio</li>
+                                        <li>Balance: 1.25</li>
+                                        <li>Transactions: 14</li>
+                                        <li>Created: 3 Jul 2016</li>
                                     </ul>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <p>
-                                        Phasellus efficitur lobortis mauris, at posuere eros maximus vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                        Vivamus ultricies dolor at nisl pharetra, et varius erat suscipit. Nam vitae ligula urna. Curabitur id sapien nibh. Pellentesque vehicula in velit id rhoncus. Nunc eget dictum felis, vel consequat nibh. Curabitur hendrerit diam eu libero congue feugiat.
                                     </p>
                                     <ul class="actions">
-                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
-                                        <li><a><span class="glyphicon glyphicon-play"></span>Play</a></li>
-                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span>Request</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-arrow-right"></span>Send</a></li>
                                     </ul>
+                                    <p></p>
                                 </div>
                             </div>
                         </article>
-                        <article>
-                            <div class="media thumbnail">
-                                <header class="col-xs-12">
-                                    <h2>Cosmic Frequency 432Hz<sup>MP3</sup></h2>
-                                </header>
-                                <div class="col-xs-12 col-md-6 pull-right">
-                                    <img src="img/Cosmic-Frequency-432-Hz-preview.png" class="pull-left">
-                                    <ul class="details">
-                                        <li>Released: 12 Sep 2014</li>
-                                        <li>Uploaded: 5 Aug 2016</li>
-                                        <li>Rating: 0</li>
-                                        <li>Bookmarked: 0</li>
-                                        <li>Access: Free</li>
-                                        <li>Path: Storage/Audio</li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-12 col-md-6">
-                                    <p>
-                                        Tune yourself to the heartbeat of our planet ...
-                                    </p>
-                                    <ul class="actions">
-                                        <li><a><span class="glyphicon glyphicon-remove"></span>Remove</a></li>
-                                        <li><a><span class="glyphicon glyphicon-play"></span>Play</a></li>
-                                        <li><a><span class="glyphicon glyphicon-share"></span>Share</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-                        <div class="form-group col-xs-12">
-                            <div class="pull-right">
-                                <a class="btn btn-success"><span class="glyphicon glyphicon-plus"></span>Add item</a>
-                            </div>
-                        </div>
                     </main>
                 </div>
             </div>
@@ -310,7 +229,7 @@
                             <span class="glyphicon glyphicon-chevron-down pull-right"></span>
                         </a>
                     </div>
-                    <ul class="breadcrumb" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <ul class="breadcrumb">
                         <li class="active"><a href="#one_" data-toggle="tab">Details</a></li>
                     </ul>
                     <div class="in" id="ticket-element">
@@ -320,67 +239,57 @@
                                     <div class="tickets">
                                         <div class="media thumbnail">
                                             <div class="col-xs-12 padding-bottom">
-                                                <img src="img/player-preview.png" class="pull-left">
+                                                <img src="img/webGold-preview.jpg" class="pull-left">
                                                 <ul class="details">
-                                                    <li>Name: Player</li>
-                                                    <li>Published: 11 Jul 2016</li>
-                                                    <li>Rating: 17</li>
-                                                    <li>Bookmarked: 21</li>
-                                                    <li>Access: Free</li> 
+                                                    <li>Name: webGold</li>
+                                                    <li>Published: 17 Jul 2016</li>
+                                                    <li>Rating: 46</li>
+                                                    <li>Bookmarked: 22</li>
+                                                    <li>Access: Free</li>
                                                 </ul>
                                             </div>
                                             <div class="col-xs-12 padding-top">
                                                 <div class="media-body">
-                                                    Integer tincidunt vestibulum nulla vitae dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec gravida nulla in metus eleifend dignissim. Phasellus efficitur lobortis mauris, at posuere eros maximus vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dignissim viverra finibus. 
+                                                    Sed dui urna, vehicula vel eros at, imperdiet varius libero. Fusce ornare est nisl, id tincidunt libero dapibus sit amet. Aliquam elementum ipsum est, vitae suscipit enim sollicitudin eget. Etiam cursus libero commodo tristique aliquet. Cras vitae purus eu ex tempus interdum. Curabitur scelerisque porttitor neque nec cursus. Quisque vulputate gravida enim, eleifend tincidunt ante feugiat at. Donec et lacus at magna porttitor rutrum. Nam suscipit sit amet tellus quis sodales.
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="two_">
-                                    Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-                                    Aliquam in felis sit amet augue.
-                                </div>
-                                <div class="tab-pane" id="twee_">
-                                    Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                                    Quisque mauris augue, molestie tincidunt condimentum vitae.
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="margin-bottom">
-                        <div class="btn-group btn-block player-controls" role="group">
-                            <button type="button" class="btn btn-default col-xs-3"><span class="glyphicon glyphicon-step-backward"></span></button>
-                            <button type="button" class="btn btn-default col-xs-3"><span class="glyphicon glyphicon-play"></span></button>
-                            <button type="button" class="btn btn-default col-xs-3"><span class="glyphicon glyphicon-step-forward"></span></button>
-                            <button type="button" class="btn btn-default col-xs-3"><span class="glyphicon glyphicon-volume-up"></span></button>
-                        </div>
-                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-th-list"></span>Manage lists</button>
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-arrow-down"></span>Add funds</button>
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-arrow-up"></span>Withdraw</button>
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-share"></span>Share</button>
                         <button type="button" class="btn btn-success btn-block"><span class="glyphicon glyphicon-bookmark"></span>Bookmarked</button>
+                        <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-remove"></span>Close</button>
                     </div>
                     <ul class="nav nav-pills nav-stacked tooltip-demo" id="sidebar-accordion">
-                        <li class="panel">
-                            <a href="#sidebar-element1" class="collapse" data-parent="#sidebar-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Cover</a>
+                        <li class="panel active">
+                            <a href="#sidebar-element1" data-parent="#sidebar-accordion" data-toggle="collapse" class="collapsed"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Cover</a>
                             <div class="collapse" id="sidebar-element1">
                                 <ul class="nav nav-pills nav-stacked">
-                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Not yet available"><a>Settings</a></li>
-                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Not yet available"><a>Feedback</a></li>
-                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Not yet available"><a>Terms</a></li>
-                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Not yet available"><a>Privacy</a></li>
+                                    <li><a href="#"><span class="pull-right">3</span>News</a></li>
+                                    <li><a href="blogs-about.htm">About</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="webgold-terms.htm"><span class="label label-success pull-right">Class A</span>Terms</a></li>
+                                    <li><a href="webgold-privacy.htm"><span class="label label-success pull-right">Class A</span>Privacy</a></li>
+                                    <li class="disabled"><a href="#" data-toggle="tooltip" data-placement="left" title="Not yet available">Download source</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="disabled"><a data-toggle="tooltip" data-placement="left" title="Not yet available">Tutorials</a></li>
-                        <li class="disabled"><a data-toggle="tooltip" data-placement="left" title="Not yet available">Offers</a></li>
-                        <li><a>Player</a></li>
-                        <li><a>Features</a></li>
+                        <li><a href="#">webGold</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
-                    <ul class="nav nav-pills nav-stacked">
-                        <li class="active"><a><span class="pull-right">4</span>My playlist</a></li>
+                    <ul class="nav nav-pills nav-stacked tooltip-demo" id="sidebar-accordion">
+                        <li><a href="#">Wallets</a></li>
+                        <li><a href="webgold-transactions.htm">Transactions</a></li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -388,8 +297,5 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/application.js"></script>
     <script src="js/offcanvas.js"></script>
-
-    <!--<script src="js/bootstrap-tour.min.js"></script>
-    <script src="js/conversations/conversation-info.js"></script>-->
 </body>
 </html>
