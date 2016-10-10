@@ -186,7 +186,7 @@ ul.leaders span + span{float:right;background:white;height:20px}
 .thumbnail .col-xs-12{padding:10px 15px}
 .thumbnail:hover{background-color:#f9f9f9;border-color:whiteSmoke;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);cursor:pointer}
 .thumbnail:hover h2{color:#666}
-.thumbnail h2{margin:0 0 20px;color:#333}
+.thumbnail h2{margin:0;color:#333}
 .thumbnail header.col-xs-12{padding-bottom:0}
 .tooltip-inner{padding:8px 12px}
 .thumbnail .details,.thumbnail .donation{line-height:normal;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
