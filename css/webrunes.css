@@ -89,25 +89,24 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-s
 .wysihtml5-supported .container{padding:0 !important;width:100% !important}
 .core{border:none;min-height:240px;height:240px;width:100%}
 /* article */
-article{text-align:justify;color:#000}
-article h1,article h2,article h3,article h4,article h5,article h6{margin:15px 0 5px 15px}
-    article h2{margin:30px 0 15px 15px}
-article h1{font-size:180%}
-article h2{font-size:140%}
-article img{width:100%}
-article header p{color:#999}
-article section{display:inline-block;width:100%}
-article .paragraph{display:inline-block;width:100%}
-article .paragraph a{color:#168dd9}
+article{text-align:justify;color:#000;padding-bottom:15px}
+    article h1,article h2,article h3,article h4,article h5,article h6{margin:15px 0 5px 15px}
+    article h1{font-size:180%}
+    article h2{font-size:140%;margin:30px 0 15px 15px}
+    article img{width:100%}
+    article header p{color:#999}
+    article section{display:inline-block;width:100%}
+    article .paragraph{display:inline-block;width:100%}
+    article .paragraph a{color:#168dd9}
     article .paragraph a:hover{color:#168dd9}
     article .paragraph a:visited{color:#9900ff}
     article .paragraph a.coming-soon,article .paragraph a.coming-soon:hover,article .paragraph a.coming-soon:visited{color:#ce0000}
     article .carousel-text a.coming-soon,article .carousel-text a.coming-soon:hover,article .carousel-text a.coming-soon:visited{color:#ff3835}
-article .paragraph p{margin:0}
+    article .paragraph p{margin:0}
 article .paragraph .glyphicon-comment{visibility:hidden}
 /*article .paragraph:hover .glyphicon-comment{visibility:visible}*/
 article .contents{padding:24px 12px}
-article .contents ol li a{display:block;padding:2px 0;width:100%}
+    article .contents ol li a{display:block;padding:2px 0;width:100%}
 article .thumbnail{padding:0}
 article .media.thumbnail{margin-top:8px}
 /* END article */
