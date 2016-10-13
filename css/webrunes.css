@@ -304,6 +304,10 @@ main .thumbnail h2,main .thumbnail p,.in p{color:#666}
 @media (min-width: 992px){
     .col-md-3{width:23.93333333333333%}
 }
+
+@media (max-width: 1200px){
+    .carousel-text{margin:0 5% 36px}
+}
 /* END */
 
 /* CUSTOM SCROLLBAR FOR CHROME */

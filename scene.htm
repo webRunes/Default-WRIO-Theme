@@ -43,11 +43,12 @@
                     </div>
                     <div class="navbar-collapse in">
                         <ul class="nav navbar-nav" id="nav-accordion">
-                            <li class="panel"><a href="#element1" class="collapsed" data-parent="#nav-accordion" data-toggle="collapse">WRIO</a>
+                            <li class="panel">
+                                <a href="https://wrioos.com/" class="collapsed" data-parent="#nav-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-remove btn btn-xs pull-right"></span>Gmail</a>
                                 <div class="collapse" id="element1">
                                     <ul class="nav nav-pills nav-stacked sub">
-                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">Alexey Anshakov</a></li>
-                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">News name</a></li>
+                                        <li><a class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a>Alexey Anshakov</a></li>
+                                        <li><a class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a>News name</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -61,10 +62,13 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="panel active"><a href="#element3" class="collapse" data-parent="#nav-accordion" data-toggle="collapse"><span class="qty btn btn-xs pull-right">324</span>The Scene</a>
+                            <li class="panel active"><a href="#element3" class="collapse" data-parent="#nav-accordion" data-toggle="collapse"><span class="qty btn btn-xs pull-right">4</span>Scene</a>
                                 <div class="in" id="element3">
                                     <ul class="nav nav-pills nav-stacked sub">
-                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">Post name</a></li>
+                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">That's a nice trick</a></li>
+                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">My funny cats</a></li>
+                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">The Flash</a></li>
+                                        <li><a href="#" class="pull-right"><span class="glyphicon glyphicon-remove btn btn-xs"></span></a><a href="#">Supergirl</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -78,28 +82,31 @@
 
             <div class="content col-xs-12 col-sm-5 col-md-7">
                 <div class="margin">
+                    <div role="alert" class="alert alert-warning alert-dismissable"><button type="button" class="close" aria-hidden="true"><span>×</span></button><strong>Attention!</strong> This is an experimental project under development. <a href="https://wrioos.com">Stated functions</a> will be added as it progresses<button type="button" class="close sr-only">Close Alert</button></div>
                     <ul class="info nav nav-pills nav-stacked" id="profile-accordion">
-                        <li class="panel"><a href="#profile-element" data-parent="#profile-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Logged with WRIO</a>
+                        <li class="panel"><a href="#profile-element" data-parent="#profile-accordion" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-down pull-right"></span>Logged as Alexey Anshakov</a>
                             <div class="in" id="profile-element">
-                                <div class="tickets">
+                                <aside>
                                     <div class="media thumbnail">
-                                        <div class="col-xs-12 col-md-6 col-lg-5">
+                                        <div class="col-xs-12 col-md-6 pull-right">
                                             <img src="img/profile1-200x200.jpg" class="pull-left">
                                             <ul class="details">
-                                                <li>Name: Alexey Anshakov</li>
-                                                <li>Registered: 22 Jun 2013</li>
-                                                <li>Rating: 244</li>
-                                                <li>Bookmarked: 1,634</li>
-                                                <li>Posts: 1,634</li>
+                                                <li>Registered: 22 Jul 2016</li>
+                                                <li>Rating: 42</li>
+                                                <li>Bookmarked: 27</li>
+                                                <li>Posts: 2</li>
                                             </ul>
                                         </div>
-                                        <div class="col-xs-12 col-md-6 col-lg-7">
-                                            <div class="media-body">
-                                                Disclaimer: We start a series of stories describing various issues and problems that are related for the most part to the Internet, and our vision of possible ways to solve them. Those will often be followed by previews of projects mentioned in the stories. Keep in mind: some of them might change, some will remain just our fantasy; at this moment we are a small team, but with a great desire to change this world for the better or at least a little bit.
-                                            </div>
+                                        <div class="col-xs-12 col-md-6">
+                                            <p>
+                                                Information in the public profile is available to any person, even unregistered users. If you want to stay anonimous, simply don't fill it in.
+                                            </p>
+                                            <ul class="actions">
+                                                <li><a><span class="glyphicon glyphicon-lock"></span>Logout</a></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </aside>
                             </div>
                         </li>
                     </ul>
@@ -112,12 +119,13 @@
                                 <div class="img" style="background-image:url('img/sign_in-cover6.jpg')"></div>
                                 <div class="carousel-caption">
                                     <div class="carousel-text">
-                                        <h2>The Scene<sup><span class="label label-primary">Free to read &middot; Invite to Write</span></sup></h2>
-                                        <div class="description">Disclaimer: We start a series of stories describing various issues and problems that are related for the most part to the Internet, and our vision of possible ways to solve them. Those will often be followed by previews of projects mentioned in the stories. Keep in mind: some of them might change, some will remain just our fantasy; at this moment we are a small team, but with a great desire to change this world for the better or at least a little bit.</div>
+                                        <h2>The Scene<sup><span class="label label-success">Free</span></sup></h2>
+                                        <h6>Express Yourself</h6>
+                                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere vel dolor sit amet fermentum. Duis scelerisque dapibus felis. Aliquam et gravida nunc, et molestie felis. Duis mattis fermentum purus quis posuere. Vivamus tristique congue ligula, in finibus massa facilisis non. Cras sit amet fermentum erat, at rhoncus felis. Quisque efficitur purus vel erat congue laoreet. Nam porta tellus ac ante dignissim, a tristique nulla cursus.</div>
                                         <ul class="features">
-                                            <li><span class="glyphicon glyphicon-ok"></span>We start a series of stories describing various</li>
-                                            <li><span class="glyphicon glyphicon-ok"></span>Various issues and problems</li>
-                                            <li><span class="glyphicon glyphicon-ok"></span>Stand-up comedy</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>donec accumsan at nibh ac volutpat.</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>rutrum maximus enim, et volutpat sapien malesuada volutpat</li>
+                                            <li><span class="glyphicon glyphicon-ok"></span>velit neque, tempus vitae cursus sed</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -135,20 +143,20 @@
                                 <div class="tickets">
                                     <div class="media thumbnail">
                                         <div class="col-xs-12">
-                                            <img src="img/no-photo-200x200.png" class="pull-left">
+                                            <img src="img/scene-preview.png" class="pull-left">
                                             <ul class="details">
-                                                <li>Name: The Scene</li>
-                                                <li>Published: 22 Jun 2013</li>
+                                                <li>Name: Scene</li>
+                                                <li>Published: 22 Jun 2016</li>
                                                 <li>Posts: 1 634 &middot; 48 unread</li>
                                                 <li>Rating: 244 &middot; 3 level</li>
-                                                <li>Access: Free &middot; Read & Write</li>
+                                                <li>Access: Free</li>
                                                 <li>Language: English</li>
                                                 <li>Owner: Public</li>
                                             </ul>
                                         </div>
                                         <div class="col-xs-12">
                                             <div class="media-body">
-                                                Disclaimer: We start a series of stories describing various issues and problems that are related for the most part to the Internet, and our vision of possible ways to solve them. Those will often be followed by previews of projects mentioned in the stories. Keep in mind: some of them might change, some will remain just our fantasy; at this moment we are a small team, but with a great desire to change this world for the better or at least a little bit.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere vel dolor sit amet fermentum. Duis scelerisque dapibus felis. Aliquam et gravida nunc, et molestie felis. Duis mattis fermentum purus quis posuere. Vivamus tristique congue ligula, in finibus massa facilisis non. Cras sit amet fermentum erat, at rhoncus felis. Quisque efficitur purus vel erat congue laoreet. Nam porta tellus ac ante dignissim, a tristique nulla cursus.
                                             </div>
                                         </div>
                                     </div>
