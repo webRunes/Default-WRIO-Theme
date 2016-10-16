@@ -186,7 +186,7 @@ ul.leaders span + span{float:right;background:white;height:20px}
 .thumbnail h2{margin:0 0 20px;color:#333}
 .thumbnail header.col-xs-12{padding-bottom:0}
 .tooltip-inner{padding:8px 12px}
-.thumbnail .details,.thumbnail .donation{line-height:normal;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
+.thumbnail .details,.thumbnail .donation{color:#aaa;line-height:normal;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
 .thumbnail .details li,.thumbnail .donation li{list-style:none}
 .thumbnail .donation .btn .glyphicon{margin:0 0 3px 0}
 .thumbnail:hover{color:#666;-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
@@ -203,8 +203,8 @@ ul.leaders span + span{float:right;background:white;height:20px}
 .thumbnail:hover .actions li span{color:#428bca;-webkit-transition:color .25s linear;transition:color .25s linear}
 .thumbnail:hover .actions li span:hover{text-decoration:underline}
 .thumbnail:hover .actions li .label{color:#fff;text-decoration:none}
-.thumbnail .col-xs-12 img{margin:4px 8px 4px 0}
-.thumbnail img{width:120px;height:80px}
+.thumbnail .col-xs-12 .img{margin:4px 12px 4px 0}
+.thumbnail .img{background-position:center;outline:4px solid #f8f8f8;width:120px;height:80px}
 .thumbnail h2 sup,.info .panel a sup{color:#aaa;font-size:80%;margin-left:4px}
 #loginbuttoniframe{display:none}
 /* END thumbnail */
