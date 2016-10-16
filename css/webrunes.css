@@ -204,7 +204,7 @@ ul.leaders span + span{float:right;background:white;height:20px}
 .thumbnail:hover .actions li span:hover{text-decoration:underline}
 .thumbnail:hover .actions li .label{color:#fff;text-decoration:none}
 .thumbnail .col-xs-12 .img{margin:4px 12px 4px 0}
-.thumbnail .img{background-position:center;outline:4px solid #f8f8f8;width:120px;height:80px}
+.thumbnail .img{background-position:center!important;background-size:cover!important;outline:4px solid #f8f8f8;width:120px;height:80px}
 .thumbnail h2 sup,.info .panel a sup{color:#aaa;font-size:80%;margin-left:4px}
 #loginbuttoniframe{display:none}
 /* END thumbnail */
