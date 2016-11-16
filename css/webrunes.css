@@ -242,8 +242,9 @@ ul.leaders span + span{float:right;background:white;height:20px}
 
 @media screen and (max-width:767px){
     article{margin:5px}
-    article h2,article h3,article h4,article h5,article h6{margin:-20px 0 10px!important}
-    article section{padding:30px 5px 0}
+    article h1{margin:-20px 0 10px!important}
+    article h2,article h3,article h4,article h5,article h6{margin:0px 0 10px !important}
+    article section{padding:30px 0 0}
     .thumbnail .col-xs-12{padding:15px 0}
     .row-offcanvas{position:relative;height:100%} /* height is to fix a mobile scroll menu issue */
     .row-offcanvas-right .sidebar-offcanvas{right:-100%;padding:0;position:fixed}
