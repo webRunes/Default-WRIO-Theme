@@ -129,7 +129,7 @@ figcaption.callout{margin:4px 0}
 menu{padding:0;margin:0 0 8px}
 /* END menu */
 
-.carousel-control{z-index:101}
+.carousel-control{z-index:98}
 .content .carousel-inner a{color:#f0ad4e}
 .carousel-inner .img{background-position:center center;min-height:750px}
 .content .carousel-caption{text-shadow:1px 1px 4px rgba(0,0,0,1)}
@@ -245,6 +245,7 @@ ul.leaders span + span{float:right;background:white;height:20px}
     article h1{margin:-20px 0 10px!important}
     article h2,article h3,article h4,article h5,article h6{margin:0px 0 10px !important}
     article section{padding:30px 0 0}
+    article article{margin:15px 0 0}
     article .thumbnail .col-xs-12{padding:15px 0 0}
     .row-offcanvas{position:relative;height:100%} /* height is to fix a mobile scroll menu issue */
     .row-offcanvas-right .sidebar-offcanvas{right:-100%;padding:0;position:fixed}
