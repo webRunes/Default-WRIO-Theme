@@ -253,8 +253,8 @@ ul.leaders span + span{float:right;background:white;height:20px}
     .content-offcanvas.active{right:100%;position:fixed}
     .content-offcanvas{right:0;transition:all 0.25s ease-out;padding-top:53px}
 
-    .sidebar-offcanvas.active{right:0%;height:inheritpadding-top:53px;z-index:100} /* height is to fix a mobile scroll menu issue */
-    .sidebar-offcanvas{right:0;position:absolute;top:0;width:100%;z-index:91;transition:right 0.25s ease-out}
+    .sidebar-offcanvas.active{right:0%;height:inherit;padding-top:53px} /* height is to fix a mobile scroll menu issue */
+    .sidebar-offcanvas{right:0;position:absolute;top:0;width:100%;z-index:100;transition:right 0.25s ease-out}
 
 }
 @media screen and (max-width:767px){
