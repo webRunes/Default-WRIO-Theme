@@ -18,7 +18,7 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-s
 .main .new.panel a{transition:all .5s ease;text-align:center;box-shadow:none;background-color:#222;color:#aaa;display:block}
 .main .new.panel a:hover{transition:all .5s ease;color:#fff}
 .main .navbar-collapse .navbar-header{float:left;overflow:auto}
-.main .nav{position:relative;overflow:auto}
+.main .nav{margin:5px;overflow:auto;position:relative}
 .main .nav>.panel{cursor:pointer;border:0;border-radius:0;background-color:#131313;margin:0}
 .main .nav>.panel>a.collapsed{background-color:#222;color:#aaa}
 .main .nav>.panel>a{color:#aaa;background-color:#222;overflow:visible;text-overflow:ellipsis;white-space:nowrap;outline:none}
@@ -291,14 +291,17 @@ ul.leaders span + span{float:right;background:white;height:20px}
     .carousel-text{margin:0 5% 36px}
 }
 
-.form-send-comment{ margin-top:-10px}
-.form-send-comment .form-group{ padding-top:10px;padding-bottom:10px}
-.form-send-comment .send-comment-form-photo-submit{ padding-bottom:0px;margin-bottom:0px!important}
+.form-send-comment{margin-top:-10px}
+.form-send-comment .form-group{padding-top:10px;padding-bottom:10px}
+.form-send-comment .send-comment-form-photo-submit{padding-bottom:0;margin-bottom:0!important}
 
 /* Fix right menu scroll visibility bug */
 @media (max-width:768px){
     .send-comment-form{width:100%}
     .send-comment-form-donation{width:33.3%}
+
+    .sidebar-offcanvas .nav-stacked{height:initial!important}
+    .sidebar-offcanvas .sidebar-margin{background-color:#fff;padding:6px 12px}
 }
 @media (max-width:520px){
     .send-comment-form{width:100%}
@@ -321,9 +324,6 @@ ul.leaders span + span{float:right;background:white;height:20px}
     .donation{width:16.666%}
     .donation-wrg{width:25%}
     .donation-title{width:58.333%}
-}
-/* Fix right menu scroll visibility bug */
-@media (min-width:768px){
     .col-sm-4{width:31.7%}
 }
 
