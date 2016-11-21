@@ -11,7 +11,7 @@
           element: ".call-ia",
           placement: "bottom",
           title: "Webtop 5",
-          content: "<div class='col-xs-12 padding-top'><div class='media thumbnail'><div class='col-xs-12 pull-right'><img src='img/ia.png' class='pull-left'><ul class='details'><li>Master, первым виджетом я рекомендую добавить мой, чтобы я всегда мог помочь.</li><li><ul class='nav nav-pills nav-stacked'><li><a id='myHref'>Хорошо, добавь</a></li></ul></li></ul></div></div><div class='media-body'><table class='table playerlist'><tr><td class='col-xs-2'>Ctrl + 1</td><td>General</td></tr><tr><td>Ctrl + 2</td><td>Home</td></tr><tr><td>Ctrl + 3</td><td>Work</td></tr><tr><td>Ctrl + 4</td><td>Bookshelf</td></tr><tr class='active'><td>Ctrl + 5</td><td>Webtop 5</td></tr></table></div>"
+          content: "<div class='col-xs-12 padding-top'><div class='media thumbnail'><div class='col-xs-12 pull-right'><img src='img/ia.png' class='pull-left'><ul class='details'><li>Master, I would advise to add my vidget first, so that I coul help you any time.</li><li><ul class='nav nav-pills nav-stacked'><li><a id='myHref'>Ok, add</a></li></ul></li></ul></div></div><div class='media-body'><table class='table playerlist'><tr><td class='col-xs-2'>Ctrl + 1</td><td>General</td></tr><tr><td>Ctrl + 2</td><td>Home</td></tr><tr><td>Ctrl + 3</td><td>Work</td></tr><tr><td>Ctrl + 4</td><td>Bookshelf</td></tr><tr class='active'><td>Ctrl + 5</td><td>Webtop 5</td></tr></table></div>"
       }
     ]);
 
