@@ -256,7 +256,8 @@ main .thumbnail h2,main .thumbnail p,.in p{color:#666}
 .col-xs-12.padding-bottom{padding-bottom:0}
 
 .total-pages{color:#aaa;text-align:center;font-size:12px}
-.form-control{font-size:12px}
+.form-control{font-size:12px;width:100%!important}
+.form-horizontal .control-label{text-align:right}
 
 .comment-limit{margin:12px 12px;color:#aaa}
 .label-small{color:#000;font-size:10px;font-weight:bold;position:relative;float:right;right:6px;top:6px;z-index:1}
