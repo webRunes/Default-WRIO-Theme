@@ -261,8 +261,9 @@ ul.leaders span + span{float:right;background:white;height:20px}
     .main .navbar-collapse{overflow:hidden;padding:0;transition:max-height 0.25s ease-in-out;max-height:0;position:relative}
     .main .navbar-collapse.active{max-height:1500px;transition:max-height 0.25s ease-in-out}
     .main .navbar-collapse .navbar-header{margin-bottom:41px}
-    .navbar.navbar-inverse .navbar-collapse{float:none;overflow:hidden}
     .main .new.panel{position:absolute}
+    .navbar.navbar-inverse .navbar-collapse{float:none;overflow:hidden}
+    .content .margin{margin:8px 8px 76px 0}
 }
 
 @media screen and (max-width:767px){
