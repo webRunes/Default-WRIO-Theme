@@ -209,11 +209,11 @@ ul.leaders span + span{float:right;background:white;height:20px}
 #loginbuttoniframe{display:none}
 /* END thumbnail */
 
+.btn{margin:0 4px}
 .btn,.nav>li>a,.dropdown-menu>li>a{cursor:pointer;padding:8px 16px}
 .btn-block+.btn-block{margin-top:4px}
 .btn .glyphicon{margin:2px 8px 0 0}
 .main .btn .glyphicon{margin:0}
-
 .btn-xs{padding:2px 0}
 .btn:focus{outline:none}
 .btn-default{background-color:#f5f5f5;border-color:#eee;color:#666}
@@ -238,7 +238,7 @@ ul.leaders span + span{float:right;background:white;height:20px}
 .sidebar-offcanvas .thumbnail:hover{background-color:transparent;border-color:transparent;cursor:default;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0)}
 
 .total-pages{color:#aaa;text-align:center;font-size:90%}
-.form-control{font-size:90%}
+.form-control{border-color:#eee;height:38px;line-height:38px}
 
 @media screen and (max-width:767px){
     article{margin:15px 5px 0}
