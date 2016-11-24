@@ -239,7 +239,7 @@ ul.leaders span + span{float:right;background:white;height:20px}
 .sidebar-offcanvas .thumbnail:hover{background-color:transparent;border-color:transparent;cursor:default;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0)}
 
 .total-pages{color:#aaa;text-align:center;font-size:90%}
-.form-control{border-color:#eee;height:38px;line-height:38px}
+.form-control{border-color:#eee;height:38px}
 
 @media screen and (max-width:767px){
     article{margin:15px 5px 0}
