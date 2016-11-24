@@ -87,7 +87,7 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-s
 .wysihtml5-supported #textarea-widget-id{width:100% !important}
 .wysihtml5-supported .container{padding:0 !important;width:100% !important}
 .core{border:none;min-height:240px;height:240px;width:100%}
-.help-block{word-wrap:break-word}
+.help-block{margin:5px 10px 0;word-wrap:break-word}
 /* article */
 article{text-align:justify;color:#000}
     article h1,article h2,article h3,article h4,article h5,article h6{margin:15px}
