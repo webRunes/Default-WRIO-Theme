@@ -98,7 +98,7 @@ article{text-align:justify;color:#000}
     article img{width:100%}
         article img.img_loading{width:16px;height:11px}
     article header p{color:#999}
-    article section{display:inline-block;padding-bottom:15px;width:100%}
+    article section{display:inline-block;width:100%}
     article .paragraph{display:inline-block;width:100%}
     article .paragraph a{color:#168dd9}
     article .paragraph a:hover{color:#168dd9}
