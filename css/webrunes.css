@@ -113,6 +113,7 @@ article{text-align:justify;color:#000}
         article .contents ol li a{display:block;padding:2px 0;width:100%}
     article .thumbnail{padding:0}
     article .media.thumbnail{margin-top:8px}
+.article_body{margin-bottom:15px}
 /* END article */
 
 .alert-transition{transition:all 10s}
