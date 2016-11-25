@@ -1,4 +1,6 @@
 body{position:initial} /* reset position */}
+.form-horizontal .form-group{margin-right:0;margin-left:0}
+
 .DraftEditor-editorContainer,
 .DraftEditor-root,
 .public-DraftEditor-content {
