@@ -67,7 +67,7 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-s
 .content .form-horizontal .form-group{margin:12px 0}
 .content .form-horizontal .form-group input[type="radio"], input[type="checkbox"]{margin:2px 0 0}
 .content .margin{margin:8px 0}
-.content .btn{margin:0 4px}
+.pull-right .btn{margin-left:8px}
 #clientholder .form-horizontal .form-group{margin:12px 0}
 /*.visible-xs{position:fixed;top:0;right:0;z-index:1050}*/
 .breadcrumb,.thumbnail{margin-bottom:8px;cursor:pointer}
