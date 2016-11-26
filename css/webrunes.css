@@ -393,3 +393,5 @@ textarea#comment{resize:none}
 
 .well{border:none;color:#666;margin-bottom:8px;padding:24px;-webkit-box-shadow:none;box-shadow:none}
     .well h4{margin-top:0}
+
+#presaleiframe body{position:initial}
