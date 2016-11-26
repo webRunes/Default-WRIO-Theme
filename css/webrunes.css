@@ -114,6 +114,7 @@ article{text-align:justify;color:#000}
     article .thumbnail{padding:0}
     article .media.thumbnail{margin-top:8px}
 .article_body{margin-bottom:15px}
+    .article_body .thumbnail .col-xs-12{padding:5px 15px 10px}
 /* END article */
 
 .alert-transition{transition:all 10s}
@@ -187,7 +188,7 @@ ul.leaders span + span{float:right;background:white;height:20px}
 
 /* thumbnail */
 .thumbnail{border-color:transparent;color:#999;text-align:justify;-webkit-box-shadow:0 1px 3px transparent;-moz-box-shadow:0 1px 3px transparent;box-shadow:0 1px 3px transparent}
-.thumbnail .col-xs-12{padding:15px}
+.thumbnail .col-xs-12{padding:5px 15px 10px}
 .thumbnail:hover{background-color:#f9f9f9;border-color:whiteSmoke;color:#666;cursor:pointer;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);-webkit-transition:all 0.25s ease-out;-moz-transition:all 0.25s ease-out;transition:all 0.25s ease-out}
     .thumbnail:hover h2{color:#666}
 .thumbnail h2{margin:0;color:#333}
