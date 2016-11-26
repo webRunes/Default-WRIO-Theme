@@ -246,10 +246,6 @@ body{position:initial} /* reset position */}
 	display: none;
 }
 
-.RichEditor-editor .public-DraftStyleDefault-block {
-	margin: 5px 0;
-}
-
 .RichEditor-editor .RichEditor-blockquote {
 	border-left: 5px solid #eee;
 	color: #666;
