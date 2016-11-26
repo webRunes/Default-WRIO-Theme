@@ -177,7 +177,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', end
 
 .nav-stacked+.nav-stacked{margin-top:32px}
 
-ul.leaders{padding:0;overflow-x:hidden;list-style:none;margin:0 8px}
+ul.leaders{padding:0;list-style:none;margin:0 8px}
 ul.leaders li{margin:4px 0 8px}
 ul.leaders li:before{color:#ccc;float:left;width:0;white-space:nowrap;content:"........................................................................................................................................................................................................................................................................................................................................................................................................................................................"}
 ul.leaders span{padding:0 4px}
@@ -304,7 +304,6 @@ ul.leaders span + span{float:right;background:white;height:20px}
     .carousel-text{margin:0 5% 36px}
 }
 
-.form-send-comment{margin-top:-10px}
 .form-send-comment .form-group{padding-top:10px;padding-bottom:10px}
 .form-send-comment .send-comment-form-photo-submit{padding-bottom:0;margin-bottom:0!important}
 
