@@ -114,7 +114,7 @@ article{text-align:justify;color:#000}
     article .thumbnail{padding:0}
     article .media.thumbnail{margin-top:8px}
 .article_body{margin-bottom:15px}
-    .article_body .thumbnail .col-xs-12{padding:5px 15px 10px}
+    .article_body .thumbnail .col-xs-12{padding:15px 15px 10px}
 /* END article */
 
 .alert-transition{transition:all 10s}
