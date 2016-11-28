@@ -346,12 +346,12 @@ ul.leaders span + span{float:right;background:white;height:20px}
 }
 /* END */
 
-/* CUSTOM SCROLLBAR FOR CHROME */
+/* CUSTOM SCROLLBAR FOR CHROME 
 ::-webkit-scrollbar{width:7px;height:7px}
 ::-webkit-scrollbar-track{background-color:rgba(0,0,0,0.0)}
 ::-webkit-scrollbar-track:hover{background-color:rgba(0,0,0,0.05)}
 ::-webkit-scrollbar-thumb{background-color:rgba(0,175,219,0.4)}
-::-webkit-scrollbar-thumb:hover{background-color:rgba(0,175,219,0.7)}
+::-webkit-scrollbar-thumb:hover{background-color:rgba(0,175,219,0.7)}*/
 
 .form-signin .alert{padding:8px 12px;margin:8px 0}
 .form-signin .form-signin-heading,
