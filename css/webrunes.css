@@ -108,7 +108,7 @@ article{text-align:justify;color:#000}
     article .carousel-text a.coming-soon,article .carousel-text a.coming-soon:hover,article .carousel-text a.coming-soon:visited{color:#ff3835}
     article .paragraph p{margin:0}
     article .paragraph .glyphicon-comment{visibility:hidden}
-    article .list-paragraph{margin:15px}
+    article .list-paragraph{margin:15px 0}
     /*article .paragraph:hover .glyphicon-comment{visibility:visible}*/
     article .contents{padding:24px 12px}
         article .contents ol li a{display:block;padding:2px 0;width:100%}
