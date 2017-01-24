@@ -179,8 +179,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', end
 
 .nav-stacked+.nav-stacked{margin-top:32px}
 
-ul.leaders{padding:0;list-style:none;margin:0 8px}
-ul.leaders li{margin:4px 0 8px}
+ul.leaders{padding:0;list-style:none}
+ul.leaders li{margin:12px}
 ul.leaders li:before{color:#ccc;float:left;width:0;white-space:nowrap;content:"........................................................................................................................................................................................................................................................................................................................................................................................................................................................"}
 ul.leaders span{padding:0 4px}
     ul.leaders span sup{padding:0}
