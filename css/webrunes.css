@@ -119,7 +119,7 @@ article{text-align:justify;color:#000}
 
 .alert-transition{transition:all 10s}
 /* callout */
-.callout{background-color:#ecf3fa;margin:4px 0 12px;padding:8px 16px;border-color:transparent;border-left:3px solid #d0e2f2;border-radius:0;color:#000}
+.callout{background-color:#ecf3fa;margin:4px 0 12px;padding:8px 16px;border-color:transparent;border-left:3px solid #d0e2f2;border-radius:0;color:#333}
 .callout button.close{top:2px;right:-3px}
 .callout h5{color:#428bca;margin:10px 0}
 .callout h6{color:#b6c7d6;margin:10px 0}
@@ -179,7 +179,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', end
 
 .nav-stacked+.nav-stacked{margin-top:32px}
 
-ul.leaders{padding:0;list-style:none}
+ul.leaders{list-style:none;margin-bottom:20px;padding:0}
 ul.leaders li{margin:12px}
 ul.leaders li:before{color:#ccc;float:left;width:0;white-space:nowrap;content:"........................................................................................................................................................................................................................................................................................................................................................................................................................................................"}
 ul.leaders span{padding:0 4px}
@@ -361,7 +361,7 @@ ul.leaders span + span{float:right;background:white;height:20px}
 .form-signin .form-control:focus{z-index:2}
 .form-signin input[type="text"]{margin-bottom:-1px;border-bottom-left-radius:0;border-bottom-right-radius:0}
 
-.comment-limit{margin:12px 12px;color:#aaa}
+.comment-limit{font-weight:normal;color:#aaa;margin:12px}
 
 /* IA */
 .active-ia{}
