@@ -307,7 +307,7 @@ em {
   font-style: italic;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-family: inherit;
   font-weight: bold;
@@ -368,7 +368,7 @@ h4 small {
 ul, ol {
   margin: 0 0 10px 25px;
   padding: 0;
-}
+}*/
 
 ul ul, ul ol, ol ol, ol ul {
   margin-bottom: 0;
