@@ -20,8 +20,8 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-s
 .main .navbar-collapse .navbar-header{float:left;overflow:auto}
 .main .nav{margin:5px;overflow:auto;position:relative}
 .main .nav>.panel{cursor:pointer;border:0;border-radius:0;background-color:#131313;margin:0}
+.main .nav>.panel>a{color:#aaa;background-color:#222;overflow:visible;text-overflow:ellipsis;white-space:nowrap;overflow-x:hidden;outline:none}
 .main .nav>.panel>a.collapsed{background-color:#222;color:#aaa}
-.main .nav>.panel>a{color:#aaa;background-color:#222;overflow:visible;text-overflow:ellipsis;white-space:nowrap;outline:none}
 .main .nav>.panel>a:hover{color:#fff}
 .main .nav>.panel>a:focus{outline:none}
 .main .nav>.panel.open>a{background-color:#131313}
