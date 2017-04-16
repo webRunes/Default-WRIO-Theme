@@ -121,8 +121,9 @@ article{text-align:justify;color:#000}
 /* callout */
 .callout{background-color:#ecf3fa;margin:4px 0 12px;padding:8px 16px;border-color:transparent;border-left:3px solid #d0e2f2;border-radius:0;color:#333}
 .callout button.close{top:2px;right:-3px}
-.callout h5{color:#428bca;margin:10px}
-.callout h6{color:#b6c7d6;margin:10px 0}
+.callout h5{color:#428bca;margin:10px 5px}
+.callout h6{color:#b6c7d6;margin:10px 5px}
+.callout p{margin:0 10px 10px}
 .success{background-color:#f1fbed;border-color:#d6e9c6}
     .success h5{color:#3c763d}
 .warning{background-color:#fcf8f2;border-color:#fbead3}
