@@ -357,7 +357,7 @@ main .thumbnail h2,main .thumbnail p,.in p{color:#666}
 /* Twitter */
 .twitter{clear:both}
 .twitter-limit{color:#aaa}
-.twitter-timeline{width:100% !important}
+.twitter-timeline{max-width:100% !important}
 .autosized-media{width:auto!important;height:auto!important}
 
 
