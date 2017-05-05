@@ -141,7 +141,7 @@ menu{padding:0;margin:0 0 8px}
 
 .carousel-control{z-index:98}
 .content .carousel-inner a{color:#f0ad4e}
-.carousel-inner .img{background-position:center center;min-height:750px}
+.carousel-inner .img{background-position:center center!important;background-size:cover!important;min-height:750px} /* !important is important :-) to rewrite the code in src/core/components/CreateCover.js */
 .content .carousel-caption{text-shadow:1px 1px 4px rgba(0,0,0,1)}
 .content .carousel h2{font-family:BebasNeue,sans-serif;font-size:180%;text-align:left;font-weight:normal}
 .content .carousel h6{font-size:85%;font-weight:bold;text-align:left;text-transform:uppercase}
