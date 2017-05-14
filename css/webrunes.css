@@ -32,7 +32,8 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-s
 .main .nav>.panel.active .active,.main .nav>.panel.active .sub .active{border-left:3px solid #337ab7}
 .main .nav>.panel.active>a.collapsed + .in{background-color:#131313;font-weight:normal}
 .main .nav>.panel .sub li a{border-radius:0;color:#aaa;line-height:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.main .nav>.panel.active>a,.main .nav>.panel>a:focus{background-color:#000;color:#fff}
+.main .nav>.panel.active>a{background-color:#000;color:#fff}
+.main .nav>.panel li>a:focus{background-color:transparent}
 .main .nav>.panel.group.active.open>a{background-color:#131313}
 .main .nav>.panel .sub li:hover a, .main .nav li a:hover span, .main .nav li.open a:hover span{background-color:transparent;color:#fff}
 .main .nav>.panel:hover .sub li a .glyphicon{color:#aaa}
