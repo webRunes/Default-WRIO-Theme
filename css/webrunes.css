@@ -65,7 +65,9 @@ html,body,h1,h2,h3,h4,h5,h6{font-family:Arial, "Helvetica Neue", Helvetica, sans
 .main .menu a,.main .menu:hover a,.main .menu a:focus{background-color:transparent}
 .main .sub li{margin:0 0 1px;list-style:circle !important}
 .main .sub>li.active a,.main .sub>li.active a:hover{background-color:transparent}
-.container-liquid .row .content{overflow:auto}
+@media (min-width:768px){
+    .container-liquid .row .content{overflow:auto}
+}
 .content label{font-weight:normal}
 .content textarea{resize:vertical}
 .content .alert{margin-bottom:8px}
