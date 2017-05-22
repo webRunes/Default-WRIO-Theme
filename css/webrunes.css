@@ -275,7 +275,7 @@ ul.leaders span + span{float:right;background:white;height:20px}
     .main .navbar-collapse.active{max-height:1500px;transition:max-height 0.25s ease-in-out}
     .main .navbar-collapse .navbar-header{margin-bottom:41px}
     .main .new.panel{position:absolute}
-    .navbar.navbar-inverse .navbar-collapse{float:none;overflow:hidden}
+    .navbar.navbar-inverse .navbar-collapse{float:none;overflow:auto}
     .content .margin{margin:8px 8px 76px 0}
 }
 
