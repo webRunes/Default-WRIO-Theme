@@ -1,6 +1,6 @@
 @font-face{font-family:'BebasNeue';src:url('../fonts/bebasneue.eot');src:url('../fonts/bebasneue.eot?#iefix') format('embedded-opentype'),url('../fonts/bebasneue.woff') format('woff'), url('../fonts/bebasneue.ttf') format('truetype');font-weight:normal;font-style:normal}
-html{padding-top:0 !important}
-html,body{height:100%;color:#333;margin:0;-ms-overflow-style:scrollbar}
+html{padding-top:0 !important;overflow-x:hidden}
+html,body{height:100%;color:#333;margin:0;-ms-overflow-style:scrollbar; /* Prevent scroll on narrow devices */}
 html,body,h1,h2,h3,h4,h5,h6{font-family:Arial,"Helvetica Neue",Helvetica, sans-serif}
 
 .nav>li>a.pull-right{z-index:99}/* fix bug for "x" in menu */
@@ -292,7 +292,9 @@ ul.leaders span + span{float:right;background:white;height:20px}
 }
 
 @media (max-width:767px){
-    html{overflow:hidden}
+    html{
+    /* overflow: hidden */
+}
     .container-liquid{position:relative;top:68px}
     .content{padding:0 15px 0 22px}
     .sidebar-offcanvas{ padding-left:0}
