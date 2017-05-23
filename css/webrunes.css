@@ -394,3 +394,4 @@ textarea#comment{resize:none}
 
 .well{border:none;color:#666;margin-bottom:8px;padding:24px;-webkit-box-shadow:none;box-shadow:none}
     .well h4{margin-top:0}
+#frame_container{float:left;width:100% /* for FF */} /* important to calculate auto height */
