@@ -113,9 +113,9 @@ article{text-align:justify;color:#000}
     article .contents{padding:24px 12px}
         article .contents ol li a{display:block;padding:2px 0;width:100%}
     article .thumbnail{padding:0}
-    article .media.thumbnail{margin-top:8px}
+    article .media.thumbnail{margin-top:20px;padding:8px 0 12px}
 .article_body{margin-bottom:15px}
-    .article_body .thumbnail .col-xs-12{padding:15px 15px 10px}
+    .article_body .thumbnail .col-xs-12{padding:5px 15px 0}
 /* END article */
 
 .alert-transition{transition:all 10s}
@@ -254,9 +254,9 @@ ul.leaders span + span{float:right;background:white;height:20px}
 @media screen and (max-width:767px){
     article{margin:15px 5px 0}
     article h1{margin:-20px 0 10px!important}
-    article h2,article h3,article h4,article h5,article h6{margin:0px 0 10px !important}
-    article section{padding:30px 0 0}
-    article article{margin:15px 0 0}
+    /*article h2,article h3,article h4,article h5,article h6{margin:0px 0 10px !important}*/
+    article section{padding:0}
+    article article{margin:20px 0 0}
     article .thumbnail .col-xs-12{padding:15px 0 0}
     .row-offcanvas{position:relative;height:100%} /* height is to fix a mobile scroll menu issue */
     .row-offcanvas-right .sidebar-offcanvas{right:-100%;padding:0;position:fixed}
