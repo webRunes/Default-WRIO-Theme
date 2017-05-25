@@ -100,8 +100,8 @@ article{text-align:justify;color:#000}
     article img{width:100%}
         article img.img_loading{width:16px;height:11px}
     article header p{color:#999}
-    article section{display:inline-block;width:100%}
-    article .paragraph{display:inline-block;width:100%}
+    article section{padding:5px 0;width:100%}
+    article .paragraph{/*display:inline-block;*/width:100%}
     article .paragraph a{color:#168dd9}
     article .paragraph a:hover{color:#168dd9}
     article .paragraph a:visited{color:#9900ff}
@@ -253,10 +253,9 @@ ul.leaders span + span{float:right;background:white;height:20px}
 .form-control{border-color:#eee;height:38px}
 
 @media screen and (max-width:767px){
-    article{margin:15px 5px 0}
+    /*article{margin:15px 5px 0}*/
     /*article h1{margin:-20px 0 10px!important}*/
     /*article h2,article h3,article h4,article h5,article h6{margin:0px 0 10px !important}*/
-    article section{padding:0}
     article article{margin:20px 0 0}
     article .thumbnail .col-xs-12{padding:15px 0 0}
     .row-offcanvas{position:relative;height:100%} /* height is to fix a mobile scroll menu issue */
