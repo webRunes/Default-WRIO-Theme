@@ -285,7 +285,6 @@ ul.leaders span + span{float:right;background:white;height:20px}
     .content{padding:0 8px 0 4px !important}
     .sidebar-offcanvas{padding-right:0 !important}
     .navbar{border-radius:0;height:100%;bottom:0;top:0;margin:0}
-    .container-liquid,.row,.row>div/*,.container-liquid .margin*/{height:100%}
     .navbar-fixed-top{position:relative}
     .content .alert.callout{display:none}
     .donation{margin-top:4px;text-align:right}

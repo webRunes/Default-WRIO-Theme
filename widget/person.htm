@@ -11,10 +11,10 @@
 </template>
 <template id="person-paragraph-template">
     <div class="paragraph">
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12">
             <p itemprop="description"></p>
         </div>
-        <div class="col-xs-12 col-md-6">  
+        <div class="col-xs-12">  
             <aside>
                 <span class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="right" title="Not yet available"></span>
             </aside>
@@ -29,7 +29,7 @@
         var $template = $(template.innerHTML);
         var paragraph = importDoc.querySelector('#person-paragraph-template');
         var $paragraph = $(paragraph.innerHTML);
- 
+
 
         var proto = Object.create(HTMLElement.prototype);
         proto.createdCallback = function () {
