@@ -1,6 +1,6 @@
 html,body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,
   .card-title,.footer-big h4,.footer-big h5,.footer-brand,.info-title,.media .media-heading,.title /* reset material-kit default */
-  {font-weight:normal;font-size:17px;font-family:"Roboto","Helvetica","Arial",sans-serif}
+  {font-weight:normal;font-size:18px;font-family:"Roboto","Helvetica","Arial",sans-serif}
 body{background-color:#fcfcfc}
 
   h1,.h1{font-size:1.8em}
@@ -8,6 +8,7 @@ body{background-color:#fcfcfc}
   h3,.h3{font-size:1.3em}
   h4,.h4{font-size:1.2em}
   h5,.h5{font-size:1.1em}
+  h6,.h6{font-size:1em}
   h1,h2,h3,.h1,.h2,.h3{margin:2rem 0 .75rem}
 .main{background:transparent}
   .main section{display:inline-block;width:100%}
@@ -20,15 +21,11 @@ a,a:hover{color:#337ab7}
   .card.ticket:hover{border-color:#337ab7;-webkit-transition:all .5s}
 
 .page-header .navbar,.page-header .title-text,.page-header .card .carousel-indicators ol,.main{max-width:800px}
-.carousel-indicators {
-     left: 0;
-    width: 100%;
-     padding-left: 0;
-     margin-left:0;
-     position:absolute;
-}
-.cover{position:absolute;z-index:2}
+.carousel-indicators{left:0;width:100%;padding-left:0;margin-left:0;position:absolute}
+.cover{max-width:800px;position:absolute;z-index:2}
   .cover .btn-lg{font-size:.9em;font-weight:500}
+  .cover .cover-left{float:left}
+  /*.cover .cover-right{float:right}*/
 .cover-bg{background:url('http://cdn.natgeotv.com.au/shows/thumbnails/cosmos-a-spacetime-odyssey.jpg') no-repeat center center fixed;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -36,10 +33,14 @@ a,a:hover{color:#337ab7}
     background-size:cover;
     transform: translate3d(0px, 0px, 0px);
     min-height:100vh}
-.cover .navbar .navbar-nav>li>a{color:rgba(255,255,255,0.7)}
-.cover .navbar .navbar-nav>li>a,.main .nav>li>a{font-size:1em;font-weight:500;margin:0 12px 0 0;padding:12px 24px;-webkit-transition:all .5s}
-  .cover .navbar .navbar-nav>li>a:hover{color:#fff;border-radius:0;-webkit-transition:all .5s}
-  .cover .navbar .navbar-nav>li>a.active{background-color:rgba(255,255,255,0.2);color:#fff;border-bottom:2px solid transparent;cursor:default;-webkit-transition:all .5s}
+.cover .navbar{clear:both}
+  .cover .navbar .navbar-nav>li>a,.cover .author{color:rgba(255,255,255,0.7)}
+  .cover .navbar .navbar-nav>li>a,.main .nav>li>a{font-size:1em;font-weight:500;margin:0 12px 0 0;padding:12px 24px;-webkit-transition:all .5s}
+    .cover .navbar .navbar-nav>li>a:hover,.cover .author:hover{color:#fff;border-radius:0;text-decoration:none;-webkit-transition:all .5s}
+    .cover .navbar .navbar-nav>li>a.active{background-color:rgba(255,255,255,0.2);color:#fff;border-bottom:2px solid transparent;cursor:default;-webkit-transition:all .5s}
+
+.cover .card .card-image{height:100px}
+  .cover .card .card-image img{width:auto;height:auto;max-height:100px;max-width:200px}
 /*.navbar.navbar-wrioos{background:#222 url(../img/loading_bg.png);color:#fff;box-shadow:0 4px 20px 0 rgba(0,0,0,.14),0 7px 12px -5px rgba(0,0,0,.46)}*/
 /* perhaps will be used later to fix #anchor position below fixed navigation bar
 *[id]::before {
@@ -52,13 +53,13 @@ a,a:hover{color:#337ab7}
 .navbar-toggle{float:left}
 /*.container-liquid{position:relative;top:70px}
 /*.card{display:block;box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.14);-webkit-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.14);box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.14);border-radius: 6px;color: rgba(0,0,0, 0.87);}*/
-.card .card-content{padding:2em 2.8em}
-.card,.card .card-image{border:1px solid #f2f2f2;border-radius:3px;box-shadow:none}
-.card .card-image{margin:0}
-  .card .card-image img{border-radius:0;box-shadow:none}
-  .card.ticket{margin-bottom:0}
-    .card.ticket h2{margin-top:0}
-  .card h5{font-size:1em}
+.main .card .card-content{padding:2em 2.8em}
+.main .card,.main .card .card-image{border:1px solid #f2f2f2;border-radius:3px;box-shadow:none}
+.main .card .card-image{margin:0}
+  .main .card .card-image img{border-radius:0;box-shadow:none}
+  .main .card.ticket{margin-bottom:0}
+    .main .card.ticket h2{margin-top:0}
+  .main .card h5{font-size:1em}
 /*.page{background-color:#fff;border:1px solid #f2f2f2;padding:1em 3em}*/
 .page-header{height:auto;min-height:100vh}
 .tab-content h1{margin-top:0}
@@ -92,9 +93,11 @@ a .media{height:200px;margin-top:2rem!important}
   .carousel .carousel-caption{padding:0;top:250px;position:initial}
     .carousel .carousel-caption .material-icons{top:0}
 
-.dashboard{margin:1em;position:fixed;z-index:100}
+.dashboard,.right-nav{margin:1em 1.2em;position:fixed;right:0;z-index:100}
+.right-nav a{display:block;text-shadow:0 0 8px rgba(255,255,255,0);-webkit-transition:all .5s}
+  .right-nav a:active,.right-nav a:focus,.right-nav a:hover{text-shadow:0 0 8px rgba(255,255,255,.3);color:#356ad9!important;-webkit-transition:all .5s}
 /*  .dashboard a{color:#fff;text-shadow:0 0 8px rgba(0,0,0,.7)}*/
-  .dashboard.btn-just-icon .dp_big{font-size:2em;width:auto;height:auto}
+  .dashboard.btn-just-icon .dp_big,.right-nav .dp_big{font-size:2em;width:auto!important;height:auto}
 .invert-icon{-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}
 
 .card-nav-tabs{margin-top:-45px}
@@ -105,8 +108,8 @@ a .media{height:200px;margin-top:2rem!important}
   {background-color:#4184f3}
 .article-margin-bottom{margin-bottom:20px}
 .contents{text-align:right}
-  .contents h1{color:#ccc;font-size:1.6em;padding:54px 0 0;margin:0;text-transform:uppercase}
-  .contents ul{font-size:1.2em;font-weight:500;list-style:none;margin:3px 0}
+  .contents h1{color:#ccc;font-size:1.6em;padding:60px 0 0;margin:0;text-transform:uppercase}
+  .contents ul{font-size:1.2em;list-style:none;margin:4px 0}
     .contents a{color:#999;display:block;line-height:42px;height:42px;-webkit-transition:all .5s}
       .contents a:hover{color:#222;text-decoration:none;-webkit-transition:all .5s}
 .navbar-fixed-top {
@@ -119,14 +122,17 @@ a .media{height:200px;margin-top:2rem!important}
     .btn.btn-primary.active, .btn.btn-primary.active:focus, .btn.btn-primary.active:hover, .btn.btn-primary:active, .btn.btn-primary:active:focus, .btn.btn-primary:active:hover, .btn.btn-primary:focus, .btn.btn-primary:hover
     {background-color:#dd4a38} */
 @media (min-width: 768px) {
-  .cover{top:10rem}
+  .cover{top:.5rem}
 }
 @media (max-width: 768px) {
   h1,h2,h3,.h1,.h2,.h3{margin:.75rem 0 .5rem}
   article{margin:0 1rem}
   .cover{padding-top:20px;right:0}
     .cover .navbar-nav a{text-align:right}
-}
+  a .card h3{color:#fff;display:block;padding:1em;position:relative;top:-190px;text-shadow:0 0 8px rgba(0,0,0,1)}
+  a .card .img{margin:0;width:100%}
+  .main .card .card-content{padding:2em 2.8em;background-origin: content-box;}
+  .card-text .arrow-more,.card-text .gradient:after{display:none}
 /*
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: none;
