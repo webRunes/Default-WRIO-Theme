@@ -97,8 +97,9 @@ a .media{height:200px;margin-top:2rem!important}
 .right-nav a{display:block;text-shadow:0 0 8px rgba(255,255,255,0);-webkit-transition:all .5s}
   .right-nav a:active,.right-nav a:focus,.right-nav a:hover{text-shadow:0 0 8px rgba(255,255,255,.3);color:#356ad9!important;-webkit-transition:all .5s}
 /*  .dashboard a{color:#fff;text-shadow:0 0 8px rgba(0,0,0,.7)}*/
-  .dashboard.btn-just-icon .dp_big,.right-nav .dp_big{font-size:2em;width:auto!important;height:auto}
+  .dp_big{font-size:2em!important;width:auto!important;height:auto}
 .invert-icon{-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}
+.invert-icon-v{-moz-transform:scaleY(-1);-o-transform:scaleY(-1);-webkit-transform:scaleY(-1);transform:scaleY(-1);filter:FlipV;-ms-filter:"FlipV"}
 
 .card-nav-tabs{margin-top:-45px}
 .card .header-primary{box-shadow:0 2px 2px 0 rgba(0,0,0,.2),0 2px 2px -2px rgba(244,67,54,.6)}
@@ -107,8 +108,8 @@ a .media{height:200px;margin-top:2rem!important}
   .btn-primary.active,.btn-primary.active:focus,.btn-primary.active:hover,.btn-primary:active,.btn.btn-primary:active:focus,.btn.btn-primary:active:hover,.btn.btn-primary:focus,.btn.btn-primary:hover
   {background-color:#4184f3}
 .article-margin-bottom{margin-bottom:20px}
-.contents{text-align:right}
-  .contents h1{color:#ccc;font-size:1.6em;padding:60px 0 0;margin:0;text-transform:uppercase}
+.contents{margin-top:-36px;text-align:right}
+  .contents h1{color:#ccc;font-size:1.6em;padding:54px 0 0;margin:0;text-transform:uppercase}
   .contents ul{font-size:1.2em;list-style:none;margin:4px 0}
     .contents a{color:#999;display:block;line-height:42px;height:42px;-webkit-transition:all .5s}
       .contents a:hover{color:#222;text-decoration:none;-webkit-transition:all .5s}
@@ -131,7 +132,10 @@ a .media{height:200px;margin-top:2rem!important}
     .cover .navbar-nav a{text-align:right}
   a .card h3{color:#fff;display:block;padding:1em;position:relative;top:-190px;text-shadow:0 0 8px rgba(0,0,0,1)}
   a .card .img{margin:0;width:100%}
-  .main .card .card-content{padding:2em 2.8em;background-origin: content-box;}
+  .main .card .card-content{padding:2em 2.8em;background-origin:content-box}
+  .main .card .nav-tabs a i{display:inline-block!important}
+  .main .card .nav-tabs>li .material-icons{margin:0}
+  .main .card .nav-tabs-wrapper label{top:0}
   .card-text .arrow-more,.card-text .gradient:after{display:none}
 /*
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
