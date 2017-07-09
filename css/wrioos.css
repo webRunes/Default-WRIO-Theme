@@ -111,11 +111,9 @@ a .media{height:200px;margin-top:2rem!important}
 .contents{text-align:right}
   .contents h1{color:#ccc;font-size:1.6em;padding:60px 0 0;margin:0;text-transform:uppercase}
   .contents ul{font-size:1.2em;list-style:none;margin:4px 0}
-    .contents a{color:#999;display:inline-block;line-height:42px;height:42px;-webkit-transition:all .5s}
+    .contents a{color:#999;display:inline-block;margin:5px 0;-webkit-transition:all .5s}
       .contents a:hover{color:#222;text-decoration:none;-webkit-transition:all .5s}
-.navbar-fixed-top {
-    position:fixed;
-}
+.navbar-fixed-top{position:fixed}
 
 /* red version
 .card .content-primary,.card .header-primary{background:linear-gradient(60deg,#dd4a38,#e52f28)}
@@ -134,16 +132,6 @@ a .media{height:200px;margin-top:2rem!important}
   a .card .img{margin:0;width:100%}
   .main .card .card-content{padding:2em 2.8em;background-origin: content-box;}
   .card-text .arrow-more,.card-text .gradient:after{display:none}
-/*
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
-  float: none;
-}*/
 
 /* Twitter */
 .timeline-Tweet:hover{background-color:transparent!important}
-/*.twitter{clear:both}
-.twitter-limit{color:#aaa}
-.twitter-timeline{width:100% !important}
-#titteriframe{height:190px;width:100%}
-textarea#comment{resize:none}
-#titteriframe img{width:auto!important;height:auto!important}*/
