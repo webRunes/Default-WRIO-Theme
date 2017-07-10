@@ -92,7 +92,7 @@ a .media{height:200px;margin-top:2rem!important}
   .carousel .carousel-caption{padding:0;top:250px;position:initial}
     .carousel .carousel-caption .material-icons{top:0}
 
-.dashboard,.right-nav{margin:1em 1.2em;position:fixed;right:0;z-index:100}
+.dashboard,.right-nav{margin:0.5em 1.2em;position:fixed;right:0;z-index:100}
 .right-nav a{display:block;text-shadow:0 0 8px rgba(255,255,255,0);-webkit-transition:all .5s}
   .right-nav a:active,.right-nav a:focus,.right-nav a:hover{text-shadow:0 0 8px rgba(255,255,255,.3);color:#356ad9!important;-webkit-transition:all .5s}
 /*  .dashboard a{color:#fff;text-shadow:0 0 8px rgba(0,0,0,.7)}*/
