@@ -124,20 +124,87 @@ a .media{height:200px;margin-top:2rem!important}
   .cover{top:.5rem}
 }
 @media (max-width: 768px) {
-  html,body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,
-    .card-title,.footer-big h4,.footer-big h5,.footer-brand,.info-title,.media .media-heading,.title /* reset material-kit default */
-    {font-size:18px}
-  h1,h2,h3,.h1,.h2,.h3{margin:.75rem 0 .5rem}
-  article{margin:0 1rem}
-  .cover{padding-top:20px;right:0}
-    .cover .navbar-nav a{text-align:right}
-  a .card h3{color:#fff;display:block;padding:1em;position:relative;top:-190px;text-shadow:0 0 8px rgba(0,0,0,1)}
-  a .card .img{margin:0;width:100%}
-  .main .card .card-content{padding:2em 2.8em;background-origin:content-box}
-  .main .card .nav-tabs a i{display:inline-block!important}
-  .main .card .nav-tabs>li .material-icons{margin:0}
-  .main .card .nav-tabs-wrapper label{top:0}
-  .card-text .arrow-more,.card-text .gradient:after{display:none}
 
-/* Twitter */
-.timeline-Tweet:hover{background-color:transparent!important}
+  h1, h2, h3, .h1, .h2, .h3 {
+    margin: .75rem 0 .5rem
+  }
+
+  article {
+    margin: 0 1rem
+  }
+
+  .cover {
+    padding-top: 20px;
+    right: 0
+  }
+
+  .cover .navbar-nav a {
+    text-align: right
+  }
+
+  a .card h3 {
+    color: #fff;
+    display: block;
+    padding: 1em;
+    position: relative;
+    top: -190px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1)
+  }
+
+  a .card .img {
+    margin: 0;
+    width: 100%
+  }
+
+  .main .card .card-content {
+    padding: 2em 2.8em;
+    background-origin: content-box
+  }
+
+  .main .card .nav-tabs a i {
+    display: inline-block !important
+  }
+
+  .main .card .nav-tabs > li .material-icons {
+    margin: 0
+  }
+
+  .main .card .nav-tabs-wrapper label {
+    top: 0
+  }
+
+  .card-text .arrow-more, .card-text .gradient:after {
+    display: none
+  }
+
+  /* Twitter */
+  .timeline-Tweet:hover {
+    background-color: transparent !important
+  }
+
+
+}
+
+/* Vertical nav */
+@media (min-width: 768px) {
+  #cd-vertical-nav {
+    display: none !important;
+  }
+
+  #sidebar {
+    display: block !important;
+  }
+}
+
+#cd-vertical-nav {
+  display: block;
+  right: 15px !important;
+}
+
+
+#sidebar {
+  display: none;
+}
+
+
+
