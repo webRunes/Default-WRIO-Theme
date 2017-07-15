@@ -211,6 +211,12 @@ div#sidebar.navbar-fixed-top{
   overflow-y: scroll;
 }
 
-
+.tabbar-fixed-top {
+  left:inherit;
+  right:inherit;
+  top: 30px;
+  position: fixed;
+  z-index: 1000;
+}
 
 
