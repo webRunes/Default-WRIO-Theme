@@ -108,7 +108,7 @@ a .media{height:200px;margin-top:2rem!important}
 .contents{margin-top:-36px;text-align:right}
   .contents h1{color:#ccc;font-size:1.6em;padding:54px 0 0;margin:0;text-transform:uppercase}
   .contents ul{font-size:1.2em;list-style:none;margin:4px 0}
-    .contents a{color:#999;display:block;line-height:42px;height:42px;-webkit-transition:all .5s}
+    .contents a{color:#999;display:block;padding:15px 0;-webkit-transition:all .5s}
       .contents a:hover{color:#222;text-decoration:none;-webkit-transition:all .5s}
     .contents .to-top{margin:28px 0}
 .navbar-fixed-top{position:fixed}
@@ -170,5 +170,3 @@ div#sidebar.navbar-fixed-top{
   position: fixed;
   z-index: 1000;
 }
-
-
