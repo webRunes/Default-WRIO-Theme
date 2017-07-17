@@ -25,7 +25,6 @@ a,a:hover{color:#337ab7}
 .cover{max-width:800px;position:absolute;z-index:2}
   .cover .btn-lg{font-size:.9em;font-weight:500}
   .cover .cover-left{float:left}
-  /*.cover .cover-right{float:right}*/
 .cover-bg{background:url('http://cdn.natgeotv.com.au/shows/thumbnails/cosmos-a-spacetime-odyssey.jpg') no-repeat center center fixed;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -51,8 +50,6 @@ a,a:hover{color:#337ab7}
   visibility: hidden;
 }*/
 .navbar-toggle{float:left}
-/*.container-liquid{position:relative;top:70px}
-/*.card{display:block;box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.14);-webkit-box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.14);box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.14);border-radius: 6px;color: rgba(0,0,0, 0.87);}*/
 .main .card .card-content{padding:2em 2.8em}
 .main .card,.main .card .card-image{border:1px solid #f2f2f2;border-radius:3px;box-shadow:none}
 .main .card .card-image{margin:0}
@@ -60,10 +57,11 @@ a,a:hover{color:#337ab7}
   .main .card.ticket{margin-bottom:0}
     .main .card.ticket h2{margin-top:0}
   .main .card h5{font-size:1em}
-/*.page{background-color:#fff;border:1px solid #f2f2f2;padding:1em 3em}*/
+.page-header{height:auto;min-height:100vh}
 .tab-content h1{margin-top:0}
 .title{padding:270px 0 150px;position:relative;z-index:2}
   .title h1{color:#fff;font-size:4em;font-weight:600}
+  .title h2{font-weight:600;margin:10px 0 20px;text-transform:uppercase}
   .title-block{margin:2em 3em}
     .title-text{text-align:left}
     .title-text h3{color:#ccc;font-weight:400;margin:0 0 1.1rem 0}
@@ -96,7 +94,6 @@ a .media{height:200px;margin-top:2rem!important}
 .dashboard,.right-nav{margin:0.5em 1.2em;position:fixed;right:0;z-index:100}
 .right-nav a{display:block;text-shadow:0 0 8px rgba(255,255,255,0);-webkit-transition:all .5s}
   .right-nav a:active,.right-nav a:focus,.right-nav a:hover{text-shadow:0 0 8px rgba(255,255,255,.3);color:#356ad9!important;-webkit-transition:all .5s}
-/*  .dashboard a{color:#fff;text-shadow:0 0 8px rgba(0,0,0,.7)}*/
   .dp_big{font-size:2em!important;width:auto!important;height:auto}
 .invert-icon{-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}
 .invert-icon-v{-moz-transform:scaleY(-1);-o-transform:scaleY(-1);-webkit-transform:scaleY(-1);transform:scaleY(-1);filter:FlipV;-ms-filter:"FlipV"}
@@ -111,79 +108,34 @@ a .media{height:200px;margin-top:2rem!important}
 .contents{margin-top:-36px;text-align:right}
   .contents h1{color:#ccc;font-size:1.6em;padding:54px 0 0;margin:0;text-transform:uppercase}
   .contents ul{font-size:1.2em;list-style:none;margin:4px 0}
-    .contents a{color:#999;display:inline-block;margin:12px 0;-webkit-transition:all .5s}
+    .contents a{color:#999;display:block;line-height:42px;height:42px;-webkit-transition:all .5s}
       .contents a:hover{color:#222;text-decoration:none;-webkit-transition:all .5s}
+    .contents .to-top{margin:28px 0}
 .navbar-fixed-top{position:fixed}
 
-/* red version
-.card .content-primary,.card .header-primary{background:linear-gradient(60deg,#dd4a38,#e52f28)}
-.btn.btn-primary,.navbar .navbar-nav>li>a.btn.btn-primary{background-color:#e52f28}
-    .btn.btn-primary.active, .btn.btn-primary.active:focus, .btn.btn-primary.active:hover, .btn.btn-primary:active, .btn.btn-primary:active:focus, .btn.btn-primary:active:hover, .btn.btn-primary:focus, .btn.btn-primary:hover
-    {background-color:#dd4a38} */
 @media (min-width: 768px) {
   .cover{top:.5rem}
 }
 @media (max-width: 768px) {
+  h1,h2,h3,.h1,.h2,.h3{margin:.75rem 0 .5rem}
+  article{margin:0 1rem}
+  .cover{padding-top:20px;right:0}
+    .cover .navbar-nav a{text-align:right}
+  a .card h3{color:#fff;display:block;padding:1em;position:relative;top:-190px;text-shadow:0 0 8px rgba(0,0,0,1)}
+  a .card .img{margin:0;width:100%}
+  .main .card .card-content{padding:2em 2.8em;background-origin:content-box}
+  .main .card .nav-tabs a i{display:inline-block!important}
+  .main .card .nav-tabs>li .material-icons{margin:0}
+  .main .card .nav-tabs-wrapper label{top:0}
+  .card-text .arrow-more,.card-text .gradient:after{display:none}
 
-  h1, h2, h3, .h1, .h2, .h3 {
-    margin: .75rem 0 .5rem
-  }
-
-  article {
-    margin: 0 1rem
-  }
-
-  .cover {
-    padding-top: 20px;
-    right: 0
-  }
-
-  .cover .navbar-nav a {
-    text-align: right
-  }
-
-  a .card h3 {
-    color: #fff;
-    display: block;
-    padding: 1em;
-    position: relative;
-    top: -190px;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 1)
-  }
-
-  a .card .img {
-    margin: 0;
-    width: 100%
-  }
-
-  .main .card .card-content {
-    padding: 2em 2.8em;
-    background-origin: content-box
-  }
-
-  .main .card .nav-tabs a i {
-    display: inline-block !important
-  }
-
-  .main .card .nav-tabs > li .material-icons {
-    margin: 0
-  }
-
-  .main .card .nav-tabs-wrapper label {
-    top: 0
-  }
-
-  .card-text .arrow-more, .card-text .gradient:after {
-    display: none
-  }
-
-  /* Twitter */
-  .timeline-Tweet:hover {
-    background-color: transparent !important
-  }
-
-
+  html,body,.card-title,.footer-big h4,.footer-big h5,.footer-brand,.info-title,.media .media-heading,.title
+  {font-size:14px}
+  .title h1{font-size:2em}
 }
+
+/* Twitter */
+.timeline-Tweet:hover{background-color:transparent!important}
 
 /* Vertical nav */
 @media (min-width: 768px) {
