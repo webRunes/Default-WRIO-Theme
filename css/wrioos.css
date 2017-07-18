@@ -9,7 +9,6 @@ body{background-color:#fcfcfc}
   h4,.h4{font-size:1.2em}
   h5,.h5{font-size:1.1em}
   h6,.h6{font-size:1em}
-  h1,h2,h3,.h1,.h2,.h3{margin:2rem 0 .75rem}
 .main{background:transparent}
   .main section{display:inline-block;width:100%}
   .main .card-content{padding:1em 3rem}
@@ -34,16 +33,9 @@ a,a:hover{color:#337ab7}
 
 .cover .card .card-image{height:100px}
   .cover .card .card-image img{width:auto;height:auto;max-height:100px;max-width:200px}
-/* perhaps will be used later to fix #anchor position below fixed navigation bar
-*[id]::before {
-  display: block;
-  content: " ";
-  margin-top: -75px;
-  height: 75px;
-  visibility: hidden;
-}*/
+.article-margin-bottom *[id],#Comments{position:relative;top:-80px;visibility:hidden}
 .navbar-toggle{float:left}
-.main .card .card-content{padding:2em 2.8em}
+.main .card .card-content{padding:1em 2.8em}
 .main .card,.main .card .card-image{border:1px solid #f2f2f2;border-radius:3px;box-shadow:none}
 .main .card .card-image{margin:0}
   .main .card .card-image img{border-radius:0;box-shadow:none}
@@ -98,7 +90,7 @@ a .media{height:200px;margin-top:2rem!important}
 .btn.btn-primary,.navbar .navbar-nav>li>a.btn.btn-primary{background-color:#3468d7}
   .btn-primary.active,.btn-primary.active:focus,.btn-primary.active:hover,.btn-primary:active,.btn.btn-primary:active:focus,.btn.btn-primary:active:hover,.btn.btn-primary:focus,.btn.btn-primary:hover
   {background-color:#4184f3}
-.article-margin-bottom{margin-bottom:20px}
+.article-margin-bottom{margin-bottom:2em}
 .contents{margin-top:-36px;text-align:right}
   .contents h1{color:#ccc;font-size:1.6em;padding:54px 0 0;margin:0;text-transform:uppercase}
   .contents ul{font-size:1.2em;list-style:none;margin:4px 0}
