@@ -25,13 +25,7 @@ a,a:hover{color:#337ab7}
 .cover{max-width:800px;position:absolute;z-index:2}
   .cover .btn-lg{font-size:.9em;font-weight:500}
   .cover .cover-left{float:left}
-.cover-bg{background:url('http://cdn.natgeotv.com.au/shows/thumbnails/cosmos-a-spacetime-odyssey.jpg') no-repeat center center fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    transform: translate3d(0px, 0px, 0px);
-    min-height:100vh}
+.cover-bg{-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;transform:translate3d(0px, 0px, 0px);min-height:100vh}
 .cover .navbar{clear:both}
   .cover .navbar .navbar-nav>li>a,.cover .author{color:rgba(255,255,255,0.7)}
   .cover .navbar .navbar-nav>li>a,.main .nav>li>a{font-size:1em;font-weight:500;margin:0 12px 0 0;padding:12px 24px;-webkit-transition:all .5s}
@@ -40,7 +34,6 @@ a,a:hover{color:#337ab7}
 
 .cover .card .card-image{height:100px}
   .cover .card .card-image img{width:auto;height:auto;max-height:100px;max-width:200px}
-/*.navbar.navbar-wrioos{background:#222 url(../img/loading_bg.png);color:#fff;box-shadow:0 4px 20px 0 rgba(0,0,0,.14),0 7px 12px -5px rgba(0,0,0,.46)}*/
 /* perhaps will be used later to fix #anchor position below fixed navigation bar
 *[id]::before {
   display: block;
@@ -66,7 +59,7 @@ a,a:hover{color:#337ab7}
     .title-text{text-align:left}
     .title-text h3{color:#ccc;font-weight:400;margin:0 0 1.1rem 0}
 .header-filter{position:relative}
-  .header-filter:after{position:absolute;z-index:1;width:100%;height:100%;display:block;left:0;top:0;content:"";background-color:rgba(0, 0, 0, 0.4);}
+  .header-filter:after{background:url('https://default.wrioos.com/img/bg_tile.png');position:absolute;z-index:1;width:100%;height:100%;display:block;left:0;top:0;content:""}
 .header{}
   .header .nav-tabs a{font-size:1em}
   .header .nav-tabs>li>a{color:#ddd!important}
@@ -113,9 +106,15 @@ a .media{height:200px;margin-top:2rem!important}
       .contents a:hover{color:#222;text-decoration:none;-webkit-transition:all .5s}
     .contents .to-top{margin:28px 0}
 .navbar-fixed-top{position:fixed}
+#cd-vertical-nav{display:block;right:15px !important}
+#sidebar{display:none}
+div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
+.tabbar-fixed-top{left:inherit;right:inherit;top:30px;position:fixed;z-index:1000}
 
 @media (min-width: 768px) {
   .cover{top:.5rem}
+  #cd-vertical-nav{display:none !important}
+  #sidebar{display:block !important}
 }
 @media (max-width: 768px) {
   h1,h2,h3,.h1,.h2,.h3{margin:.75rem 0 .5rem}
@@ -133,41 +132,8 @@ a .media{height:200px;margin-top:2rem!important}
   html,body,.card-title,.footer-big h4,.footer-big h5,.footer-brand,.info-title,.media .media-heading,.title
   {font-size:14px}
   .title h1{font-size:2em}
+  .title h2{font-size:1em}
 }
 
 /* Twitter */
 .timeline-Tweet:hover{background-color:transparent!important}
-
-/* Vertical nav */
-@media (min-width: 768px) {
-  #cd-vertical-nav {
-    display: none !important;
-  }
-
-  #sidebar {
-    display: block !important;
-  }
-}
-
-#cd-vertical-nav {
-  display: block;
-  right: 15px !important;
-}
-
-
-#sidebar {
-  display: none;
-}
-
-div#sidebar.navbar-fixed-top{
-  height: 100vh;
-  overflow-y: scroll;
-}
-
-.tabbar-fixed-top {
-  left:inherit;
-  right:inherit;
-  top: 30px;
-  position: fixed;
-  z-index: 1000;
-}
