@@ -18,7 +18,7 @@ a,a:hover{color:#337ab7}
   a:hover{text-decoration:underline}
   .card.ticket{background-color:#fff;-webkit-transition:all .5s}
   .card.ticket:hover{border-color:#337ab7;-webkit-transition:all .5s}
-.coming-soon{color:#FF4136!important}
+.coming-soon,.coming-soon:hover{color:#FF4136!important}
 
 .page-header .navbar,.page-header .title-text,.page-header .card .carousel-indicators ol,.main{max-width:800px}
 .carousel-indicators{left:0;width:100%;padding-left:0;margin-left:0;position:absolute}
