@@ -1,6 +1,6 @@
 html,body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,
   .card-title,.footer-big h4,.footer-big h5,.footer-brand,.info-title,.media .media-heading,.title /* reset material-kit default */
-  {font-weight:normal;font-size:18px;font-family:"Roboto","Helvetica","Arial",sans-serif}
+  {font-weight:normal;font-size:1em;font-family:"Roboto","Helvetica","Arial",sans-serif}
 body{background-color:#fcfcfc}
 
   h1,.h1{font-size:1.8em}
