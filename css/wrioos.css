@@ -3,12 +3,12 @@ html,body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,
   {font-weight:normal;font-size:1em;font-family:"Roboto","Helvetica","Arial",sans-serif}
 body{background-color:#fcfcfc}
 
-  h1,.h1{font-size:1.8em}
-  h2,.h2{font-size:1.4em}
-  h3,.h3{font-size:1.3em}
-  h4,.h4{font-size:1.2em}
-  h5,.h5{font-size:1.1em}
-  h6,.h6{font-size:1em}
+h1,.h1{font-size:1.8em}
+h2,.h2{font-size:1.4em}
+h3,.h3{font-size:1.3em}
+h4,.h4{font-size:1.2em}
+h5,.h5{font-size:1.1em}
+h6,.h6{font-size:1em}
 .main{background:transparent}
   .main section{display:inline-block;width:100%}
   .main .card-content{padding:1em 3rem}
@@ -58,7 +58,12 @@ a,a:hover{color:#337ab7}
   .header .nav-tabs a{font-size:1em}
   .header .nav-tabs>li>a{color:#ddd!important}
     .header .nav-tabs>li.active>a,.header .nav-tabs>li>a:focus,.header .nav-tabs>li>a:hover{color:#fff!important}
-.breadcrumb{clear:both}
+.breadcrumb{clear:both;margin-bottom:8px}
+.breadcrumb,.well{}
+.well{border:none;color:#777;padding:15px 20px;margin-bottom:8px;-webkit-box-shadow:none;box-shadow:none}
+  .well h4{margin:0 0 12px}
+a.btn .glyphicon{padding-right:8px}
+.btn-group-sm .btn,.btn-group-sm .navbar .navbar-nav>li>a.btn,.btn.btn-sm,.navbar .navbar-nav>li>a.btn.btn-sm{padding:15px 20px;}
 .glyphicon-new-window{margin-left:4px}
 #centerWrp>img{width:auto;height:auto}
 a .media{height:200px;margin-top:2rem!important}
