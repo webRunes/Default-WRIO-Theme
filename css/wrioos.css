@@ -125,6 +125,8 @@ figcaption.callout{margin:4px 0}
 #sidebar{display:none}
 div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .tabbar-fixed-top{left:inherit;right:inherit;top:30px;position:fixed;z-index:1000}
+.dropdown-menu li a:active,.dropdown-menu li a:focus,.dropdown-menu li a:hover{background-color:#4184f3}
+.dropdown-menu li>a:focus,.dropdown-menu li>a:hover{box-shadow:none}
 
 @media (min-width: 768px) {
   .cover{top:.5rem}
