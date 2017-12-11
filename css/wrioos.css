@@ -153,9 +153,6 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .main .card .nav-tabs>li .material-icons{margin:0}
   .main .card .nav-tabs-wrapper label{top:0}
   .card-text .arrow-more,.card-text .gradient:after{display:none}
-
-  html,body,.card-title,.footer-big h4,.footer-big h5,.footer-brand,.info-title,.media .media-heading,.title
-  {font-size:14px}
   .title h1{font-size:2em}
   .title h2{font-size:1em}
 }
