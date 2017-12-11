@@ -35,7 +35,7 @@ a,a:hover{color:#337ab7}
 
 .cover .card .card-image{height:100px}
   .cover .card .card-image img{width:auto;height:auto;max-height:100px;max-width:200px}
-.article-margin-bottom *[id],#Comments{position:relative;top:-80px;visibility:hidden}
+.article-margin-bottom *[id]{position:relative;top:-80px;visibility:hidden}
 .navbar-toggle{float:left}
 .main .card .card-content{padding:1em 2.8em}
 .main .card,.main .card .card-image{border:1px solid #f2f2f2;border-radius:3px;box-shadow:none}
@@ -129,7 +129,12 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .tabbar-fixed-top{left:inherit;right:inherit;top:30px;position:fixed;z-index:1000}
 .dropdown-menu li a:active,.dropdown-menu li a:focus,.dropdown-menu li a:hover{background-color:#4184f3}
 .dropdown-menu li>a:focus,.dropdown-menu li>a:hover{box-shadow:none}
+
+/* Reset material-kit.min.css */
 .card .footer{margin-top:0}
+.btn.btn-success:active, .btn.btn-success:focus, .btn.btn-success:hover, .navbar .navbar-nav>li>a.btn.btn-success:active, .navbar .navbar-nav>li>a.btn.btn-success:focus, .navbar .navbar-nav>li>a.btn.btn-success:hover{box-shadow:none}
+.btn-group-sm .btn, .btn-group-sm .navbar .navbar-nav>li>a.btn, .btn.btn-sm, .navbar .navbar-nav>li>a.btn.btn-sm{font-size:12px}
+/* END */
 
 @media (min-width: 768px) {
   .cover{top:.5rem}
