@@ -35,7 +35,7 @@ a,a:hover{color:#337ab7}
 
 .cover .card .card-image{height:100px}
   .cover .card .card-image img{width:auto;height:auto;max-height:100px;max-width:200px}
-.article-margin-bottom *[id]{position:relative;top:-80px;visibility:hidden}
+h2[id]{position:relative;top:-80px;visibility:hidden}
 .navbar-toggle{float:left}
 .main .card .card-content{padding:1em 2.8em}
 .main .card,.main .card .card-image{border:1px solid #f2f2f2;border-radius:3px;box-shadow:none}
@@ -121,7 +121,7 @@ figcaption.callout{margin:4px 0}
     .contents a{color:#999;display:block;padding:15px 0;-webkit-transition:all .5s}
       .contents a:hover{color:#222;text-decoration:none;-webkit-transition:all .5s}
     .contents .to-top{margin:28px 0}
-.paragraph>div>div{margin:0 0 24px}
+.paragraph>div>div{margin:0 0 18px}
 .navbar-fixed-top{position:fixed}
 #cd-vertical-nav{display:block;right:15px !important}
 #sidebar{display:none}
