@@ -160,5 +160,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .title h2{font-size:1em}
 }
 
+.loading{width:64px;height:64px}
+
 /* Twitter */
 .timeline-Tweet:hover{background-color:transparent!important}
