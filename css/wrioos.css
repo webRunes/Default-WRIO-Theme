@@ -121,7 +121,6 @@ figcaption.callout{margin:4px 0}
       .contents a:hover{color:#222;text-decoration:none;-webkit-transition:all .5s}
     .contents .to-top{margin:28px 0}
 h1[id],h2[id]{position:relative;top:-80px;visibility:hidden} /* we need it for the Content's #anchors */
-.paragraph>div>div{margin:0 0 18px}
 .navbar-fixed-top{position:fixed}
 #cd-vertical-nav{display:block;right:15px !important}
 #sidebar{display:none}
