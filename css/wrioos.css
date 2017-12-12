@@ -36,12 +36,12 @@ a,a:hover{color:#337ab7}
 .cover .card .card-image{height:100px}
   .cover .card .card-image img{width:auto;height:auto;max-height:100px;max-width:200px}
 .navbar-toggle{float:left}
-.main .card .card-content{padding:1em 2.8em}
+.main .card .card-content{padding:24px}
 .main .card,.main .card .card-image{border:1px solid #f2f2f2;border-radius:3px;box-shadow:none}
 .main .card .card-image{margin:0}
   .main .card .card-image img{border-radius:0;box-shadow:none}
   .main .card.ticket{margin-bottom:0}
-    .main .card.ticket h2{margin-top:0}
+    .main .card.ticket h2{margin-top:-8px}
   .main .card h5{font-size:1em}
 .page-header{height:auto;min-height:100vh}
 .tab-content h1{margin-top:0}
@@ -147,7 +147,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
     .cover .navbar-nav a{text-align:right}
   a .card h3{color:#fff;display:block;padding:1em;position:relative;top:-190px;text-shadow:0 0 8px rgba(0,0,0,1)}
   a .card .img{margin:0;width:100%}
-  .main .card .card-content{padding:1.6em 2em;background-origin:content-box}
+  .main .card .card-content{padding:24px;background-origin:content-box}
   .main .card .nav-tabs a i{display:inline-block!important}
   .main .card .nav-tabs>li .material-icons{margin:0}
   .main .card .nav-tabs-wrapper label{top:0}
