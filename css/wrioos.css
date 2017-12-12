@@ -122,7 +122,7 @@ figcaption.callout{margin:4px 0}
     .contents .to-top{margin:28px 0}
 h1[id],h2[id]{position:relative;top:-80px;visibility:hidden} /* we need it for the Content's #anchors */
 .navbar-fixed-top{position:fixed}
-#cd-vertical-nav{display:block;right:15px !important}
+#cd-vertical-nav{display:block;right:36px!important}
 #sidebar{display:none}
 div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .tabbar-fixed-top{left:inherit;right:inherit;top:30px;position:fixed;z-index:1000}
