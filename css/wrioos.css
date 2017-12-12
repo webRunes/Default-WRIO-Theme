@@ -70,7 +70,7 @@ a .media{height:200px;margin-top:2rem!important}
   a .media h2{color:#222;margin-top:12px}
   a .media p{color:#222;margin:12px 0}
   a .card .img{background-size:200px!important;float:right;margin-left:15px;width:200px;height:200px;
-    -webkit-background-size:cover!important;-moz-background-size:cover!important;-o-background-size:cover!important;background-size:cover!important}
+    -webkit-background-size:cover!important;-moz-background-size:cover!important;-o-background-size:cover!important;background-size:cover!important;background-position:center!important}
   a .card-text{height:200px;overflow:hidden;text-overflow:ellipsis}
   .card-text .arrow-more{color:#eee;float:right;padding-right:200px;position:relative;text-align:center;top:-25px;width:100%;z-index:2}
   .card-text .gradient{margin-right:200px;position:relative;top:200px}
