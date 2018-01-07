@@ -379,13 +379,13 @@ li {
 }
 
 a {
-  color: #C15757;
+  color: #337ab7;
   font-weight: 400;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #823030;
+  color: #337ab7;
   text-decoration: underline;
 }
 

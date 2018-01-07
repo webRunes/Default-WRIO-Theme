@@ -110,9 +110,15 @@ figcaption.callout{margin:4px 0}
 .card-nav-tabs{margin-top:-45px}
 .card .header-primary{box-shadow:0 2px 2px 0 rgba(0,0,0,.2),0 2px 2px -2px rgba(244,67,54,.6)}
 .card .content-primary,.card .header-primary{background:linear-gradient(60deg,#4184f3,#3468d7)}
-.btn.btn-primary,.navbar .navbar-nav>li>a.btn.btn-primary{background-color:#3468d7}
+.btn.btn-primary,.navbar .navbar-nav>li>a.btn.btn-primary{background-color:#4184f3}
   .btn-primary.active,.btn-primary.active:focus,.btn-primary.active:hover,.btn-primary:active,.btn.btn-primary:active:focus,.btn.btn-primary:active:hover,.btn.btn-primary:focus,.btn.btn-primary:hover
-  {background-color:#4184f3}
+  {background-color:#3468d7}
+  .btn-default.active,.btn-default.active:focus,.btn-default.active:hover,.btn-default:active,.btn.btn-default:active:focus,.btn.btn-default:active:hover,.btn.btn-default:focus,.btn.btn-default:hover
+  {background-color:#757575}
+  .btn-success.active,.btn-success.active:focus,.btn-success.active:hover,.btn-success:active,.btn.btn-success:active:focus,.btn.btn-success:active:hover,.btn.btn-success:focus,.btn.btn-success:hover
+  {background-color:#3c763d}
+  .btn-danger.active,.btn-danger.active:focus,.btn-danger.active:hover,.btn-danger:active,.btn.btn-danger:active:focus,.btn.btn-danger:active:hover,.btn.btn-danger:focus,.btn.btn-danger:hover
+  {background-color:#a94442}
 .article-margin-bottom{margin-bottom:2em}
 .contents{margin-top:18px;text-align:right}
   .contents h1{color:#ccc;font-size:1.6em;padding:54px 0 0;margin:0;text-transform:uppercase}
@@ -128,12 +134,23 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .tabbar-fixed-top{left:inherit;right:inherit;top:30px;position:fixed;z-index:1000}
 .dropdown-menu li a:active,.dropdown-menu li a:focus,.dropdown-menu li a:hover{background-color:#4184f3}
 .dropdown-menu li>a:focus,.dropdown-menu li>a:hover{box-shadow:none}
+  .dropdown-menu li>a .dp_small{font-size:20px;position:relative;top:-2px}
+  .with_text{margin-right:4px}
 .social{margin:24px 0}
 
 /* Reset material-kit.min.css */
 .card .footer{margin-top:0}
-.btn.btn-success:active, .btn.btn-success:focus, .btn.btn-success:hover, .navbar .navbar-nav>li>a.btn.btn-success:active, .navbar .navbar-nav>li>a.btn.btn-success:focus, .navbar .navbar-nav>li>a.btn.btn-success:hover{box-shadow:none}
+.btn.btn-primary:active, .btn.btn-primary:focus, .btn.btn-primary:hover, .navbar .navbar-nav>li>a.btn.btn-primary:active, .navbar .navbar-nav>li>a.btn.btn-primary:focus, .navbar .navbar-nav>li>a.btn.btn-primary:hover,
+.btn.btn-success:active, .btn.btn-success:focus, .btn.btn-success:hover, .navbar .navbar-nav>li>a.btn.btn-success:active, .navbar .navbar-nav>li>a.btn.btn-success:focus, .navbar .navbar-nav>li>a.btn.btn-success:hover,
+.btn.btn-default:active, .btn.btn-default:focus, .btn.btn-default:hover, .btn:active, .btn:focus, .btn:hover, .navbar .navbar-nav>li>a.btn.btn-default:active, .navbar .navbar-nav>li>a.btn.btn-default:focus, .navbar .navbar-nav>li>a.btn.btn-default:hover, .navbar .navbar-nav>li>a.btn:active, .navbar .navbar-nav>li>a.btn:focus, .navbar .navbar-nav>li>a.btn:hover{box-shadow:none}
 .btn-group-sm .btn, .btn-group-sm .navbar .navbar-nav>li>a.btn, .btn.btn-sm, .navbar .navbar-nav>li>a.btn.btn-sm{font-size:12px}
+/* END */
+
+/* Core */
+.core .form-group label.control-label{font-size:14px;color:#999;margin:12px 0 0;text-align:right}
+.toggle-field{margin:5px 0 0}
+  .toggle-field .toggle-label{float:right;margin:2px 0 0}
+.narrow-dropdown>button{padding:12px}
 /* END */
 
 @media (min-width: 1024px) {
