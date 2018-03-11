@@ -120,8 +120,8 @@ figcaption.callout{margin:4px 0}
   .btn-danger.active,.btn-danger.active:focus,.btn-danger.active:hover,.btn-danger:active,.btn.btn-danger:active:focus,.btn.btn-danger:active:hover,.btn.btn-danger:focus,.btn.btn-danger:hover
   {background-color:#a94442}
 .article-margin-bottom{margin-bottom:2em}
-.contents{margin-top:18px;text-align:right}
-  .contents h1{color:#ccc;font-size:1.6em;padding:54px 0 0;margin:0;text-transform:uppercase}
+.contents{margin:-5px 5px;text-align:right}
+  .contents h1{color:#ccc;font-size:1.6em;margin: 0 0 32px 0;text-transform:uppercase}
   .contents ul{font-size:1.2em;list-style:none;margin:4px 0}
     .contents a{color:#999;display:block;padding:15px 0;-webkit-transition:all .5s}
       .contents a:hover{color:#222;text-decoration:none;-webkit-transition:all .5s}
