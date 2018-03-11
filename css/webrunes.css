@@ -362,7 +362,9 @@ ul.leaders span + span{float:right;background:white;height:20px}
 .form-signin .form-control:focus{z-index:2}
 .form-signin input[type="text"]{margin-bottom:-1px;border-bottom-left-radius:0;border-bottom-right-radius:0}
 
-.comment-limit{font-weight:normal;color:#aaa;margin:12px}
+.commenting_form{margin:0 -15px}
+.comment-limit{font-weight:normal;color:#aaa;margin:0 12px}
+.input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn{padding:6px 12px;font-size:14px;line-height:normal}
 
 /* IA */
 .active-ia{}
