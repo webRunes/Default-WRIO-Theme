@@ -124,7 +124,7 @@ figcaption.callout{margin:4px 0}
 .contents{margin:-5px 5px;text-align:right}
   .contents h1{color:#ccc;font-size:1.6em;margin: 0 0 32px 0;text-transform:uppercase}
   .contents ul{font-size:1.2em;list-style:none;margin:4px 0}
-    .contents a{color:#999;display:block;padding:15px 0;-webkit-transition:all .5s}
+    .contents a{color:#999;cursor:pointer;display:block;padding:15px 0;-webkit-transition:all .5s}
       .contents a:hover{color:#222;text-decoration:none;-webkit-transition:all .5s}
     .contents .to-top{margin:28px 0}
 h1[id],h2[id]{position:relative;top:-80px;visibility:hidden} /* we need it for the Content's #anchors */
