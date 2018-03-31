@@ -1,7 +1,7 @@
 html,body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,
   .card-title,.footer-big h4,.footer-big h5,.footer-brand,.info-title,.media .media-heading,.title /* reset material-kit default */
   {font-weight:normal;font-size:1em;font-family:"Roboto","Helvetica","Arial",sans-serif}
-body{background-color:#fcfcfc}
+body{background-color:#fcfcfc;overflow-x:hidden}
 
 h1,.h1{font-size:1.8em}
 h2,.h2{font-size:1.4em}
