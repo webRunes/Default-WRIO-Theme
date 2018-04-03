@@ -222,7 +222,7 @@ ul.leaders span + span{float:right;background:white;height:20px}
 #loginbuttoniframe{display:none}
 /* END thumbnail */
 
-.btn,.nav>li>a,.dropdown-menu>li>a{cursor:pointer;padding:8px 16px}
+.btn,.nav>li>a,.dropdown-menu>li>a{cursor:pointer;padding:12px 24px}
 .btn-block+.btn-block{margin-top:4px}
 .btn .glyphicon{margin:2px 8px 0 0}
 .main .btn .glyphicon{margin:0}
