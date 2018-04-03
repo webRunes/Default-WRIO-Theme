@@ -1,37 +1,22 @@
+.main .card .card-content{padding:0 24px 24px}
+.page-header:hover{cursor:pointer}
+  .page-header .cover-bg{opacity:.75}
+    .page-header:hover .cover-bg{opacity:1!important}
+.contents h1{margin:0 0 72px}
+h2{margin:48px 0 12px}
+.RichEditor-controls{padding:4px 0}
+
 .DraftEditor-editorContainer,
 .DraftEditor-root,
-.public-DraftEditor-content {
-	height: inherit;
-	text-align: initial
-}
+.public-DraftEditor-content{height:inherit;text-align:initial}
 
-.DraftEditor-root {
-	position: relative
-}
+.DraftEditor-root{position:relative}
+.DraftEditor-editorContainer{background-color:rgba(255,255,255,0);border-left:.1px solid transparent;position:relative;top:-36px;z-index:1}
 
-.DraftEditor-editorContainer {
-	background-color: rgba(255, 255, 255, 0);
-	border-left: .1px solid transparent;
-	position: relative;
-	z-index: 1
-}
-
-.public-DraftEditor-block {
-	position: relative
-}
-
-.DraftEditor-alignLeft .public-DraftStyleDefault-block {
-	text-align: left
-}
-
-.DraftEditor-alignLeft .public-DraftEditorPlaceholder-root {
-	left: 0;
-	text-align: left
-}
-
-.DraftEditor-alignCenter .public-DraftStyleDefault-block {
-	text-align: center
-}
+.public-DraftEditor-block{position:relative}
+.DraftEditor-alignLeft .public-DraftStyleDefault-block{text-align:left}
+.DraftEditor-alignLeft .public-DraftEditorPlaceholder-root{left:0;text-align:left}
+.DraftEditor-alignCenter .public-DraftStyleDefault-block{text-align:center}
 
 .DraftEditor-alignCenter .public-DraftEditorPlaceholder-root {
 	margin: 0 auto;
@@ -1445,33 +1430,12 @@ pre[class*="language-"] {
   color: #a67f59;
 }
 
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-  color: #07a;
-}
-
-.token.function {
-  color: #DD4A68;
-}
-
-.token.regex,
-.token.important,
-.token.variable {
-  color: #e90;
-}
-
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-.token.italic {
-  font-style: italic;
-}
-
-.token.entity {
-  cursor: help;
-}
+.token.atrule,.token.attr-value,.token.keyword{color:#07a}
+.token.function{color:#DD4A68}
+.token.regex,.token.important,.token.variable{color:#e90}
+.token.important,.token.bold{font-weight:bold}
+.token.italic{font-style:italic}
+.token.entity{cursor:help}
 
 /* Custom prism rules for the Relay docs */
 
@@ -1495,23 +1459,9 @@ pre[class*="language-"],
   line-height: 20px;
   padding: 5px 10px;
 }
-
-.prism + .prism {
-  margin-top: -15px;
-}
+.prism + .prism{margin-top:-15px}
 
 /* Line highlighting */
+.prism{position:relative}
 
-.prism {
-  position: relative;
-}
-
-.line-highlight {
-  background: rgba(75, 145, 80, 0.15);
-  left: 0;
-  line-height: inherit;
-  margin-top: 5px;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-}
+.line-highlight{background:rgba(75,145,80,0.15);left:0;line-height:inherit;margin-top:5px;pointer-events:none;position:absolute;right:0}
