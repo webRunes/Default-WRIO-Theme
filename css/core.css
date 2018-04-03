@@ -2,6 +2,7 @@
 .page-header:hover{cursor:pointer}
   .page-header .cover-bg{opacity:.75}
     .page-header:hover .cover-bg{opacity:1!important}
+.cover-bg{position:relative;z-index:99}
 .contents h1{margin:0 0 72px}
 h2{margin:48px 0 12px}
 .RichEditor-controls{padding:4px 0}
