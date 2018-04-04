@@ -6,9 +6,8 @@
 .carousel-inner>.item{transition:transform 0s ease-in-out} /* quick fix, must be removed and fixed white bg between transactions */
 .contents h1{margin:0 0 73px}
 h2{margin:48px 0 12px}
-.cover-edit{overflow-x:hidden;overflow-y:auto}
-.core .navbar-left{margin-left:-35px}
-.core .navbar-right{margin-right:-35px}
+.cover-edit{height:calc(100vh - 100px - 280px);overflow-x:hidden;overflow-y:auto}
+.core .navbar-right{margin-right:0}
 .ReactModal__Content ReactModal__Content--after-open{top:20px}
 
 .RichEditor-controls{padding:4px 0}
