@@ -2,9 +2,13 @@
 .page-header:hover{cursor:pointer}
   .page-header .cover-bg{opacity:.75}
     .page-header:hover .cover-bg{opacity:1!important}
-.cover-bg{position:relative;z-index:2}
+.cover-bg{background-color:#eee;background-size:auto!important;transform:translate3d(0px,0px,0px);position:relative;z-index:2}
+.carousel-inner>.item{transition:transform 0s ease-in-out} /* quick fix, must be removed and fixed white bg between transactions */
 .contents h1{margin:0 0 72px}
 h2{margin:48px 0 12px}
+.cover-edit{overflow-x:hidden;overflow-y:auto}
+.ReactModal__Content ReactModal__Content--after-open{top:20px}
+
 .RichEditor-controls{padding:4px 0}
 
 .DraftEditor-editorContainer,
@@ -12,7 +16,7 @@ h2{margin:48px 0 12px}
 .public-DraftEditor-content{height:inherit;text-align:initial}
 
 .DraftEditor-root{position:relative}
-.DraftEditor-editorContainer{background-color:rgba(255,255,255,0);border-left:.1px solid transparent;position:relative;top:-36px;z-index:1}
+.DraftEditor-editorContainer{background-color:rgba(255,255,255,0);border-left:.1px solid transparent;position:relative;top:-40px;z-index:1}
 
 .public-DraftEditor-block{position:relative}
 .DraftEditor-alignLeft .public-DraftStyleDefault-block{text-align:left}
@@ -251,6 +255,8 @@ h2{margin:48px 0 12px}
 	font-size: 14px;
 	margin-bottom: 5px;
 	user-select: none;
+  position:relative;
+  z-index:2
 }
 
 .RichEditor-styleButton {
