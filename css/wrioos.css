@@ -144,9 +144,10 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 
 /* Reset material-kit.min.css */
 .card .footer{margin-top:0}
-.btn.btn-primary:active, .btn.btn-primary:focus, .btn.btn-primary:hover, .navbar .navbar-nav>li>a.btn.btn-primary:active, .navbar .navbar-nav>li>a.btn.btn-primary:focus, .navbar .navbar-nav>li>a.btn.btn-primary:hover,
-.btn.btn-success:active, .btn.btn-success:focus, .btn.btn-success:hover, .navbar .navbar-nav>li>a.btn.btn-success:active, .navbar .navbar-nav>li>a.btn.btn-success:focus, .navbar .navbar-nav>li>a.btn.btn-success:hover,
-.btn.btn-default:active, .btn.btn-default:focus, .btn.btn-default:hover, .btn:active, .btn:focus, .btn:hover, .navbar .navbar-nav>li>a.btn.btn-default:active, .navbar .navbar-nav>li>a.btn.btn-default:focus, .navbar .navbar-nav>li>a.btn.btn-default:hover, .navbar .navbar-nav>li>a.btn:active, .navbar .navbar-nav>li>a.btn:focus, .navbar .navbar-nav>li>a.btn:hover{box-shadow:none}
+.btn.btn-danger:active,.btn.btn-danger:focus,.btn.btn-danger:hover,.btn.btn-primary:active,.btn.btn-primary:focus,.btn.btn-primary:hover,.navbar .navbar-nav>li>a.btn.btn-primary:active,.navbar .navbar-nav>li>a.btn.btn-primary:focus,.navbar .navbar-nav>li>a.btn.btn-primary:hover,
+.btn.btn-success:active,.btn.btn-success:focus,.btn.btn-success:hover,.navbar .navbar-nav>li>a.btn.btn-success:active,.navbar .navbar-nav>li>a.btn.btn-success:focus,.navbar .navbar-nav>li>a.btn.btn-success:hover,
+.btn.btn-default:active,.btn.btn-default:focus,.btn.btn-default:hover,.btn:active,.btn:focus,.btn:hover,.navbar .navbar-nav>li>a.btn.btn-default:active,.navbar .navbar-nav>li>a.btn.btn-default:focus,
+.navbar .navbar-nav>li>a.btn.btn-default:hover,.navbar .navbar-nav>li>a.btn:active,.navbar .navbar-nav>li>a.btn:focus,.navbar .navbar-nav>li>a.btn:hover{box-shadow:none}
 .btn-group-sm .btn, .btn-group-sm .navbar .navbar-nav>li>a.btn, .btn.btn-sm, .navbar .navbar-nav>li>a.btn.btn-sm{font-size:12px}
 /* END */
 
