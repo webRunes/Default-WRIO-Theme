@@ -8,6 +8,7 @@
 h2{margin:48px 0 12px}
 .cover-edit{height:calc(100vh - 100px - 280px);overflow-x:hidden;overflow-y:auto}
 .core .navbar-right{margin-right:0}
+#clientholder .dropdown-toggle{padding:18px 36px} /* fix padding for mobiles */
 .ReactModal__Content ReactModal__Content--after-open{top:20px}
 
 .RichEditor-controls{padding:4px 0}
