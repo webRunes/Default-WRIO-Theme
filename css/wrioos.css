@@ -29,7 +29,7 @@ a,a:hover{color:#337ab7}
 .cover{max-width:800px;position:absolute;z-index:2}
   .cover .btn-lg{font-size:.9em;font-weight:500}
   .cover .cover-left{float:left}
-.cover-bg{-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover!important;transform:translate3d(0px, 0px, 0px);min-height:100vh} /* background-size:cover!important needs to fix IE */
+.carousel .cover-bg{-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover!important;transform:translate3d(0px, 0px, 0px);min-height:100vh} /* background-size:cover!important needs to fix IE */
 .cover .navbar{clear:both}
   .cover .navbar .navbar-nav>li>a,.cover .author{color:rgba(255,255,255,0.7)}
   .cover .navbar .navbar-nav>li>a,.main .nav>li>a{font-size:1em;font-weight:500;margin:0 12px 0 0;padding:12px 24px;-webkit-transition:all .5s}
