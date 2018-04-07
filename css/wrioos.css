@@ -23,6 +23,8 @@ a,a:hover{color:#337ab7}
   .card.ticket:hover{border-color:#337ab7;-webkit-transition:all .5s}
 .coming-soon,.coming-soon:hover{color:#FF4136!important}
 .card{margin:0 0 30px!important}
+.profile{margin:3px 100px;position:absolute;right:0;z-index:120}
+.dropdown-toggle .profile{background:rgba(255,255,255,0.75)}
 
 .page-header .navbar,.page-header .title-text,.page-header .card .carousel-indicators ol,.main{max-width:800px}
 .carousel-indicators{left:0;width:100%;padding-left:0;margin-left:0;position:absolute}
@@ -31,7 +33,7 @@ a,a:hover{color:#337ab7}
   .cover .cover-left{float:left}
 .carousel .cover-bg{-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover!important;transform:translate3d(0px, 0px, 0px);min-height:100vh} /* background-size:cover!important needs to fix IE */
 .cover .navbar{clear:both}
-  .cover .navbar .navbar-nav>li>a,.cover .author{color:rgba(255,255,255,0.7)}
+  .cover .navbar .navbar-nav>li>a,.cover .author{color:rgba(255,255,255,0.75)}
   .cover .navbar .navbar-nav>li>a,.main .nav>li>a{font-size:1em;font-weight:500;margin:0 12px 0 0;padding:12px 24px;-webkit-transition:all .5s}
     .cover .navbar .navbar-nav>li>a:hover,.cover .author:hover{color:#fff;border-radius:0;text-decoration:none;-webkit-transition:all .5s}
     .cover .navbar .navbar-nav>li>a.active{background-color:rgba(255,255,255,0.2);color:#fff;border-bottom:2px solid transparent;cursor:default;-webkit-transition:all .5s}
@@ -175,13 +177,15 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   article{margin:0 1rem}
   .cover{padding-top:20px;right:0}
     .cover .navbar-nav a{text-align:right}
+  a .card-text{height:400px}
   a .card h3{color:#fff;display:block;padding:1em;position:relative;top:-190px;text-shadow:0 0 8px rgba(0,0,0,1)}
-  a .card .img{margin:0;width:100%}
+  a .card .img{margin:0 0 12px;width:100%}
   .main .card .card-content{padding:24px;background-origin:content-box}
   .main .card .nav-tabs a i{display:inline-block!important}
   .main .card .nav-tabs>li .material-icons{margin:0}
   .main .card .nav-tabs-wrapper label{top:0}
   .card-text .arrow-more,.card-text .gradient:after{display:none}
+  .card-text p{margin:0}
   .title h1{font-size:2em}
   .title h2{font-size:1em}
 }
