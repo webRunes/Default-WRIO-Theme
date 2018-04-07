@@ -177,7 +177,8 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   article{margin:0 1rem}
   .cover{padding-top:20px;right:0}
     .cover .navbar-nav a{text-align:right}
-  a .card .img{margin:0 0 12px;width:100%}
+  a .card .img{margin:0 0 12px;width:100%;
+    -webkit-background-size:auto!important;-moz-background-size:auto!important;-o-background-size:auto!important;background-size:auto!important}
   a .card-text{height:400px}
     .card-text .arrow-more{display:none}
     .card-text .gradient{position:inherit}
@@ -189,9 +190,6 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .main .card .nav-tabs-wrapper label{top:0}
   .title h1{font-size:2em}
   .title h2{font-size:1em}
-}
-@media (max-width: 480px) {
-  a .card .img{-webkit-background-size:auto!important;-moz-background-size:auto!important;-o-background-size:auto!important;background-size:auto!important}
 }
 
 .loading{width:64px;height:64px}
