@@ -77,8 +77,8 @@ a.btn .glyphicon{padding-right:8px}
 a .media{height:200px;margin-top:2rem!important}
   a .media h2{color:#222;margin-top:12px}
   a .media p{color:#222;margin:12px 0}
-  a .card .img{background-size:200px!important;float:right;margin-left:15px;width:200px;height:200px;
-    -webkit-background-size:cover!important;-moz-background-size:cover!important;-o-background-size:cover!important;background-size:cover!important;background-position:center!important}
+  a .card .img{background-size:200px!important;float:right;margin-left:15px;width:200px;height:200px;background-repeat:no-repeat!important;background-position:center!important;
+    -webkit-background-size:cover!important;-moz-background-size:cover!important;-o-background-size:cover!important;background-size:cover!important}
   a .card-text{height:200px;overflow:hidden;text-overflow:ellipsis}
   .card-text .arrow-more{color:#eee;float:right;padding-right:200px;position:relative;text-align:center;top:-25px;width:100%;z-index:2}
   .card-text .gradient{margin-right:200px;position:relative;top:200px}
@@ -173,15 +173,16 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   #sidebar{display:block !important}
 }
 @media (max-width: 768px) {
-  h1,h2,h3,.h1,.h2,.h3{font-size:1.2em;margin:.75rem 0 .5rem}
+  h1,h2,h3,.h1,.h2,.h3{font-size:1.3em;margin:.75rem 0 .5rem}
   article{margin:0 1rem}
   .cover{padding-top:20px;right:0}
     .cover .navbar-nav a{text-align:right}
   a .card .img{margin:0 0 12px;width:100%}
   a .card-text{height:400px}
-    .card-text p{margin:0;font-size:1em;line-height:normal}
     .card-text .arrow-more{display:none}
     .card-text .gradient{position:inherit}
+    .card-text p{margin:0}
+  .card-text p,.paragraph{font-size:1em}
   .main .card .card-content{padding:24px;background-origin:content-box}
   .main .card .nav-tabs a i{display:inline-block!important}
   .main .card .nav-tabs>li .material-icons{margin:0}
@@ -190,8 +191,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .title h2{font-size:1em}
 }
 @media (max-width: 480px) {
-  h1,h2,h3,.h1,.h2,.h3{font-size:1em}
-  .card-text p{font-size:.9em;line-height:normal}
+  a .card .img{-webkit-background-size:auto!important;-moz-background-size:auto!important;-o-background-size:auto!important;background-size:auto!important}
 }
 
 .loading{width:64px;height:64px}
