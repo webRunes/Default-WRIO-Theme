@@ -180,8 +180,8 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   a .card .img{margin:0 0 12px;width:100%}
   a .card-text{height:400px}
     .card-text p{margin:0}
-    .card-text .arrow-more{display:none}
-    .card-text .gradient{margin-right:auto}
+    .card-text .arrow-more{position:absolute;bottom:0}
+    .card-text .gradient{position:inherit}
   .main .card .card-content{padding:24px;background-origin:content-box}
   .main .card .nav-tabs a i{display:inline-block!important}
   .main .card .nav-tabs>li .material-icons{margin:0}
