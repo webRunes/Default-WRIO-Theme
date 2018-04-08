@@ -179,7 +179,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
     .cover .navbar-nav a{text-align:right}
   a .card .img{margin:0 0 12px;width:100%;
     -webkit-background-size:auto!important;-moz-background-size:auto!important;-o-background-size:auto!important;background-size:auto!important}
-  a .card-text{height:400px}
+  a .card-text{height:400px;text-align:center}
     .card-text .arrow-more{display:none}
     .card-text .gradient{position:inherit}
     .card-text p{margin:0}
