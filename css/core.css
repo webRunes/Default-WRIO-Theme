@@ -5,7 +5,8 @@
 .cover-bg{background:#eee url("https://default.wrioos.com/img/cover_add.png") center center no-repeat;min-height:240px;transform:translate3d(0px,0px,0px);position:relative;z-index:2}
 .carousel-inner>.item{transition:transform 0s ease-in-out} /* quick fix, must be removed and fixed white bg between transactions */
 .contents h1{margin:0 0 73px}
-h2{margin:48px 0 12px}
+.cover-edit h1,.cover-edit h2{font-weight:bold}
+.cover-edit h2{font-size:1.4rem;margin:8px 0 16px;text-transform:uppercase}
 .cover-edit{height:calc(100vh - 100px - 280px);overflow-x:hidden;overflow-y:auto}
 .core .navbar-right{margin-right:0}
 .ReactModal__Content ReactModal__Content--after-open{top:20px}
@@ -17,7 +18,7 @@ h2{margin:48px 0 12px}
 .public-DraftEditor-content{height:inherit;text-align:initial}
 
 .DraftEditor-root{position:relative}
-.DraftEditor-editorContainer{background-color:rgba(255,255,255,0);border-left:.1px solid transparent;position:relative;top:-40px;z-index:1}
+.DraftEditor-editorContainer{margin-top:20px}
 
 .public-DraftEditor-block{position:relative}
 .DraftEditor-alignLeft .public-DraftStyleDefault-block{text-align:left}
