@@ -18,7 +18,7 @@
 .public-DraftEditor-content{height:inherit;text-align:initial}
 
 .DraftEditor-root{position:relative}
-.DraftEditor-editorContainer{margin-top:20px}
+.DraftEditor-editorContainer{margin:20px 0}
 
 .public-DraftEditor-block{position:relative}
 .DraftEditor-alignLeft .public-DraftStyleDefault-block{text-align:left}
@@ -223,10 +223,7 @@
 }
 
 .RichEditor-editor .public-DraftEditorPlaceholder-root,
-.RichEditor-editor .public-DraftEditor-content {
-	margin: 0 -15px -15px;
-	padding: 15px;
-}
+.RichEditor-editor .public-DraftEditor-content{margin:0 -15px -15px;padding:0 15px}
 
 .RichEditor-editor .public-DraftEditor-content {
 	min-height: 100px;
