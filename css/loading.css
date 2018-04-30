@@ -1,15 +1,15 @@
-@font-face {font-family:'BebasNeue';src:url('../fonts/bebasneue.eot');src:url('../fonts/bebasneue.eot?#iefix') format('embedded-opentype'),url('../fonts/bebasneue.woff') format('woff'),url('../fonts/bebasneue.ttf') format('truetype');font-weight:normal;font-style:normal}
-html,body{height:100%;margin:0}
+@font-face{font-family:'Poppins';src: url("../fonts/Poppins-Regular.eot"); src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+html,body{font-family:"Poppins",sans-serif;height:100%;margin:0}
 .preloader-wrapper{height:100%;display:block}
 .preloader-wrapper.loading{margin:0}
-.preloader{position:fixed;top:0;z-index:9999;min-height:600px;width:100%;height:100%;background:#222 url('../img/loading_bg.png');display:table;vertical-align:middle}
-.preloader h1 {font-family:BebasNeue,sans-serif;color:#eee;font-size:32px;text-transform:uppercase;text-shadow:2px 2px 4px #000;-webkit-font-smoothing:antialiased}
-.preloader p{font-family:sans-serif;font-size:11px;font-weight:bold;color:#eee;margin:0 8px;text-transform:uppercase}
+.preloader{position:fixed;top:0;z-index:9999;min-height:600px;width:100%;height:100%;background-color:#10122d;display:table;vertical-align:middle}
+.preloader h1 {color:#eee;font-size:32px;font-weight:bold;text-transform:uppercase;text-shadow:2px 2px 4px #000;-webkit-font-smoothing:antialiased}
+.preloader p{font-size:11px;font-weight:bold;color:#eee;margin:0 8px;text-transform:uppercase}
 .preloader .container{position:relative;vertical-align:middle;display:table-cell;height:260px;text-align:center}
 .preloader .inner{margin:128px auto 0;width:140px;height:260px}
-.preloader .preloader-logo{width:140px;height:70px;background:url('../img/logo.png') no-repeat center}
-.preloader .progress{height:6px; margin: 20px 0}
-.preloader .progress-bar{background-color:#0088cc !important;width:100% !important}
+.preloader .preloader-logo{width:200px;height:102px;background:url('../img/logo.jpg') no-repeat center}
+.preloader .progress{height:6px;margin:20px 0}
+.preloader .progress-bar{background-color:#7a0fff!important;width:100%!important}
 
 #outdated{display:none;position:fixed;top:0;left:0;width:100%;height:100%;text-align:center;text-transform:uppercase;z-index:999999;color:#eee;background-color:#222;background-image:url('../img/loading_bg.png')}
 #outdated a img{border:0}
