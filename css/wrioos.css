@@ -15,7 +15,6 @@ h6,.h6{font-size:1em}
   .main .card-content{padding:1em 3rem}
   .main .nav-tabs-wrapper label{background-color:#fff;border-radius:3px;color:#4184f3;display:inline;font-weight:600;padding:2px 6px;position:relative;top:-2px}
   #titteriframe{width:100%}
-.main_page_content{margin-bottom:30px}
 .card-nav-tabs .header{margin-top:-36px}
 a,a:hover{color:#337ab7}
   a:hover{text-decoration:underline}
@@ -48,7 +47,6 @@ a,a:hover{color:#337ab7}
   .main .card.ticket{margin-bottom:0}
     .main .card.ticket h2{margin-top:-8px}
   .main .card h5{font-size:1em}
-  .main_page_content{margin-bottom:12px}
 .page-header{height:auto;min-height:100vh}
 .tab-content h1{margin-top:0}
 .title{padding:200px 0 150px;position:relative;z-index:2}
