@@ -15,6 +15,7 @@ h6,.h6{font-size:1em}
   .main .card-content{padding:1em 3rem}
   .main .nav-tabs-wrapper label{background-color:#fff;border-radius:3px;color:#4184f3;display:inline;font-weight:600;padding:2px 6px;position:relative;top:-2px}
   #titteriframe{width:100%}
+.main_page_content{margin-bottom:12px}
 .card-nav-tabs .header{margin-top:-36px}
 a,a:hover{color:#337ab7}
   a:hover{text-decoration:underline}
