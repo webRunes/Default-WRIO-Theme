@@ -44,10 +44,11 @@ a,a:hover{color:#337ab7}
 .main .card .card-content{padding:18px 24px 24px}
 .main .card,.main .card .card-image{border:2px solid #f2f2f2;border-radius:4px;box-shadow:none}
 .main .card .card-image{margin:0}
-  .main .card .card-image img{border-radius:0;box-shadow:none}
-  .main .card.ticket{margin-bottom:0}
-    .main .card.ticket h2{margin-top:-8px}
-  .main .card h5{font-size:1em}
+.main .card .card-image img{border-radius:0;box-shadow:none}
+.main .card img{display:block;margin:auto;width:auto!important;max-width:100%}
+.main .card.ticket{margin-bottom:0}
+.main .card.ticket h2{margin-top:-8px}
+.main .card h5{font-size:1em}
 .page-header{height:auto;min-height:100vh}
 .tab-content h1{margin-top:0}
 .title{padding:200px 0 150px;position:relative;z-index:2}
@@ -73,7 +74,6 @@ a.btn .glyphicon{padding-right:8px}
 .btn-group-sm .btn,.btn-group-sm .navbar .navbar-nav>li>a.btn,.btn.btn-sm,.navbar .navbar-nav>li>a.btn.btn-sm{padding:15px 20px}
 .glyphicon-new-window{margin-left:4px}
 #centerWrp>img{width:auto;height:auto}
-.card img{display:block;margin:auto;width:auto;max-width:100%}
 a .media{height:200px;margin-top:2rem!important}
   a .media h2{color:#222;margin-top:12px}
   a .media p{color:#222;margin:12px 0}
