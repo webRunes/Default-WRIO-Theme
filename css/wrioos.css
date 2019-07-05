@@ -74,6 +74,7 @@ a.btn .glyphicon{padding-right:8px}
 .btn-group-sm .btn,.btn-group-sm .navbar .navbar-nav>li>a.btn,.btn.btn-sm,.navbar .navbar-nav>li>a.btn.btn-sm{padding:15px 20px}
 .glyphicon-new-window{margin-left:4px}
 .icon-success{color:#2cbe4e}
+.center{text-align:center}
 #centerWrp>img{width:auto;height:auto}
 a .media{height:200px;margin-top:2rem!important}
   a .media h2{color:#222;margin-top:12px}
@@ -161,7 +162,6 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 }
 .alert-primary{color:#004085;background-color:#cce5ff;border-color:#b8daff}
 .table>thead>tr>th{font-size:1em;font-weight:bold}
-.table>td.center{text-align:center}
 /* END */
 
 /* Core */
