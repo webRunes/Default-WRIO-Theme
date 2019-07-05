@@ -94,7 +94,7 @@ a .media{height:200px;margin-top:2rem!important}
   .carousel .carousel-inner a{color:#f0ad4e}
 
 /* callout */
-.callout{background-color:#ecf3fa;margin:4px 0 12px;padding:8px 16px;border-left:3px solid #d0e2f2;border-radius:0;color:#333}
+.callout{background-color:#ecf3fa;margin:4px 0 12px;padding:12px 16px;border-left:3px solid #d0e2f2;border-radius:0;color:#333}
 .callout button.close{top:2px;right:-3px}
 .callout h5{color:#428bca;margin:10px 0}
 .callout h6{color:#b6c7d6;margin:10px 0}
