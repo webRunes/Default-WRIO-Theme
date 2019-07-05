@@ -25,7 +25,6 @@ a,a:hover{color:#337ab7}
 .card{margin:0 0 30px!important}
 .profile{margin:3px 100px;position:absolute;right:0;z-index:120}
 .dropdown-toggle .profile{background:rgba(255,255,255,0.75)}
-
 .page-header .navbar,.page-header .title-text,.page-header .card .carousel-indicators ol,.main{max-width:800px}
 .carousel-indicators{left:0;width:100%;padding-left:0;margin-left:0;position:absolute}
 .cover{max-width:800px;position:absolute;z-index:2}
