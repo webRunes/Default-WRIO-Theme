@@ -158,6 +158,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 @media (max-width: 991px) {
   .btn.btn-simple,.navbar .navbar-nav>li>a.btn.btn-simple{padding:18px 36px}
 }
+.alert-primary{color:#004085;background-color:#cce5ff;border-color:#b8daff}
 /* END */
 
 /* Core */
