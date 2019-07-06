@@ -96,6 +96,7 @@ a .media{height:200px;margin-top:2rem!important}
 /* callout */
 .callout{background-color:#ecf3fa;margin:4px 0 12px;padding:8px 16px;border-left:3px solid #d0e2f2;border-radius:0;color:#333}
 .callout button.close{top:2px;right:-3px}
+.callout a{font-weight:500}
 .callout h5{color:#428bca;margin:8px 0}
 .callout h6{color:#b6c7d6;margin:8px 0}
 .success{background-color:#f1fbed;border-color:#d6e9c6}
