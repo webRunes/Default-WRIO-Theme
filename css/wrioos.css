@@ -198,3 +198,27 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .timeline-Tweet:hover{background-color:transparent!important}
 /* Dashboard */
 .dashboard-sensor-id {width: 6ch;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;} 
+/* Feed */
+.feed-dropdown { display: inline-block; position: relative; z-index: 100; }
+
+.feed-dropdown-button { display: inline-block; border: 1px solid gray; border-radius: 4px; padding: 10px 30px 10px 20px; background-color: #ffffff; cursor: pointer; white-space: nowrap; }
+
+.feed-dropdown-button:after { content: ''; position: absolute; top: 50%; right: 15px; transform: translateY(-50%); width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid black; }
+
+.feed-dropdown-button:hover { background-color: #eeeeee; } 
+
+.feed-dropdown-input { display: none; }
+
+.feed-dropdown-menu { position: absolute; top: 100%; border: 1px solid #ccc; border-radius: 4px; padding: 0; margin: 2px 0 0 0; box-shadow: 0 0 6px 0 rgba(0,0,0,0.1); background-color: #ffffff; list-style-type: none; }
+
+.feed-dropdown-input + .feed-dropdown-menu { display: none; } 
+
+.feed-dropdown-input:checked + .feed-dropdown-menu { display: block; } 
+
+.feed-dropdown-menu li { padding: 10px 20px; cursor: pointer; white-space: nowrap; }
+
+.feed-dropdown-menu li:hover { background-color: #f6f6f6; }
+
+.feed-dropdown-menu li a { display: block; margin: -10px -20px; padding: 10px 20px; }
+
+.feed-dropdown-menu li.divider{ padding: 0; border-bottom: 1px solid #cccccc; }
