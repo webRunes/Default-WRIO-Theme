@@ -25,7 +25,6 @@ a,a:hover{color:#337ab7}
 .card{margin:0 0 30px!important}
 .profile{margin:3px 100px;position:absolute;right:0;z-index:120}
 .dropdown-toggle .profile{background:rgba(255,255,255,0.75)}
-
 .page-header .navbar,.page-header .title-text,.page-header .card .carousel-indicators ol,.main{max-width:800px}
 .carousel-indicators{left:0;width:100%;padding-left:0;margin-left:0;position:absolute}
 .cover{max-width:800px;position:absolute;z-index:2}
@@ -73,6 +72,8 @@ a,a:hover{color:#337ab7}
 a.btn .glyphicon{padding-right:8px}
 .btn-group-sm .btn,.btn-group-sm .navbar .navbar-nav>li>a.btn,.btn.btn-sm,.navbar .navbar-nav>li>a.btn.btn-sm{padding:15px 20px}
 .glyphicon-new-window{margin-left:4px}
+.icon-success{color:#2cbe4e}
+.center{text-align:center}
 #centerWrp>img{width:auto;height:auto}
 a .media{height:200px;margin-top:2rem!important}
   a .media h2{color:#222;margin-top:12px}
@@ -95,8 +96,9 @@ a .media{height:200px;margin-top:2rem!important}
 /* callout */
 .callout{background-color:#ecf3fa;margin:4px 0 12px;padding:8px 16px;border-left:3px solid #d0e2f2;border-radius:0;color:#333}
 .callout button.close{top:2px;right:-3px}
-.callout h5{color:#428bca;margin:10px 0}
-.callout h6{color:#b6c7d6;margin:10px 0}
+.callout a{font-weight:500}
+.callout h5{color:#428bca;margin:8px 0}
+.callout h6{color:#b6c7d6;margin:8px 0}
 .success{background-color:#f1fbed;border-color:#d6e9c6}
     .success h5{color:#3c763d}
 .warning{background-color:#fcf8f2;border-color:#fbead3}
@@ -158,6 +160,8 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 @media (max-width: 991px) {
   .btn.btn-simple,.navbar .navbar-nav>li>a.btn.btn-simple{padding:18px 36px}
 }
+.alert-primary{color:#004085;background-color:#cce5ff;border-color:#b8daff}
+.table>thead>tr>th{font-size:1em;font-weight:bold}
 /* END */
 
 /* Core */
@@ -198,6 +202,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .timeline-Tweet:hover{background-color:transparent!important}
 /* Dashboard */
 .dashboard-sensor-id {width: 6ch;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;} 
+
 /* Feed */
 .feed-chart-main-div { height: 850px; width: 950px; }
 .feed-dropdown { display: inline-block; position: relative; z-index: 100; }
@@ -223,3 +228,4 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .feed-dropdown-menu li a { display: block; margin: -10px -20px; padding: 10px 20px; }
 
 .feed-dropdown-menu li.divider{ padding: 0; border-bottom: 1px solid #cccccc; }
+
