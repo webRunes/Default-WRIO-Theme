@@ -204,7 +204,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .dashboard-sensor-id {width: 6ch;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;} 
 
 /* Feed */
-.feed-chart-main-div{}
+.feed-chart-main-div{height:auto;width:100%}
 .feed-dropdown{display:inline-block;position:relative;z-index:100}
 .feed-dropdown-button{display:inline-block;border:1px solid gray;border-radius:4px;padding:10px 30px 10px 20px;background-color:#ffffff;cursor:pointer;white-space:nowrap}
 .feed-dropdown-button:after{content:'';position:absolute;top:50%;right:15px;transform:translateY(-50%);width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid black}
