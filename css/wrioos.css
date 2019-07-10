@@ -40,7 +40,7 @@ a,a:hover{color:#337ab7}
 .cover .card .card-image{height:100px}
   .cover .card .card-image img{width:auto;height:auto;max-height:100px;max-width:200px}
 .navbar-toggle{float:left}
-.main .card .header-primary{margin:15px 15px 0}
+.main .card .header-primary{margin:-36px 15px -28px}
 .main .card .card-content{padding:18px 24px 24px}
 .main .card,.main .card .card-image{border:2px solid #f2f2f2;border-radius:4px;box-shadow:none}
 .main .card .card-image{margin:0}
