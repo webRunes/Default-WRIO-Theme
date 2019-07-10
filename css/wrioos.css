@@ -49,6 +49,7 @@ a,a:hover{color:#337ab7}
 .main .card.ticket h2{margin-top:-8px}
 .main .card h5{font-size:1em}
 .page-header{height:auto;min-height:100vh}
+.tab-content h1{margin-top:0}
 .title{padding:200px 0 150px;position:relative;z-index:2}
   .title h1,.title h2{color:#eee}
   .title h1{font-size:2em;font-weight:600}
