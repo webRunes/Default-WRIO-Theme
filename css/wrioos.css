@@ -201,11 +201,8 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 /* Twitter */
 .timeline-Tweet:hover{background-color:transparent!important}
 /* Dashboard */
-.dashboard-sensor-id {width: 6ch;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;} 
-.dashboard-modal-div { height: 100%; display: grid; justify-items: start; align-items: center; grid-template-columns: auto 1fr; padding: 10px; }
-.dashboard-modal-div h4, .dashboard-modal-div p { grid-column: 1/-1; }
-.dashboard-modal-div-a1 { grid-column: 1/span 1; }
-.dashboard-modal-div-a2 { grid-column: 2/span 1; cursor: default; background-color: #3c763d !important;}
+.dashboard-sensor-id{width:6ch;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} 
+.dashboard-modal-div{padding:28px}
 
 /* Feed */
 .feed-chart-main-div{height:350px;width:100%}
