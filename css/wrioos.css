@@ -167,7 +167,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   {background-color:#337ab7;box-shadow:none}
 .pagination>li>a{border-radius:3px!important;font-size:initial;text-transform:initial}
   .pagination>li.disabled>a{color:#aaa}
-.material-icons{position:relative;top:5px;margin-right:3px;margin-left:3px;font-size:24px}
+.material-icons{position:relative;top:6px;margin-right:3px;margin-left:3px;font-size:24px}
 /* END */
 
 /* Reset bootstrap.min.css */
