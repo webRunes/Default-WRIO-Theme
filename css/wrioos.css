@@ -71,7 +71,6 @@ a,a:hover{color:#337ab7}
   .well h4{margin:0 0 12px}
 a.btn .glyphicon{padding-right:8px}
 .btn-group-sm .btn,.btn-group-sm .navbar .navbar-nav>li>a.btn,.btn.btn-sm,.navbar .navbar-nav>li>a.btn.btn-sm{padding:15px 20px}
-.btn.btn-control{padding:5px 20px}
 .glyphicon-new-window{margin-left:4px}
 .icon-success{color:#2cbe4e}
 .center{text-align:center}
@@ -225,6 +224,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 
 /* Feed */
 .feedPage{margin-top:32px}
+.control-panel .btn-sm{padding:5px 20px}
 .control-panel{margin:32px 0;text-align:center}
   .control-panel h1{font-size:1em;text-transform:uppercase}
   .control-alerts p{font-size:2.4em;line-height:64px}
@@ -250,4 +250,3 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .breadcrumb.chart_timeframe>li.disabled>a{cursor:default;color:#aaa}
   .breadcrumb.chart_timeframe>li.disabled>a:hover{text-decoration:none}
 .breadcrumb.chart_timeframe>li+li:before{content:"\b7\a0";font-weight:bold}
-
