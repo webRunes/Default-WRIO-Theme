@@ -223,7 +223,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 
 /* Feed */
 .feedPage{margin-top:32px}
-.control-panel{text-align:center}
+.control-panel{margin:32px 0;text-align:center}
   .control-panel h1{font-size:1em;text-transform:uppercase}
   .control-alerts p{font-size:2.4em;line-height:64px}
   .control-last-readings p{color:#aaa;line-height:64px}
