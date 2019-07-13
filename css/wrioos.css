@@ -170,8 +170,9 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 /* END */
 
 /* Reset bootstrap.min.css */
+.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control,
 .pagination>.disabled>span,.pagination>.disabled>span:hover,.pagination>.disabled>span:focus,.pagination>.disabled>a,.pagination>.disabled>a:hover,.pagination>.disabled>a:focus
-{cursor:initial}
+{cursor:default}
 
 /* Core */
 .core .form-group label.control-label{font-size:14px;color:#999;margin:12px 0 0;text-align:right}
