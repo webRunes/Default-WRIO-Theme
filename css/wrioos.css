@@ -157,7 +157,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .btn.btn-default:active,.btn.btn-default:focus,.btn.btn-default:hover,.btn:active,.btn:focus,.btn:hover,.navbar .navbar-nav>li>a.btn.btn-default:active,.navbar .navbar-nav>li>a.btn.btn-default:focus,
 .navbar .navbar-nav>li>a.btn.btn-default:hover,.navbar .navbar-nav>li>a.btn:active,.navbar .navbar-nav>li>a.btn:focus,.navbar .navbar-nav>li>a.btn:hover{box-shadow:none}
 .btn-group-sm .btn, .btn-group-sm .navbar .navbar-nav>li>a.btn, .btn.btn-sm, .navbar .navbar-nav>li>a.btn.btn-sm{font-size:12px}
-.btn{padding:13px 30px 11px}
+.btn{box-shadow:none!important;padding:13px 30px 11px}
 @media (max-width: 991px) {
   .btn.btn-simple,.navbar .navbar-nav>li>a.btn.btn-simple{padding:18px 36px}
 }
