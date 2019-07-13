@@ -70,7 +70,7 @@ a,a:hover{color:#337ab7}
 .well{border:none;color:#777;padding:15px 20px;margin-bottom:8px;-webkit-box-shadow:none;box-shadow:none}
   .well h4{margin:0 0 12px}
 a.btn .glyphicon{padding-right:8px}
-.btn-group-sm .btn,.btn-group-sm .navbar .navbar-nav>li>a.btn,.btn.btn-sm,.navbar .navbar-nav>li>a.btn.btn-sm{padding:15px 20px}
+.btn-group-sm .navbar .navbar-nav>li>a.btn,.btn.btn-sm,.navbar .navbar-nav>li>a.btn.btn-sm{padding:15px 20px}
 .glyphicon-new-window{margin-left:4px}
 .icon-success{color:#2cbe4e}
 .center{text-align:center}
