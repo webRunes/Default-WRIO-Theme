@@ -240,7 +240,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .control-panel h1{font-size:1em;text-transform:uppercase}
   .control-left p{font-size:2.4em;line-height:64px}
   .control-left sup{color:#4caf50;font-size:50%;top:-.75em}
-  .control-last-readings p{color:#aaa;line-height:64px}
+  .control-right p{color:#aaa;line-height:64px}
 .feed-chart-main-div{height:350px;width:100%}
 .feed-dropdown{display:inline-block;position:relative;z-index:100}
 .feed-dropdown-button{display:inline-block;padding:10px 30px 10px 20px;cursor:pointer;white-space:nowrap}
