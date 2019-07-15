@@ -225,7 +225,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .tab_networks>li.active>a,.tab_networks>li.active>a:focus,.tab_networks>li.active>a:hover
     {background-color:transparent;box-shadow:none;color:#337ab7}
   .tab_networks>li.active{border-bottom:2px solid #337ab7}
-  .tab_networks>li>a:hover,.tab_networks>li.active>a:hover{border-radius:initial!important}
+  .tab_networks>li>a,.tab_networks>li>a:hover,.tab_networks>li.active>a:hover{border-radius:initial!important}
   .tab_networks>li i{font-size:initial;padding:0;top:1px}
 .tab_networks .add_icon i{font-size:1.5em}
 
