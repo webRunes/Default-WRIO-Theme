@@ -208,6 +208,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 }
 
 .loading{width:64px;height:64px}
+.tooltip{display:inline}
 
 /* Twitter */
 .timeline-Tweet:hover{background-color:transparent!important}
