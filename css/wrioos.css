@@ -23,7 +23,7 @@ a,a:hover{color:#337ab7}
   .card.ticket:hover{border-color:#337ab7;-webkit-transition:all .5s}
 .coming-soon,.coming-soon:hover{color:#FF4136!important}
 .card{margin:0 0 30px!important}
-.profile{margin:3px 100px;position:absolute;right:0;z-index:120}
+.profile{margin:3px 100px;position:absolute;right:0;z-index:120;display:none} /* temp display:none */
 .dropdown-toggle .profile{background:rgba(255,255,255,0.75)}
 .page-header .navbar,.page-header .title-text,.page-header .card .carousel-indicators ol,.main{max-width:800px}
 .carousel-indicators{left:0;width:100%;padding-left:0;margin-left:0;position:absolute}
@@ -116,6 +116,7 @@ figcaption.callout{margin:4px 0}
   .dp_big{font-size:2em!important;width:auto!important;height:auto}
 .invert-icon{-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}
 .invert-icon-v{-moz-transform:scaleY(-1);-o-transform:scaleY(-1);-webkit-transform:scaleY(-1);transform:scaleY(-1);filter:FlipV;-ms-filter:"FlipV"}
+.search{margin:12px 0}
 
 .card-nav-tabs{margin-top:-45px}
 .card .header-primary{box-shadow:0 2px 2px 0 rgba(0,0,0,.2),0 2px 2px -2px rgba(244,67,54,.6)}
@@ -156,13 +157,23 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .btn.btn-default:active,.btn.btn-default:focus,.btn.btn-default:hover,.btn:active,.btn:focus,.btn:hover,.navbar .navbar-nav>li>a.btn.btn-default:active,.navbar .navbar-nav>li>a.btn.btn-default:focus,
 .navbar .navbar-nav>li>a.btn.btn-default:hover,.navbar .navbar-nav>li>a.btn:active,.navbar .navbar-nav>li>a.btn:focus,.navbar .navbar-nav>li>a.btn:hover{box-shadow:none}
 .btn-group-sm .btn, .btn-group-sm .navbar .navbar-nav>li>a.btn, .btn.btn-sm, .navbar .navbar-nav>li>a.btn.btn-sm{font-size:12px}
-.btn{padding:13px 30px 11px}
+.btn{box-shadow:none!important;padding:13px 30px 11px}
 @media (max-width: 991px) {
   .btn.btn-simple,.navbar .navbar-nav>li>a.btn.btn-simple{padding:18px 36px}
 }
 .alert-primary{color:#004085;background-color:#cce5ff;border-color:#b8daff}
 .table>thead>tr>th{font-size:1em;font-weight:bold}
+.pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover
+  {background-color:#337ab7;box-shadow:none}
+.pagination>li>a{border-radius:3px!important;font-size:initial;text-transform:initial}
+  .pagination>li.disabled>a{color:#aaa}
+.material-icons{position:relative;top:6px;margin-right:3px;margin-left:3px;font-size:24px}
 /* END */
+
+/* Reset bootstrap.min.css */
+.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control,
+.pagination>.disabled>span,.pagination>.disabled>span:hover,.pagination>.disabled>span:focus,.pagination>.disabled>a,.pagination>.disabled>a:hover,.pagination>.disabled>a:focus
+{cursor:default}
 
 /* Core */
 .core .form-group label.control-label{font-size:14px;color:#999;margin:12px 0 0;text-align:right}
@@ -201,13 +212,23 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 /* Twitter */
 .timeline-Tweet:hover{background-color:transparent!important}
 /* Dashboard */
-.dashboard-sensor-id {width: 6ch;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;} 
-.dashboard-modal-div { height: 100%; display: grid; justify-items: start; align-items: center; grid-template-columns: auto 1fr; padding: 10px; }
-.dashboard-modal-div h4, .dashboard-modal-div p { grid-column: 1/-1; }
-.dashboard-modal-div-a1 { grid-column: 1/span 1; }
-.dashboard-modal-div-a2 { grid-column: 2/span 1; cursor: default; background-color: #3c763d !important;}
+.dashboard-sensor-id{width:6ch;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} 
+.dashboard-modal-div{padding:28px}
+.dashboard-table{}
+  .dashboard-table .table{margin:0}
+  .dashboard-table .pagination{margin:0}
+.data_entries{color:#aaa;display:block;margin:24px 0}
+
+/* Product profile */
+.product_img{margin-bottom:8px!important}
 
 /* Feed */
+.feedPage{margin-top:32px}
+.control-panel .btn-sm{padding:5px 20px}
+.control-panel{margin:32px 0;text-align:center}
+  .control-panel h1{font-size:1em;text-transform:uppercase}
+  .control-alerts p{font-size:2.4em;line-height:64px}
+  .control-last-readings p{color:#aaa;line-height:64px}
 .feed-chart-main-div{height:350px;width:100%}
 .feed-dropdown{display:inline-block;position:relative;z-index:100}
 .feed-dropdown-button{display:inline-block;padding:10px 30px 10px 20px;cursor:pointer;white-space:nowrap}
@@ -221,9 +242,13 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .feed-dropdown-menu li:hover{background-color:#f6f6f6}
 .feed-dropdown-menu li a{display:block;margin:-10px -20px;padding:10px 20px}
 .feed-dropdown-menu li.divider{padding:0;border-bottom:1px solid #ccc}
+.data_export{margin:5px 0}
+.recharts-responsive-container{margin-bottom:28px}
 
 .breadcrumb.chart_timeframe{background-color:transparent;clear:initial}
 .breadcrumb.chart_timeframe>li>a{font-size:0.85em}
+.breadcrumb.chart_timeframe>li.disabled>a{cursor:default;color:#aaa}
+  .breadcrumb.chart_timeframe>li.disabled>a:hover{text-decoration:none}
 .breadcrumb.chart_timeframe>li+li:before{content:"\b7\a0";font-weight:bold}
 .feedlist-tooltip-a{font-size:0.85em; padding-left: 8px;}
 
