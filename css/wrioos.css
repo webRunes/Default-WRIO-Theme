@@ -219,7 +219,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .dashboard-table .table{margin:0}
   .dashboard-table .pagination{margin:0}
 .data_entries{color:#aaa;display:block;margin:24px 0}
-.tab_networks{margin:12px 0 20px}
+.tab_networks{border-bottom:1px solid #eee;margin:12px 0 20px}
   .tab_networks>li>a{margin:0;padding:0;text-transform:none}
   .tab_networks>li.active>a,.tab_networks>li.active>a:focus,.tab_networks>li.active>a:hover
     {background-color:transparent;box-shadow:none;color:#337ab7}
