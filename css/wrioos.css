@@ -211,6 +211,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 
 /* Twitter */
 .timeline-Tweet:hover{background-color:transparent!important}
+
 /* Dashboard */
 .dashboard-sensor-id{width:6ch;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} 
 .dashboard-modal-div{padding:28px}
@@ -218,6 +219,12 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .dashboard-table .table{margin:0}
   .dashboard-table .pagination{margin:0}
 .data_entries{color:#aaa;display:block;margin:24px 0}
+.tab_networks{margin:12px 0 20px}
+  .tab_networks>li>a{text-transform:none}
+  .tab_networks>li.active>a,.tab_networks>li.active>a:focus,.tab_networks>li.active>a:hover
+    {background-color:transparent;box-shadow:none;color:#337ab7}
+  .tab_networks>li.active{border-bottom: 2px solid #337ab7}
+  .tab_networks>li i{font-size:initial;padding:0;top:-1px}
 
 /* Product profile */
 .product_img{margin-bottom:8px!important}
@@ -252,6 +259,6 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .breadcrumb.chart_timeframe>li+li:before{content:"\b7\a0";font-weight:bold}
 .feedlist-tooltip-a{font-size:0.85em; padding-left: 8px;}
 
-.react-tooltip-lite {background: #333;color: white;}
-.react-tooltip-lite-arrow {border-color: #333;}
-.pull-right div {display: inline-block;}
+.react-tooltip-lite{background:#333;color:#fff}
+.react-tooltip-lite-arrow{border-color:#333}
+.pull-right div{display:inline-block}
