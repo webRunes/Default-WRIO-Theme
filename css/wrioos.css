@@ -238,7 +238,8 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .control-panel .btn-sm{padding:5px 20px}
 .control-panel{margin:32px 0;text-align:center}
   .control-panel h1{font-size:1em;text-transform:uppercase}
-  .control-alerts p{font-size:2.4em;line-height:64px}
+  .control-left p{font-size:2.4em;line-height:64px}
+  .control-left sup{color:#4caf50;font-size:50%;top:-.75em}
   .control-last-readings p{color:#aaa;line-height:64px}
 .feed-chart-main-div{height:350px;width:100%}
 .feed-dropdown{display:inline-block;position:relative;z-index:100}
