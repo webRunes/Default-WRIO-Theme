@@ -158,9 +158,6 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .navbar .navbar-nav>li>a.btn.btn-default:hover,.navbar .navbar-nav>li>a.btn:active,.navbar .navbar-nav>li>a.btn:focus,.navbar .navbar-nav>li>a.btn:hover{box-shadow:none}
 .btn-group-sm .btn, .btn-group-sm .navbar .navbar-nav>li>a.btn, .btn.btn-sm, .navbar .navbar-nav>li>a.btn.btn-sm{font-size:12px}
 .btn{box-shadow:none!important;padding:13px 30px 11px}
-@media (max-width: 991px) {
-  .btn.btn-simple,.navbar .navbar-nav>li>a.btn.btn-simple{padding:18px 36px}
-}
 .alert-primary{color:#004085;background-color:#cce5ff;border-color:#b8daff}
 .table>thead>tr>th{font-size:1em;font-weight:bold}
 .pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover
@@ -181,31 +178,6 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .toggle-field .toggle-label{float:right;margin:2px 0 0}
 .narrow-dropdown>button{padding:12px}
 /* END */
-
-@media (min-width: 1024px) {
-  .cover{top:.5rem}
-  #cd-vertical-nav{display:none !important}
-  #sidebar{display:block !important}
-}
-@media (max-width: 768px) {
-  h1,h2,h3,.h1,.h2,.h3{font-size:1.3em;margin:.75rem 0 .5rem}
-  article{margin:0 1rem}
-  .cover{padding-top:20px;right:0}
-    .cover .navbar-nav a{text-align:right}
-  a .card .img{margin:0 0 12px;width:100%;
-    -webkit-background-size:auto!important;-moz-background-size:auto!important;-o-background-size:auto!important;background-size:auto!important}
-  a .card-text{height:400px;text-align:center}
-    .card-text .arrow-more{display:none}
-    .card-text .gradient{position:inherit}
-    .card-text p{margin:0}
-  .card-text p,.paragraph{font-size:1em}
-  .main .card .card-content{padding:24px;background-origin:content-box}
-  .main .card .nav-tabs a i{display:inline-block!important}
-  .main .card .nav-tabs>li .material-icons{margin:0}
-  .main .card .nav-tabs-wrapper label{top:0}
-  .title h1{font-size:2em}
-  .title h2{font-size:1em}
-}
 
 .loading{width:64px;height:64px}
 .tooltip{display:inline}
@@ -256,6 +228,9 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .feed-dropdown-menu li.divider{padding:0;border-bottom:1px solid #ccc}
 .data_export{margin:5px 0}
 .recharts-responsive-container{margin-bottom:28px}
+.timeline:before{left:50%;margin-left:-2px}
+.timeline-step{position:absolute;display:inline-flex;align-items:center;justify-content:center;left:0;width:33px;height:33px;border-radius:50%;text-align:center;-webkit-transform:translateX(-50%);transform:translateX(-50%);font-size:1rem;font-weight:600;z-index:1}
+.timeline-content{margin-left:60px;padding-top:.5rem;position:relative;top:-6px;width:auto}
 
 .breadcrumb.chart_timeframe{clear:none}
 .breadcrumb.chart_timeframe>li a{font-size:0.85em;padding-left:8px}
@@ -266,3 +241,30 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .react-tooltip-lite{background:#333;color:#fff}
 .react-tooltip-lite-arrow{border-color:#333}
 .pull-right div{display:inline-block}
+
+@media(min-width:1024px){
+  .cover{top:.5rem}
+  #cd-vertical-nav{display:none !important}
+  #sidebar{display:block !important}
+  .btn.btn-simple,.navbar .navbar-nav>li>a.btn.btn-simple{padding:18px 36px}
+  .timeline-content{max-width:30rem}
+}
+@media (max-width:768px){
+  h1,h2,h3,.h1,.h2,.h3{font-size:1.3em;margin:.75rem 0 .5rem}
+  article{margin:0 1rem}
+  .cover{padding-top:20px;right:0}
+    .cover .navbar-nav a{text-align:right}
+  a .card .img{margin:0 0 12px;width:100%;
+    -webkit-background-size:auto!important;-moz-background-size:auto!important;-o-background-size:auto!important;background-size:auto!important}
+  a .card-text{height:400px;text-align:center}
+    .card-text .arrow-more{display:none}
+    .card-text .gradient{position:inherit}
+    .card-text p{margin:0}
+  .card-text p,.paragraph{font-size:1em}
+  .main .card .card-content{padding:24px;background-origin:content-box}
+  .main .card .nav-tabs a i{display:inline-block!important}
+  .main .card .nav-tabs>li .material-icons{margin:0}
+  .main .card .nav-tabs-wrapper label{top:0}
+  .title h1{font-size:2em}
+  .title h2{font-size:1em}
+}
