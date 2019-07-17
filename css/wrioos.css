@@ -228,8 +228,9 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .feed-dropdown-menu li.divider{padding:0;border-bottom:1px solid #ccc}
 .data_export{margin:5px 0}
 .recharts-responsive-container{margin-bottom:28px}
-.timeline:before{left:50%;margin-left:-2px}
-.timeline-step{position:absolute;display:inline-flex;align-items:center;justify-content:center;left:0;width:33px;height:33px;border-radius:50%;text-align:center;-webkit-transform:translateX(-50%);transform:translateX(-50%);font-size:1rem;font-weight:600;z-index:1}
+.timeline:before{left:50%;margin-left:-2px;content:"";position:absolute;top:0;height:100%;border-right:2px solid #ccc}
+.timeline-step{color:#fff;background-color:#4184f3;margin:24px;position:absolute;width:33px;height:33px;border-radius:50%;text-align:center;-webkit-transform:translateX(-50%);transform:translateX(-50%);font-size:1rem;font-weight:600;z-index:1}
+  .timeline-step i{position:relative;top:5px;margin:0 2px 0 0}
 .timeline-content{margin-left:60px;padding-top:.5rem;position:relative;top:-6px;width:auto}
 
 .breadcrumb.chart_timeframe{clear:none}
