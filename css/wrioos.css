@@ -249,11 +249,12 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .breadcrumb.chart_timeframe>li>a{font-size:0.85em}
 .breadcrumb.chart_timeframe>li.disabled>a{cursor:default;color:#aaa}
   .breadcrumb.chart_timeframe>li.disabled>a:hover{text-decoration:none}
-.breadcrumb.chart_timeframe>li+li:before{content:"\b7\a0";font-weight:bold}
+/* .breadcrumb.chart_timeframe>li+li:before{content:"\b7\a0";font-weight:bold} */
 .feedlist-tooltip-a{font-size:0.85em; padding-left: 8px;}
+.feedlist-tooltip-a:before{content:"\b7\a0";font-weight:bold}
 
 .react-tooltip-lite {background: #333;color: white;}
 .react-tooltip-lite-arrow {border-color: #333;}
 .pull-right div {display: inline-block;}
 
-.deviceProfile-mapboxgl{height: 460px;margin-top: 12px;}
+.deviceProfile-mapboxgl{height: 300px;width:344px;}
