@@ -239,6 +239,12 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .breadcrumb.chart_timeframe>li.disabled a:hover{text-decoration:none}
 .breadcrumb.chart_timeframe>li+li:before{content:"\b7\a0";font-weight:bold}
 
+.react-tooltip-lite {background: #333;color: white;}
+.react-tooltip-lite-arrow {border-color: #333;}
+.pull-right div {display: inline-block;}
+
+.deviceProfile-mapboxgl{height: 460px;margin-top: 12px;}
+
 .react-tooltip-lite{background:#333;color:#fff}
 .react-tooltip-lite-arrow{border-color:#333}
 .pull-right div{display:inline-block}
@@ -269,3 +275,4 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .title h1{font-size:2em}
   .title h2{font-size:1em}
 }
+
