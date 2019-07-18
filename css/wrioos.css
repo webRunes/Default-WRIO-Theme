@@ -240,7 +240,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .breadcrumb.chart_timeframe>li a{font-size:0.85em;padding-left:8px}
 .breadcrumb.chart_timeframe>li.disabled a{cursor:default;color:#aaa}
   .breadcrumb.chart_timeframe>li.disabled a:hover{text-decoration:none}
-.breadcrumb.chart_timeframe>li+li:before{content:"\b7\a0";font-weight:bold}
+.breadcrumb.chart_timeframe>li+li:before{content:"\b7\a0";font-weight:bold;padding:0 5px 0 8px}
 
 .react-tooltip-lite {background: #333;color: white;}
 .react-tooltip-lite-arrow {border-color: #333;}
