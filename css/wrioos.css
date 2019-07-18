@@ -244,9 +244,9 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .pull-right div {display: inline-block;}
 
 .deviceProfile-mapboxgl-main{display: grid;justify-items: center;align-items: center;}
-.deviceProfile-mapboxgl{height: 300px;width:344px;}
-.deviceProfile-mapboxgl .mapboxgl-map{height: 100%;}
-.mapbox-main-div{height: 300px;width:344px;}
+/* .deviceProfile-mapboxgl{height: 300px;width:344px;}
+.deviceProfile-mapboxgl .mapboxgl-map{height: 100%;} */
+.mapbox-main-div{height: 300px;width:100%;}
 
 .react-tooltip-lite{background:#333;color:#fff}
 .react-tooltip-lite-arrow{border-color:#333}
@@ -279,4 +279,4 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .title h2{font-size:1em}
 }
 
-.feedlist-tooltip-a, .feedlist-tooltip-b{display: inline;}
+.tooltip-a, .tooltip-b{display: inline;}
