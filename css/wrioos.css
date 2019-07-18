@@ -248,7 +248,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .deviceProfile-mapboxgl-main{display:block;justify-items:center;align-items:center}
 .deviceProfile-mapboxgl{height:300px;width:auto}
 .deviceProfile-mapboxgl .mapboxgl-map{height:100%}
-.mapbox-main-div{height:300px;width:auto}
+.mapbox-main-div{margin-top:20px;height:300px;width:auto}
 
 .react-tooltip-lite{background:#333;color:#fff}
 .react-tooltip-lite-arrow{border-color:#333}
