@@ -168,6 +168,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 /* END */
 
 /* Reset bootstrap.min.css */
+.btn.disabled,.btn[disabled],fieldset[disabled] .btn,
 .form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control,
 .pagination>.disabled>span,.pagination>.disabled>span:hover,.pagination>.disabled>span:focus,.pagination>.disabled>a,.pagination>.disabled>a:hover,.pagination>.disabled>a:focus
 {cursor:default}
