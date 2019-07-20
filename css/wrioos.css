@@ -147,6 +147,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .dropdown-menu li>a:focus,.dropdown-menu li>a:hover{box-shadow:none}
   .dropdown-menu li>a .dp_small{font-size:20px;position:relative;top:-2px}
   .with_text{margin-right:4px}
+.tooltip-a,.tooltip-b{display:inline}
 /* .social{margin:24px 0} */
 
 /* Reset material-kit.min.css */
@@ -280,5 +281,3 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
   .title h1{font-size:2em}
   .title h2{font-size:1em}
 }
-
-.tooltip-a, .tooltip-b{display: inline;}
