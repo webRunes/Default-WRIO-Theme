@@ -188,6 +188,8 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
 .timeline-Tweet:hover{background-color:transparent!important}
 
 /* Dashboard */
+.dashboard-main .jumbotron{padding:40px 54px 24px}
+  .dashboard-main .jumbotron h1{font-size:1.5em;padding:0 0 18px}
 .dashboard-sensor-id{width:6ch;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} 
 .dashboard-modal-div{padding:28px}
 .dashboard-table{}
