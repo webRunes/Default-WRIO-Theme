@@ -141,7 +141,7 @@ h1[id],h2[id]{position:relative;top:-80px;visibility:hidden} /* we need it for t
 .navbar-fixed-top{position:fixed}
 #cd-vertical-nav{display:none!important;/*display:block;*/right:36px!important} /* later: we need to restore display and fix position for mobile */
 #sidebar{display:none}
-div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll}
+div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll;z-index:1}
 .tabbar-fixed-top{left:inherit;right:inherit;top:30px;position:fixed;z-index:1000}
 .dropdown-menu li a:active,.dropdown-menu li a:focus,.dropdown-menu li a:hover{background-color:#4184f3}
 .dropdown-menu li>a:focus,.dropdown-menu li>a:hover{box-shadow:none}
