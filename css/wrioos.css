@@ -117,6 +117,7 @@ figcaption.callout{margin:4px 0}
 .invert-icon{-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}
 .invert-icon-v{-moz-transform:scaleY(-1);-o-transform:scaleY(-1);-webkit-transform:scaleY(-1);transform:scaleY(-1);filter:FlipV;-ms-filter:"FlipV"}
 .search{margin:12px 0}
+.btn-refresh{padding:0;line-height:normal}
 
 .card-nav-tabs{margin-top:-45px}
 .card .header-primary{box-shadow:0 2px 2px 0 rgba(0,0,0,.2),0 2px 2px -2px rgba(244,67,54,.6)}
