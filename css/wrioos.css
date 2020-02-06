@@ -1,5 +1,6 @@
 html,body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,
-  .card-title,.footer-big h4,.footer-big h5,.footer-brand,.info-title,.media .media-heading,.title /* reset material-kit default */
+  .card-title,.footer-big h4,.footer-big h5,.footer-brand,.info-title,.media .media-heading,.title,
+  .mapboxgl-popup-content /* reset material-kit default and mapbox */
   {font-weight:normal;font-size:1em;font-family:"Roboto","Helvetica","Arial",sans-serif}
 body{background-color:#fcfcfc;overflow-x:hidden}
 
@@ -253,7 +254,10 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll;z-index:1}
 
 .deviceProfile-mapboxgl-main{display:grid;justify-items:center;align-items:center}
 .mapbox-main-div{margin-top:30px;height:400px;width:100%}
-.mapboxgl-popup-content h4 {background-color:#99ff99;white-space:pre-line}
+.mapboxgl-popup-content h4{background-color:#4caf50;font-weight:bold;line-height:normal;margin:0;padding:8px 12px;white-space:pre-line}
+.mapboxgl-popup-close-button{font-weight:bold;right:5px;top:5px}
+.mapboxgl-popup-content{padding:0}
+  .mapboxgl-popup-content p{margin:12px}
 
 .react-tooltip-lite{background:#333;color:#fff}
 .react-tooltip-lite-arrow{border-color:#333}
