@@ -257,7 +257,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll;z-index:1}
 .mapboxgl-popup-content h4{background-color:#4caf50;color:#fff;font-weight:bold;line-height:normal;margin:0;padding:8px 12px;white-space:pre-line}
 .mapboxgl-popup-close-button{font-weight:bold;color:#fff;right:5px;top:5px}
 .mapboxgl-popup-content{padding:0}
-  .mapboxgl-popup-content p{margin:12px}
+  .mapboxgl-popup-content p{font-size:14px;margin:12px}
 
 .react-tooltip-lite{background:#333;color:#fff}
 .react-tooltip-lite-arrow{border-color:#333}
