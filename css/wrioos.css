@@ -10,7 +10,7 @@ h3,.h3{font-size:1.3em}
 h4,.h4{font-size:1.2em}
 h5,.h5{font-size:1.1em}
 h6,.h6{font-size:1em}
-.main{background:transparent;margin-top:12px}
+.main{background:transparent;margin-top:12px;z-index: auto}
   .main h1,.main .h1,.main h2,.main .h2{color:#444;font-weight:bold}
   .main section{display:inline-block;width:100%}
   .main .card-content{padding:1em 3rem}
@@ -196,7 +196,7 @@ div#sidebar.navbar-fixed-top{height:100vh;overflow-y:scroll;z-index:1}
 .dashboard-modal-div{padding:28px}
 .dashboard-table{}
   .dashboard-table .table{margin:0}
-    .dashboard-table .table tbody tr:hover{background-color:#f1f8ff;cursor:pointer}
+   .dashboard-table .table tbody tr:hover{background-color:#f1f8ff;cursor:pointer}
   .dashboard-table .pagination{margin:0}
 .data_entries{color:#aaa;display:block;margin:24px 0}
 .tab_networks{border-bottom:1px solid #eee;margin:12px 0 20px}
